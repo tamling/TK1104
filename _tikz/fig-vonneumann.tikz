@@ -1,0 +1,16 @@
+\begin{tikzpicture}[box/.style={draw, rounded corners=2pt, minimum height=0.85cm, font=\small, inner sep=5pt}, >=Stealth]
+\node[draw, rounded corners=2pt, minimum width=3.6cm, minimum height=3.0cm] (cpu) at (0,0) {};
+\node[font=\small\bfseries, anchor=south] at (cpu.north) {CPU};
+\node[box, minimum width=2.8cm] at (0,0.85) {Control unit};
+\node[box, minimum width=2.8cm] at (0,0) {ALU};
+\node[box, minimum width=2.8cm] at (0,-0.85) {Registers};
+\node[draw, rounded corners=2pt, minimum width=3.0cm, minimum height=3.0cm, fill=kristiania!6] (mem) at (6.4,0) {\small Memory};
+\node[font=\footnotesize, color=kgrey, anchor=south, align=center] at (mem.north) {program \emph{and} data};
+\draw[very thick] (-2.4,-2.4) -- (8.6,-2.4) node[pos=0.83, below=2pt, font=\footnotesize, color=kgrey] {system bus};
+\draw[thick] (cpu.south) -- (0,-2.4);
+\draw[thick] (mem.south) -- (6.4,-2.4);
+\node[box] (inp) at (2.0,-3.6) {Input};
+\node[box] (outp) at (4.6,-3.6) {Output};
+\draw[thick] (inp.north) -- (2.0,-2.4);
+\draw[thick] (outp.north) -- (4.6,-2.4);
+\end{tikzpicture}

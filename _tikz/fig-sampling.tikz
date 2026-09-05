@@ -1,0 +1,12 @@
+\begin{tikzpicture}[>=Stealth]
+\draw[->] (0,-1.3) -- (0,1.5) node[above, font=\footnotesize]{amplitude};
+\draw[->] (0,0) -- (7.3,0) node[right, font=\footnotesize]{time};
+\draw[thick, kgrey] plot[domain=0:6.9, samples=120] (\x,{1.05*sin(\x*103)});
+\foreach \x in {0.35,0.95,1.55,2.15,2.75,3.35,3.95,4.55,5.15,5.75,6.35}{
+  \pgfmathsetmacro{\y}{1.05*sin(\x*103)}
+  \draw[kristiania, thick] (\x,0) -- (\x,\y);
+  \fill[kristiania] (\x,\y) circle (1.6pt);
+}
+\node[font=\footnotesize, color=kgrey, align=left] at (5.5,1.25) {grey: the sound wave};
+\node[font=\footnotesize, color=kristiania, align=left] at (5.6,-1.1) {red: the samples};
+\end{tikzpicture}

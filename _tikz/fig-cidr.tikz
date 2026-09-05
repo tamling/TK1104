@@ -1,0 +1,5 @@
+\begin{tikzpicture}[]
+\node[draw, minimum width=6.9cm, minimum height=0.8cm, fill=kristiania!10, anchor=west, font=\small] (p) at (0,0) {network prefix -- 22 bits};
+\node[draw, minimum width=3.1cm, minimum height=0.8cm, anchor=west, font=\small] (hst) at (p.east) {host -- 10 bits};
+\node[font=\footnotesize, color=kgrey] at (5.0,-0.78) {\texttt{10.21.24.0/22} \; $\cdot$ \; addresses \texttt{10.21.24.0}--\texttt{10.21.27.255} \; $\cdot$ \; 1022 usable hosts};
+\end{tikzpicture}

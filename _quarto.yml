@@ -1,0 +1,44 @@
+project:
+  type: book
+  output-dir: _site
+
+# ── Annotations (Hypothesis) ─────────────────────────────────────────────
+# Same setup as the SKY2100 script: ON by default — every HTML page loads
+# the Hypothesis client (see includes/hypothesis.html) so students can
+# annotate directly. Set to false (and drop include-in-header below) to
+# switch the layer off again.
+annotations: true
+
+book:
+  title: "TK1104 — Digital Technology"
+  subtitle: "Lecture script — a companion to the twelve lectures"
+  author: "Timo Amling"
+  chapters:
+    - index.qmd
+    - chapters/01-introduction-everything-is-bits.qmd
+    - chapters/02-binary-hex-twos-complement.qmd
+    - chapters/03-text-and-multimedia.qmd
+    - chapters/04-how-the-machine-computes.qmd
+    - chapters/05-operating-systems.qmd
+    - chapters/06-the-internet.qmd
+    - chapters/07-the-application-layer.qmd
+    - chapters/08-the-transport-layer.qmd
+    - chapters/09-the-network-layer.qmd
+    - chapters/10-the-link-layer.qmd
+    - chapters/11-repetition.qmd
+  appendices:
+    - appendix/abbreviations.qmd
+    - appendix/revision-history.qmd
+
+format:
+  html:
+    # Every page gets both a light and a dark theme; Quarto renders the
+    # toggle in the navbar of every page. theme.scss carries the shared
+    # course styling (bridges, boxes), theme-dark.scss the dark-mode
+    # fixes (light backing card behind the SVG figures).
+    theme:
+      light: [cosmo, theme.scss]
+      dark: [darkly, theme.scss, theme-dark.scss]
+    toc: true
+    number-sections: true
+    include-in-header: includes/hypothesis.html

@@ -1,0 +1,10 @@
+# Quarto build output
+_site/
+.quarto/
+/.quarto/
+
+# LaTeX build junk from the figure pipeline (_tikz/build.sh builds in /tmp,
+# but keep the patterns in case anyone builds in place)
+*.aux
+*.log
+*.synctex.gz

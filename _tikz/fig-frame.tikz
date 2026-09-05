@@ -1,0 +1,9 @@
+\begin{tikzpicture}[]
+\tikzset{seg/.style={draw, minimum height=0.8cm, font=\footnotesize, inner sep=2pt, anchor=west}}
+\node[seg, minimum width=1.5cm, fill=kgrey!12] (a) at (0,0) {preamble};
+\node[seg, minimum width=1.7cm] (b) at (a.east) {dest MAC};
+\node[seg, minimum width=1.7cm] (c) at (b.east) {src MAC};
+\node[seg, minimum width=1.0cm] (d) at (c.east) {type};
+\node[seg, minimum width=3.9cm, fill=kristiania!8] (e) at (d.east) {payload (IP datagram)};
+\node[seg, minimum width=1.0cm, fill=kgrey!12] (f) at (e.east) {CRC};
+\end{tikzpicture}

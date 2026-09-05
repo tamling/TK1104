@@ -1,0 +1,10 @@
+\begin{tikzpicture}[box/.style={draw, rounded corners=2pt, minimum height=0.85cm, font=\small, inner sep=5pt}, >=Stealth]
+\node[box] (s) at (0,0) {Source};
+\node[draw, circle, font=\small, inner sep=3pt] (r1) at (2.7,0) {R1};
+\node[draw, circle, font=\small, inner sep=3pt] (r2) at (4.9,0) {R2};
+\node[draw, circle, font=\small, inner sep=3pt] (r3) at (7.1,0) {R3};
+\node[box] (d) at (9.7,0) {Dest};
+\draw[->, thick] (s) -- (r1); \draw[->, thick] (r1) -- (r2);
+\draw[->, thick] (r2) -- (r3); \draw[->, thick] (r3) -- (d);
+\node[font=\footnotesize, color=kgrey] at (4.9,-0.85) {each router: ``next hop only''};
+\end{tikzpicture}

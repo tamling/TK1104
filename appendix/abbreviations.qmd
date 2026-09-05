@@ -1,0 +1,59 @@
+# Abbreviations {.unnumbered}
+
+The abbreviations used throughout the script, with their expansions. Each
+is also introduced in full where it first appears.
+
+| Abbreviation | Expansion |
+|:---|:---|
+| ALU | arithmetic logic unit |
+| ARP | Address Resolution Protocol |
+| AS | autonomous system |
+| ASCII | American Standard Code for Information Interchange |
+| BGP | Border Gateway Protocol |
+| CIDR | Classless Inter-Domain Routing |
+| CPU | central processing unit |
+| CRC | cyclic redundancy check |
+| CSMA/CA | carrier sense multiple access / collision avoidance |
+| CSMA/CD | carrier sense multiple access / collision detection |
+| DHCP | Dynamic Host Configuration Protocol |
+| DNS | Domain Name System |
+| ECC | error-correcting code |
+| FTP | File Transfer Protocol |
+| GPU | graphics processing unit |
+| GUI | graphical user interface |
+| HDD | hard disk drive |
+| HTTP(S) | Hypertext Transfer Protocol (Secure) |
+| ICMP | Internet Control Message Protocol |
+| IMAP | Internet Message Access Protocol |
+| IP(v4/v6) | Internet Protocol (version 4/6) |
+| IR | instruction register |
+| ISP | internet service provider |
+| LAN | local area network |
+| MAC | media access control |
+| MIME | Multipurpose Internet Mail Extensions |
+| MSS | maximum segment size |
+| MTU | maximum transmission unit |
+| NAT | network address translation |
+| NIC | network interface card |
+| OS | operating system |
+| OSI | Open Systems Interconnection |
+| OUI | organisationally unique identifier |
+| P2P | peer-to-peer |
+| PC | program counter |
+| POP3 | Post Office Protocol v3 |
+| RAM | random-access memory |
+| RFC | Request for Comments |
+| RGB | red–green–blue |
+| RTT | round-trip time |
+| SMTP | Simple Mail Transfer Protocol |
+| SSD | solid-state drive |
+| SSH | Secure Shell |
+| TCP | Transmission Control Protocol |
+| TLD | top-level domain |
+| TLS | Transport Layer Security |
+| TTL | time to live |
+| UDP | User Datagram Protocol |
+| URL | uniform resource locator |
+| UTF | Unicode Transformation Format |
+| WAN | wide area network |
+| WPA | Wi-Fi Protected Access |

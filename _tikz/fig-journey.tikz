@@ -1,0 +1,10 @@
+\begin{tikzpicture}[>=Stealth]
+\tikzset{stp/.style={draw, rounded corners=2pt, minimum height=1.05cm, minimum width=2.3cm, font=\footnotesize, align=center}}
+\node[stp] (s1) at (0,0) {1 DNS\\[-1pt]{\scriptsize L6--7}};
+\node[stp] (s2) at (2.8,0) {2 TCP\\[-1pt]{\scriptsize L8}};
+\node[stp] (s3) at (5.6,0) {3 IP routing\\[-1pt]{\scriptsize L9}};
+\node[stp] (s4) at (8.4,0) {4 ARP + frame\\[-1pt]{\scriptsize L10}};
+\node[stp, fill=kristiania!8] (s5) at (11.2,0) {5 HTTP\\[-1pt]{\scriptsize L7}};
+\draw[->, thick] (s1) -- (s2); \draw[->, thick] (s2) -- (s3);
+\draw[->, thick] (s3) -- (s4); \draw[->, thick] (s4) -- (s5);
+\end{tikzpicture}

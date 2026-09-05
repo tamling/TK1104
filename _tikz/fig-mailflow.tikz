@@ -1,0 +1,9 @@
+\begin{tikzpicture}[box/.style={draw, rounded corners=2pt, minimum height=0.85cm, font=\small, inner sep=5pt, align=center}, >=Stealth]
+\node[box] (ua1) at (0,0) {sender's\\user agent};
+\node[box] (s1) at (3.5,0) {sender's\\mail server};
+\node[box] (s2) at (7.0,0) {recipient's\\mail server};
+\node[box] (ua2) at (10.5,0) {recipient's\\user agent};
+\draw[->, thick, kristiania] (ua1) -- node[above, font=\scriptsize\ttfamily]{SMTP} node[below, font=\scriptsize, color=kgrey]{push} (s1);
+\draw[->, thick, kristiania] (s1) -- node[above, font=\scriptsize\ttfamily]{SMTP} node[below, font=\scriptsize, color=kgrey]{push} (s2);
+\draw[->, thick] (s2) -- node[above, font=\scriptsize\ttfamily]{IMAP/POP3} node[below, font=\scriptsize, color=kgrey]{pull} (ua2);
+\end{tikzpicture}

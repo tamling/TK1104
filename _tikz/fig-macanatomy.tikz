@@ -1,0 +1,12 @@
+\begin{tikzpicture}[]
+\tikzset{oct/.style={draw, minimum width=1.35cm, minimum height=0.72cm, font=\ttfamily\small, anchor=west}}
+\node[oct, fill=kristiania!10] (o1) at (0,0) {3C};
+\node[oct, fill=kristiania!10] (o2) at (o1.east) {5A};
+\node[oct, fill=kristiania!10] (o3) at (o2.east) {B4};
+\node[oct] (o4) at (o3.east) {1F};
+\node[oct] (o5) at (o4.east) {9E};
+\node[oct] (o6) at (o5.east) {02};
+\draw[decorate, decoration={brace, amplitude=4pt}, thick, kgrey] ([yshift=3pt]o1.north west) -- node[above=6pt, font=\footnotesize, color=kgrey]{OUI -- assigned to the manufacturer by the IEEE} ([yshift=3pt]o3.north east);
+\draw[decorate, decoration={brace, amplitude=4pt}, thick, kgrey] ([yshift=-3pt]o6.south east) -- node[below=6pt, font=\footnotesize, color=kgrey]{device part -- chosen by the manufacturer} ([yshift=-3pt]o4.south west);
+\node[font=\footnotesize, color=kgrey, anchor=west] at ([xshift=6pt]o6.east) {$6\times8 = 48$ bits};
+\end{tikzpicture}

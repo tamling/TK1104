@@ -1,0 +1,8 @@
+\begin{tikzpicture}[>=Stealth]
+\foreach [count=\i from 0] \a/\b/\r in {13/6/1, 6/3/0, 3/1/1, 1/0/1}{
+  \node[font=\small, anchor=east] at (1.2,-\i*0.62) {$\a \div 2 = \b$};
+  \node[font=\small\bfseries, color=kristiania] (r\i) at (2.6,-\i*0.62) {\r};
+}
+\node[font=\footnotesize, color=kgrey, anchor=west] at (3.4,-0.93) {remainders};
+\draw[->, thick, kgrey] (2.6,-2.35) to[bend right=35] node[below right=-1pt, font=\footnotesize, color=kgrey]{read bottom-up: $1101_2$} (4.9,-0.2);
+\end{tikzpicture}

@@ -1,0 +1,9 @@
+\begin{tikzpicture}[box/.style={draw, rounded corners=2pt, minimum height=0.85cm, font=\small, inner sep=5pt}, >=Stealth]
+\node[box, minimum width=2.2cm] (rdy) at (0,0) {Ready};
+\node[box, minimum width=2.2cm, fill=kristiania!8] (run) at (6.4,0) {Running};
+\node[box, minimum width=2.2cm] (blk) at (3.2,-2.3) {Blocked};
+\draw[->, thick] (rdy.north east) to[bend left=18] node[above, font=\footnotesize]{scheduler dispatches} (run.north west);
+\draw[->, thick] (run.south west) to[bend left=18] node[below, font=\footnotesize]{time slice over} (rdy.south east);
+\draw[->, thick] (run.south) to[bend left=12] node[below right=-2pt, font=\footnotesize]{waits for I/O} (blk.east);
+\draw[->, thick] (blk.west) to[bend left=12] node[below left=-2pt, font=\footnotesize]{I/O completes} (rdy.south);
+\end{tikzpicture}

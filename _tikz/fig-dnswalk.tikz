@@ -1,0 +1,12 @@
+\begin{tikzpicture}[box/.style={draw, rounded corners=2pt, minimum height=0.85cm, font=\small, inner sep=5pt}, >=Stealth]
+\node[box] (pc) at (0,-1.7) {your PC};
+\node[box, fill=kristiania!8] (res) at (3.6,-1.7) {local resolver};
+\node[box, minimum width=2.6cm] (root) at (8.5,0) {root};
+\node[box, minimum width=2.6cm] (tld) at (8.5,-1.7) {\texttt{.no} TLD};
+\node[box, minimum width=2.6cm] (auth) at (8.5,-3.4) {kristiania.no};
+\draw[->, thick] ([yshift=4pt]pc.east) -- node[above, font=\scriptsize]{1} ([yshift=4pt]res.west);
+\draw[<->, thick] (res.north east) -- node[above, sloped, font=\scriptsize]{2 ``ask .no''} (root.west);
+\draw[<->, thick] (res.east) -- node[above, font=\scriptsize]{3 ``ask kristiania''} (tld.west);
+\draw[<->, thick] (res.south east) -- node[below, sloped, font=\scriptsize]{4 the IP} (auth.west);
+\draw[->, thick] ([yshift=-4pt]res.west) -- node[below, font=\scriptsize]{5 answer (cached)} ([yshift=-4pt]pc.east);
+\end{tikzpicture}

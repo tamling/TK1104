@@ -1,0 +1,7 @@
+\begin{tikzpicture}[>=Stealth]
+\draw[very thick] (0,0) node[above, font=\small\bfseries]{Client} -- (0,-3.5);
+\draw[very thick] (7.6,0) node[above, font=\small\bfseries]{Server} -- (7.6,-3.5);
+\draw[->, thick] (0,-0.35) -- node[above, sloped, font=\footnotesize\ttfamily]{SYN (seq = x)} (7.6,-1.15);
+\draw[->, thick] (7.6,-1.5) -- node[above, sloped, font=\footnotesize\ttfamily]{SYN+ACK (seq = y, ack = x+1)} (0,-2.3);
+\draw[->, thick] (0,-2.65) -- node[above, sloped, font=\footnotesize\ttfamily]{ACK (ack = y+1)} (7.6,-3.45);
+\end{tikzpicture}
