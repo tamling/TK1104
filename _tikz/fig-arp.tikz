@@ -1,0 +1,10 @@
+\begin{tikzpicture}[box/.style={draw, rounded corners=2pt, minimum height=0.85cm, font=\small, inner sep=5pt}, >=Stealth]
+\node[box] (A) at (0,0) {A};
+\node[box] (C) at (3.4,1.15) {C};
+\node[box] (D) at (3.4,-1.15) {D};
+\node[box, fill=kristiania!8] (B) at (6.8,0) {B};
+\draw[->, dashed, thick] (A) -- node[above, font=\scriptsize, sloped]{who has 10.0.0.7?} (C);
+\draw[->, dashed, thick] (A) -- (D);
+\draw[->, dashed, thick] (A) -- (B);
+\draw[->, thick, kristiania] (B.south) to[bend left=22] node[below, font=\scriptsize]{B: my MAC is 3C:5A:\dots} (A.south);
+\end{tikzpicture}

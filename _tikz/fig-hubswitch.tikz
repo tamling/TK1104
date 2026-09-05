@@ -1,0 +1,19 @@
+\begin{tikzpicture}[>=Stealth, font=\small]
+\tikzset{hst/.style={draw, rounded corners=1.5pt, minimum width=0.85cm, minimum height=0.6cm, font=\footnotesize},
+dev/.style={draw, minimum width=1.5cm, minimum height=0.75cm, font=\small}}
+% hub side
+\node[dev, fill=kgrey!15] (hub) at (0,0) {hub};
+\foreach \ang/\n in {135/A, 45/B, 225/C, 315/D}{
+  \node[hst] (h\n) at (\ang:1.9) {\n};
+  \draw[kristiania, thick] (hub) -- (h\n);
+}
+\node[font=\footnotesize, color=kgrey, align=center] at (0,-2.6) {one collision domain:\\every frame reaches everyone};
+% switch side
+\node[dev, fill=kgrey!15] (sw) at (7.2,0) {switch};
+\foreach \ang/\n in {135/A, 45/B, 225/C, 315/D}{
+  \node[hst] (s\n) at ($(7.2,0)+(\ang:1.9)$) {\n};
+  \draw[kgrey!60] (sw) -- (s\n);
+}
+\draw[kristiania, very thick, ->] (sA) -- (sw) -- (sB);
+\node[font=\footnotesize, color=kgrey, align=center] at (7.2,-2.6) {one domain per port:\\A$\to$B disturbs no one else};
+\end{tikzpicture}

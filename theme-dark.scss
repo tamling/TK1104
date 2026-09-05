@@ -1,0 +1,11 @@
+/*-- scss:rules --*/
+// The chapter figures are SVGs with transparent background and dark
+// ink; give them a light backing card so they stay readable in dark mode.
+// (Same fix as in the SKY2100 script.)
+.quarto-figure img,
+p > img,
+div > img {
+  background-color: #ffffff;
+  border-radius: 4px;
+  padding: 0.6rem;
+}

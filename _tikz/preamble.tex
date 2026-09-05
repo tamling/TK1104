@@ -1,0 +1,14 @@
+% Wrapper preamble for the figure sources (fig-*.tikz).
+% build.sh appends each .tikz body plus \end{document} and crops the
+% result, so only texlive-latex-base + texlive-pictures are required
+% (no standalone class).
+\documentclass{article}
+\pagestyle{empty}
+\usepackage[T1]{fontenc}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning,calc,decorations.pathreplacing,circuits.logic.US}
+\usepackage{amsmath,amssymb}
+\definecolor{kristiania}{HTML}{D81E2E}
+\definecolor{kgrey}{HTML}{595959}
+\definecolor{kblue}{HTML}{1F5C8B}
+\begin{document}

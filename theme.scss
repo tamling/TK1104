@@ -1,0 +1,31 @@
+/*-- scss:defaults --*/
+$kristiania: #d81e2e;
+$kblue: #1f5c8b;
+
+/*-- scss:rules --*/
+// ── Didactic bridge ────────────────────────────────────────────────────
+// Deck-style transition at the end of each chapter: red rule + arrow +
+// italic sentence linking what was just built to what comes next
+// (the \bridge macro of the LaTeX original).
+.bridge {
+  margin-top: 2.2rem;
+  padding-top: 0.8rem;
+  border-top: 2px solid $kristiania;
+  font-style: italic;
+  display: flex;
+  gap: 0.7em;
+  align-items: flex-start;
+}
+
+.bridge::before {
+  content: "⟶";
+  color: $kristiania;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.5em;
+  line-height: 1.1;
+}
+
+.bridge p:last-child {
+  margin-bottom: 0;
+}

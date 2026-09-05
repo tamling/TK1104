@@ -1,0 +1,18 @@
+\begin{tikzpicture}[circuit logic US, every circuit symbol/.style={thick}, font=\footnotesize]
+\node[nand gate, inputs=nn] (n1) at (0,0.9) {};
+\node[nand gate, inputs=nn] (n2) at (0,-0.9) {};
+\node[nand gate, inputs=nn] (n3) at (2.6,0) {};
+\node[anchor=east] (a) at (-1.7,0.9) {$a = 1$};
+\node[anchor=east] (b) at (-1.7,-0.9) {$b = 0$};
+\draw (a.east) -- ++(0.35,0) coordinate (fa);
+\draw (b.east) -- ++(0.35,0) coordinate (fb);
+\draw (fa) |- (n1.input 1);
+\draw (fa) |- (n1.input 2);
+\draw (fb) |- (n2.input 1);
+\draw (fb) |- (n2.input 2);
+\draw (n1.output) -- ++(0.3,0) |- node[pos=0.25, right]{$0$} (n3.input 1);
+\draw (n2.output) -- ++(0.3,0) |- node[pos=0.25, right]{$1$} (n3.input 2);
+\draw (n3.output) -- ++(0.5,0) node[anchor=west]{$a\;\mathrm{OR}\;b = 1$};
+\node[anchor=south, color=kgrey] at (n1.north) {NOT $a$};
+\node[anchor=north, color=kgrey] at (n2.south) {NOT $b$};
+\end{tikzpicture}

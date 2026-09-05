@@ -1,0 +1,9 @@
+\begin{tikzpicture}[box/.style={draw, rounded corners=2pt, minimum height=0.85cm, font=\small, inner sep=5pt}, >=Stealth]
+\node[box, minimum width=2.4cm] (in) at (0,0) {Input};
+\node[box, minimum width=2.6cm, fill=kristiania!8] (pr) at (4.0,0) {Processing};
+\node[box, minimum width=2.4cm] (out) at (8.0,0) {Output};
+\node[box, minimum width=2.6cm] (st) at (4.0,-1.7) {Storage};
+\draw[->, thick] (in) -- (pr);
+\draw[->, thick] (pr) -- (out);
+\draw[<->, thick] (pr) -- (st);
+\end{tikzpicture}

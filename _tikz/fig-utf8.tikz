@@ -1,0 +1,9 @@
+\begin{tikzpicture}[]
+\node[draw, minimum height=0.75cm, font=\ttfamily\small, inner sep=3pt, fill=kgrey!15, anchor=west] (a) at (0,0) {110};
+\node[draw, minimum height=0.75cm, font=\ttfamily\small, inner sep=3pt, fill=kristiania!10, anchor=west] (b) at (a.east) {00011};
+\node[draw, minimum height=0.75cm, font=\ttfamily\small, inner sep=3pt, fill=kgrey!15, anchor=west] (c) at ([xshift=0.7cm]b.east) {10};
+\node[draw, minimum height=0.75cm, font=\ttfamily\small, inner sep=3pt, fill=kristiania!10, anchor=west] (d) at (c.east) {000101};
+\node[font=\footnotesize, color=kgrey, anchor=south] at ([yshift=0.15cm]b.north west) {byte 1 = \texttt{C3}};
+\node[font=\footnotesize, color=kgrey, anchor=south] at ([yshift=0.15cm]d.north west) {byte 2 = \texttt{85}};
+\node[font=\footnotesize, color=kgrey, anchor=north] at ([yshift=-0.15cm, xshift=-1.4cm]c.south) {grey: marker bits \quad red: the code point's eleven data bits};
+\end{tikzpicture}

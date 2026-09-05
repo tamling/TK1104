@@ -1,0 +1,19 @@
+\begin{tikzpicture}[circuit logic US, every circuit symbol/.style={thick}, font=\small]
+\node[and gate, inputs=nn] (and) at (0,0) {};
+\node[or gate, inputs=nn] (or) at (2.6,0) {};
+\node[xor gate, inputs=nn] (xor) at (5.2,0) {};
+\node[not gate] (not) at (7.8,0) {};
+\node[nand gate, inputs=nn] (nand) at (10.4,0) {};
+\foreach \g in {and,or,xor,nand}{
+  \draw (\g.input 1) -- ++(-0.35,0);
+  \draw (\g.input 2) -- ++(-0.35,0);
+  \draw (\g.output) -- ++(0.35,0);
+}
+\draw (not.input) -- ++(-0.35,0);
+\draw (not.output) -- ++(0.35,0);
+\node[anchor=north, font=\footnotesize, align=center] at ([yshift=-14pt]and.south) {AND\\[-2pt]{\scriptsize both}};
+\node[anchor=north, font=\footnotesize, align=center] at ([yshift=-14pt]or.south) {OR\\[-2pt]{\scriptsize at least one}};
+\node[anchor=north, font=\footnotesize, align=center] at ([yshift=-14pt]xor.south) {XOR\\[-2pt]{\scriptsize exactly one}};
+\node[anchor=north, font=\footnotesize, align=center] at ([yshift=-14pt]not.south) {NOT\\[-2pt]{\scriptsize invert}};
+\node[anchor=north, font=\footnotesize, align=center] at ([yshift=-14pt]nand.south) {NAND\\[-2pt]{\scriptsize AND, then NOT}};
+\end{tikzpicture}

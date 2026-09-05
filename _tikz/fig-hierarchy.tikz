@@ -1,0 +1,12 @@
+\begin{tikzpicture}[>=Stealth]
+\tikzset{tier/.style={draw, font=\small, minimum height=0.66cm, anchor=south}}
+\node[tier, minimum width=1.7cm, fill=kristiania!14] at (0,2.79) {registers};
+\node[tier, minimum width=3.1cm, fill=kristiania!9] at (0,2.10) {cache (L1/L2/L3)};
+\node[tier, minimum width=4.5cm, fill=kristiania!5] at (0,1.41) {RAM};
+\node[tier, minimum width=5.9cm] at (0,0.72) {SSD};
+\node[tier, minimum width=7.3cm] at (0,0.03) {HDD / archive};
+\draw[->, thick, kgrey] (-4.35,0.2) -- node[left, font=\footnotesize, align=right, color=kgrey]{faster,\\smaller,\\costlier} (-4.35,3.25);
+\draw[->, thick, kgrey] (4.35,3.25) -- node[right, font=\footnotesize, align=left, color=kgrey]{larger,\\slower,\\cheaper} (4.35,0.2);
+\node[font=\footnotesize, color=kgrey, anchor=south] at (0,3.55) {inside the CPU};
+\node[font=\footnotesize, color=kgrey, anchor=north] at (0,-0.25) {survives power-off};
+\end{tikzpicture}

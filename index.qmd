@@ -1,0 +1,58 @@
+# A guidance to TK1104 {.unnumbered}
+
+This script accompanies the course **TK1104 Digital Technology**. Each
+chapter belongs to one lecture: Chapter 1 to Lecture 1, Chapter 2 to
+Lecture 2, and so on, and each is followed in the same week by its guided
+Practice session. The slides shown in the lectures carry the same
+structure, so slides, script and exercises can be used side by side.
+
+In this course, the lectures themselves are the curriculum — the exam will
+not ask for book-only material. The script therefore does something simple
+but useful: It re-tells each lecture in connected prose, slowly enough to
+be read, so that you can prepare a lecture before it happens and
+reconstruct it afterwards without deciphering bullet points. The
+recommended textbook — Fox, *Information Technology*, 2nd edition — adds
+depth where you want it; the short per-lecture reading (15–30 minutes) is
+listed in `Readings.xlsx` on Canvas.
+
+Scattered through the chapters you will find a few grey boxes headed
+*Excursus*. They draw on textbooks that generations of computer-science
+students grew up with — Tanenbaum and Austin's *Structured Computer
+Organization*, Tanenbaum and Bos's *Modern Operating Systems*, and, for
+the networking chapters, Dostálek and Kabelová's *Understanding TCP/IP* —
+and they supply background, history and the occasional deeper "why"
+behind something the lecture states. Read them for perspective and
+enjoyment: They are **not** exam material, and skipping them costs you
+nothing on the multiple-choice paper. The blue boxes headed *Worked
+exercise* are the opposite: Small worked tasks — convert this, encode
+that, build this gate — placed right next to the technique they practise,
+each with its compact solution. Do them with the solution covered; they
+are the stepping stones to each chapter's self-check, and the self-checks
+are the stepping stones to the exam.
+
+Lecture 12 (exam preparation) is delivered live in the final session and
+has no chapter of its own in this script; Chapter 11 closes the written
+part.
+
+A practical suggestion from someone who once learned from a script very
+much like this one: Read a chapter with a pen. Mark what is obvious, mark
+what is not, and bring the second list to the lecture. That is the
+cheapest exam preparation you will ever do.
+
+::: {.callout-tip}
+## Reading in the dark
+
+Every page of this script has a dark mode: Use the toggle in the
+navigation bar to switch between the light and the dark theme. The
+setting is remembered as you move between chapters.
+:::
+
+::: {.callout-tip}
+## Annotate this script
+
+You can highlight and annotate any passage of this script with Hypothesis
+— select text and comment directly in the margin (a free account at
+[hypothes.is](https://hypothes.is) is needed).
+:::
+
+Timo Amling, 2026

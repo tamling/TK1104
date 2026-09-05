@@ -1,0 +1,12 @@
+\begin{tikzpicture}[]
+\tikzset{hdr/.style={draw, minimum width=0.9cm, minimum height=0.68cm, font=\footnotesize, inner sep=1pt, fill=kgrey!15, anchor=west},
+dat/.style={draw, minimum width=3.2cm, minimum height=0.68cm, font=\small, inner sep=1pt, anchor=west}}
+\node[dat] at (2.7,0) {Message};
+\node[font=\footnotesize, color=kgrey, anchor=west] at (6.3,0) {application: \emph{message}};
+\node[hdr] at (1.8,-0.85) {$H_t$}; \node[dat] at (2.7,-0.85) {Message};
+\node[font=\footnotesize, color=kgrey, anchor=west] at (6.3,-0.85) {transport: \emph{segment}};
+\node[hdr] at (0.9,-1.7) {$H_n$}; \node[hdr] at (1.8,-1.7) {$H_t$}; \node[dat] at (2.7,-1.7) {Message};
+\node[font=\footnotesize, color=kgrey, anchor=west] at (6.3,-1.7) {network: \emph{datagram}};
+\node[hdr] at (0,-2.55) {$H_l$}; \node[hdr] at (0.9,-2.55) {$H_n$}; \node[hdr] at (1.8,-2.55) {$H_t$}; \node[dat] at (2.7,-2.55) {Message};
+\node[font=\footnotesize, color=kgrey, anchor=west] at (6.3,-2.55) {link: \emph{frame}};
+\end{tikzpicture}

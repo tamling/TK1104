@@ -1,0 +1,12 @@
+\begin{tikzpicture}[>=Stealth]
+\node[font=\small\bfseries] at (0,-0.05) {Host A};
+\node[font=\small\bfseries] at (7.6,-0.05) {Host B};
+\foreach [count=\i] \l in {Application,Transport,Network,Data link,Physical}{
+  \node[draw, minimum width=3.0cm, minimum height=0.7cm, font=\small] (a\i) at (0,-0.78*\i) {\l};
+  \node[draw, minimum width=3.0cm, minimum height=0.7cm, font=\small] (b\i) at (7.6,-0.78*\i) {\l};
+  \draw[<->, dashed, kgrey] (a\i.east) -- (b\i.west);
+}
+\node[font=\footnotesize, color=kgrey, fill=white, inner sep=1pt] at (3.8,-0.78) {peer talks to peer};
+\draw[very thick] (a5.south) -- ++(0,-0.4) -| (b5.south);
+\node[font=\footnotesize, color=kgrey] at (3.8,-4.62) {physical medium};
+\end{tikzpicture}

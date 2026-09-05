@@ -1,0 +1,7 @@
+\begin{tikzpicture}[]
+\foreach [count=\i from 0] \w/\b in {128/0,64/1,32/0,16/0,8/1,4/1,2/0,1/1}{
+  \node[font=\scriptsize, color=kgrey] at (\i*0.78,0.52) {\w};
+  \node[draw, minimum width=0.68cm, minimum height=0.58cm, font=\small] at (\i*0.78,0) {\b};
+}
+\node[font=\small, anchor=west] at (5.9,0) {$= 64+8+4+1 = 77$};
+\end{tikzpicture}

@@ -1,0 +1,11 @@
+\begin{tikzpicture}[>=Stealth, font=\footnotesize]
+\node[draw, minimum width=3.4cm, minimum height=0.8cm] (sw) at (0,0) {switch};
+\foreach \x/\p in {-1.275/1, -0.425/2, 0.425/3, 1.275/4}{
+  \node[font=\scriptsize, color=kgrey, anchor=south] at (\x,-0.95) {\p};
+  \draw (\x,-0.4) -- (\x,-0.75);
+}
+\node[draw, rounded corners=1.5pt, minimum width=0.8cm] (A) at (-1.275,-1.6) {A};
+\node[draw, rounded corners=1.5pt, minimum width=0.8cm] (B) at (1.275,-1.6) {B};
+\draw (A) -- (-1.275,-0.75); \draw (B) -- (1.275,-0.75);
+\node[anchor=west, align=left, font=\scriptsize\ttfamily] at (2.6,-0.1) {MAC table\\A $\to$ port 1\\B $\to$ port 4};
+\end{tikzpicture}

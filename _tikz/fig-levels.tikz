@@ -1,0 +1,14 @@
+\begin{tikzpicture}[]
+\tikzset{lvl/.style={draw, minimum width=6.2cm, minimum height=0.62cm, font=\small, anchor=south}}
+\foreach [count=\i from 0] \t/\f in {
+  electrons in silicon/white,
+  logic gates (Lecture 4)/white,
+  CPU: machine instructions (Lecture 4)/white,
+  operating system (Lecture 5)/white,
+  applications and networks (Lectures 6--10)/white,
+  what you see: icons and pages/kristiania!8}{
+  \node[lvl, fill=\f] at (0,\i*0.62) {\t};
+}
+\draw[->, thick, kgrey] (-3.75,0.15) -- node[left, font=\footnotesize, align=right, color=kgrey]{each level\\hides the\\one below} (-3.75,3.6);
+\draw[->, thick, kgrey] (3.75,3.6) -- node[right, font=\footnotesize, align=left, color=kgrey]{each level\\rests on the\\one below} (3.75,0.15);
+\end{tikzpicture}
