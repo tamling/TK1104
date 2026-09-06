@@ -1,0 +1,33 @@
+```{=html}
+<div class="tk-task">
+<script type="application/json">
+{
+ "type": "sort",
+ "title": "DNS record types",
+ "prompt": "Match each job to its record type.",
+ "buckets": [
+  "A",
+  "AAAA",
+  "CNAME",
+  "MX",
+  "NS"
+ ],
+ "chips": [
+  "name → IPv4 address",
+  "name → IPv6 address",
+  "an alias for another name",
+  "the domain's mail server",
+  "the authoritative name server"
+ ],
+ "key": [
+  1299209431,
+  2215260417,
+  2297004325,
+  3554276557,
+  3689879312
+ ],
+ "sol": "QTogbmFtZSDihpIgSVB2NCBhZGRyZXNzCkFBQUE6IG5hbWUg4oaSIElQdjYgYWRkcmVzcwpDTkFNRTogYW4gYWxpYXMgZm9yIGFub3RoZXIgbmFtZQpNWDogdGhlIGRvbWFpbiYjeDI3O3MgbWFpbCBzZXJ2ZXIKTlM6IHRoZSBhdXRob3JpdGF0aXZlIG5hbWUgc2VydmVyCkEgYW5kIEFBQUEgbWFwIG5hbWVzIHRvIGFkZHJlc3NlcywgQ05BTUUgYWxpYXNlcywgTVggbmFtZXMgdGhlIG1haWwgc2VydmVyLCBOUyB0aGUgbmFtZSBzZXJ2ZXIuClNlZTogPGEgaHJlZj0iI3NlYy0wNy1kbnMiPkROUzogTmFtZXMgdG8gYWRkcmVzc2VzPC9hPi4="
+}
+</script>
+</div>
+```

@@ -1,0 +1,36 @@
+```{=html}
+<div class="tk-task">
+<script type="application/json">
+{
+ "type": "sort",
+ "title": "Hardware or software?",
+ "prompt": "Every system has two halves - sort these eight into theirs.",
+ "buckets": [
+  "Hardware",
+  "Software"
+ ],
+ "chips": [
+  "CPU",
+  "RAM",
+  "SSD",
+  "GPU",
+  "operating system",
+  "device driver",
+  "web browser",
+  "your Python script"
+ ],
+ "key": [
+  255714905,
+  260458589,
+  272955953,
+  274778939,
+  1872851704,
+  1882124704,
+  2395398228,
+  3640776398
+ ],
+ "sol": "SGFyZHdhcmU6IENQVTsgUkFNOyBTU0Q7IEdQVQpTb2Z0d2FyZTogb3BlcmF0aW5nIHN5c3RlbTsgZGV2aWNlIGRyaXZlcjsgd2ViIGJyb3dzZXI7IHlvdXIgUHl0aG9uIHNjcmlwdApIYXJkd2FyZSBpcyB0aGUgcGh5c2ljYWwgcGFydHM7IHNvZnR3YXJlIGlzIHRoZSBpbnN0cnVjdGlvbnMgdGhhdCBydW4gb24gdGhlbS4KU2VlOiA8YSBocmVmPSIjc2VjLTAxLWlwb3MiPkhhcmR3YXJlLCBzb2Z0d2FyZSwgYW5kIHRoZSBJUE9TIGxvb3A8L2E+Lg=="
+}
+</script>
+</div>
+```

@@ -1,0 +1,34 @@
+```{=html}
+<div class="tk-task">
+<script type="application/json">
+{
+ "type": "sort",
+ "title": "Lossless or lossy?",
+ "prompt": "Sort the formats by their compression family.",
+ "buckets": [
+  "Lossless",
+  "Lossy"
+ ],
+ "chips": [
+  "PNG",
+  "FLAC",
+  "GIF",
+  "JPEG",
+  "MP3",
+  "AAC",
+  "H.264"
+ ],
+ "key": [
+  122009720,
+  252784407,
+  260190695,
+  267502242,
+  271044758,
+  3093097412,
+  4255543655
+ ],
+ "sol": "TG9zc2xlc3M6IFBORzsgRkxBQzsgR0lGCkxvc3N5OiBKUEVHOyBNUDM7IEFBQzsgSC4yNjQKTG9zc2xlc3MgcmVjb25zdHJ1Y3RzIGJpdCBmb3IgYml0OyBsb3NzeSBkaXNjYXJkcyB3aGF0IGh1bWFucyBtaXNzLgpTZWU6IDxhIGhyZWY9IiNkZWYtY29tcHJlc3Npb24iPkRlZmluaXRpb24g4oCcTG9zc2xlc3MgYW5kIGxvc3N5IGNvbXByZXNzaW9u4oCdPC9hPi4="
+}
+</script>
+</div>
+```

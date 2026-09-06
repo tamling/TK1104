@@ -1,0 +1,30 @@
+```{=html}
+<div class="tk-task">
+<script type="application/json">
+{
+ "type": "sort",
+ "title": "Choose the right tool",
+ "prompt": "Which command answers which question?",
+ "buckets": [
+  "ping",
+  "traceroute",
+  "nslookup / dig",
+  "netstat"
+ ],
+ "chips": [
+  "Is the host reachable, and how fast?",
+  "Where along the path does it stop?",
+  "What IP address is behind this name?",
+  "Which connections are open right now?"
+ ],
+ "key": [
+  1322373764,
+  2059269285,
+  3638451965,
+  3824300473
+ ],
+ "sol": "cGluZzogSXMgdGhlIGhvc3QgcmVhY2hhYmxlLCBhbmQgaG93IGZhc3Q/CnRyYWNlcm91dGU6IFdoZXJlIGFsb25nIHRoZSBwYXRoIGRvZXMgaXQgc3RvcD8KbnNsb29rdXAgLyBkaWc6IFdoYXQgSVAgYWRkcmVzcyBpcyBiZWhpbmQgdGhpcyBuYW1lPwpuZXRzdGF0OiBXaGljaCBjb25uZWN0aW9ucyBhcmUgb3BlbiByaWdodCBub3c/CnBpbmcgdGVzdHMgcmVhY2hhYmlsaXR5LCB0cmFjZXJvdXRlIHRoZSBwYXRoLCBkaWcgdGhlIG5hbWUsIG5ldHN0YXQgdGhlIGNvbm5lY3Rpb25zLgpTZWU6IDxhIGhyZWY9IiNzZWMtMDYtdG9vbHMiPlNlZWluZyB0aGUgbmV0d29yazwvYT4u"
+}
+</script>
+</div>
+```

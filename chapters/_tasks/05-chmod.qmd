@@ -1,0 +1,27 @@
+```{=html}
+<div class="tk-task">
+<script type="application/json">
+{
+ "type": "input",
+ "title": "Permissions in octal",
+ "prompt": "Read–write–execute are three bits, and three bits are one octal digit (Chapter 2 pays off).",
+ "fields": [
+  {
+   "label": "rwx as one octal digit:",
+   "answers": [
+    177628
+   ]
+  },
+  {
+   "label": "r-x as one octal digit:",
+   "answers": [
+    177626
+   ]
+  }
+ ],
+ "done": "chmod 755: rwx for the owner, r-x for group and everyone.",
+ "sol": "cnd4IGFzIG9uZSBvY3RhbCBkaWdpdDogNwpyLXggYXMgb25lIG9jdGFsIGRpZ2l0OiA1CnJ3eCBhcmUgdGhyZWUgYml0czogNCArIDIgKyAxID0gNzsgci14IGlzIDQgKyAxID0gNSAtIGNobW9kIDc1NS4KU2VlOiA8YSBocmVmPSIjc2VjLTA1LWZpbGVzIj5GaWxlcyBhbmQgc3RvcmFnZTwvYT4u"
+}
+</script>
+</div>
+```

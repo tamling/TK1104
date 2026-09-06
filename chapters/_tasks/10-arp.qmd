@@ -1,0 +1,24 @@
+```{=html}
+<div class="tk-task">
+<script type="application/json">
+{
+ "type": "order",
+ "title": "The ARP exchange",
+ "prompt": "Host A knows only neighbour B's IP - put the exchange in order.",
+ "chips": [
+  "A broadcasts: “who has this IP? Tell me your MAC”",
+  "Only B, the owner of the IP, replies with its MAC",
+  "A caches the IP→MAC mapping",
+  "A sends the frame to B"
+ ],
+ "key": [
+  427237128,
+  662196666,
+  2854746820,
+  4051387075
+ ],
+ "sol": "MS4gQSBicm9hZGNhc3RzOiDigJx3aG8gaGFzIHRoaXMgSVA/IFRlbGwgbWUgeW91ciBNQUPigJ0KMi4gT25seSBCLCB0aGUgb3duZXIgb2YgdGhlIElQLCByZXBsaWVzIHdpdGggaXRzIE1BQwozLiBBIGNhY2hlcyB0aGUgSVDihpJNQUMgbWFwcGluZwo0LiBBIHNlbmRzIHRoZSBmcmFtZSB0byBCCkJyb2FkY2FzdCB0aGUgcXVlc3Rpb247IG9ubHkgdGhlIG93bmVyIGFuc3dlcnM7IGNhY2hlIHRoZSBtYXBwaW5nOyBzZW5kLgpTZWU6IDxhIGhyZWY9IiNleG0tYXJwIj5FeGFtcGxlIOKAnEFSUCBpbiBhY3Rpb27igJ08L2E+Lg=="
+}
+</script>
+</div>
+```

@@ -1,0 +1,32 @@
+```{=html}
+<div class="tk-task">
+<script type="application/json">
+{
+ "type": "sort",
+ "title": "Private or public?",
+ "prompt": "Which of these IPv4 addresses can appear on the public internet?",
+ "buckets": [
+  "Private (LAN only)",
+  "Public (routable)"
+ ],
+ "chips": [
+  "10.0.0.5",
+  "192.168.1.7",
+  "172.16.3.9",
+  "8.8.8.8",
+  "158.36.10.4",
+  "100.4.2.1"
+ ],
+ "key": [
+  613714833,
+  658747004,
+  2433853316,
+  2980933662,
+  4210308648,
+  4230746424
+ ],
+ "sol": "UHJpdmF0ZSAoTEFOIG9ubHkpOiAxMC4wLjAuNTsgMTkyLjE2OC4xLjc7IDE3Mi4xNi4zLjkKUHVibGljIChyb3V0YWJsZSk6IDguOC44Ljg7IDE1OC4zNi4xMC40OyAxMDAuNC4yLjEKMTAuKiwgMTcyLjE2LTMxLiogYW5kIDE5Mi4xNjguKiBhcmUgcHJpdmF0ZSAtIHJvdXRlcnMgZHJvcCB0aGVtOyB0aGUgcmVzdCByb3V0ZS4KU2VlOiA8YSBocmVmPSIjc2VjLTA5LWlwIj5JUCBhZGRyZXNzZXM8L2E+Lg=="
+}
+</script>
+</div>
+```

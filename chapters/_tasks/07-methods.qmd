@@ -1,0 +1,30 @@
+```{=html}
+<div class="tk-task">
+<script type="application/json">
+{
+ "type": "sort",
+ "title": "HTTP methods",
+ "prompt": "The first word of the request is the verb - match each meaning.",
+ "buckets": [
+  "GET",
+  "POST",
+  "HEAD",
+  "DELETE"
+ ],
+ "chips": [
+  "fetch the resource",
+  "send data to the server",
+  "only the headers, please",
+  "remove the resource"
+ ],
+ "key": [
+  758597899,
+  2314978001,
+  3201273476,
+  3929993368
+ ],
+ "sol": "R0VUOiBmZXRjaCB0aGUgcmVzb3VyY2UKUE9TVDogc2VuZCBkYXRhIHRvIHRoZSBzZXJ2ZXIKSEVBRDogb25seSB0aGUgaGVhZGVycywgcGxlYXNlCkRFTEVURTogcmVtb3ZlIHRoZSByZXNvdXJjZQpHRVQgZmV0Y2hlcywgUE9TVCBzZW5kcywgSEVBRCBhc2tzIGZvciBoZWFkZXJzIG9ubHksIERFTEVURSByZW1vdmVzLgpTZWU6IDxhIGhyZWY9IiNzZWMtMDctaHR0cCI+VGhlIHdlYiBhbmQgSFRUUDwvYT4u"
+}
+</script>
+</div>
+```

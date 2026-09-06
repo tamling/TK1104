@@ -1,0 +1,35 @@
+```{=html}
+<div class="tk-task">
+<script type="application/json">
+{
+ "type": "input",
+ "title": "MAC anatomy",
+ "prompt": "The hardware address, by the numbers.",
+ "fields": [
+  {
+   "label": "Bits in a MAC address:",
+   "answers": [
+    5861681
+   ]
+  },
+  {
+   "label": "Bytes of the manufacturer's OUI prefix:",
+   "answers": [
+    177624,
+    275584093
+   ]
+  },
+  {
+   "label": "The broadcast MAC address:",
+   "answers": [
+    2818563983,
+    3315708621,
+    3630074446
+   ]
+  }
+ ],
+ "sol": "Qml0cyBpbiBhIE1BQyBhZGRyZXNzOiA0OApCeXRlcyBvZiB0aGUgbWFudWZhY3R1cmVyJiN4Mjc7cyBPVUkgcHJlZml4OiAzClRoZSBicm9hZGNhc3QgTUFDIGFkZHJlc3M6IEZGOkZGOkZGOkZGOkZGOkZGCjQ4IGJpdHM6IGEgMy1ieXRlIElFRUUgT1VJIHBsdXMgMyBtYW51ZmFjdHVyZXIgYnl0ZXM7IGFsbC1vbmVzIGlzIGJyb2FkY2FzdC4KU2VlOiA8YSBocmVmPSIjZGVmLW1hYyI+RGVmaW5pdGlvbiDigJxNQUMgYWRkcmVzc+KAnTwvYT4u"
+}
+</script>
+</div>
+```

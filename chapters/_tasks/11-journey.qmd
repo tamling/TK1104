@@ -1,0 +1,26 @@
+```{=html}
+<div class="tk-task">
+<script type="application/json">
+{
+ "type": "order",
+ "title": "One click, whole course",
+ "prompt": "Put the five stages of a page load in order - if you can narrate this unaided, you are ready.",
+ "chips": [
+  "DNS resolves the name to an IP address",
+  "TCP opens a reliable connection",
+  "IP routes the packets, hop by hop",
+  "ARP and the link layer carry each frame across each hop",
+  "HTTP returns the page and the browser renders it"
+ ],
+ "key": [
+  281804622,
+  580552367,
+  1752505270,
+  2807301647,
+  3817346556
+ ],
+ "sol": "MS4gRE5TIHJlc29sdmVzIHRoZSBuYW1lIHRvIGFuIElQIGFkZHJlc3MKMi4gVENQIG9wZW5zIGEgcmVsaWFibGUgY29ubmVjdGlvbgozLiBJUCByb3V0ZXMgdGhlIHBhY2tldHMsIGhvcCBieSBob3AKNC4gQVJQIGFuZCB0aGUgbGluayBsYXllciBjYXJyeSBlYWNoIGZyYW1lIGFjcm9zcyBlYWNoIGhvcAo1LiBIVFRQIHJldHVybnMgdGhlIHBhZ2UgYW5kIHRoZSBicm93c2VyIHJlbmRlcnMgaXQKRE5TLCBUQ1AsIElQLCBBUlAgKyBmcmFtZSwgSFRUUCAtIHRoZSB3aG9sZSBjb3Vyc2UgaW4gb25lIGNsaWNrLgpTZWU6IDxhIGhyZWY9IiNzZWMtMTEtYmxvY2s1Ij5CbG9jayA1OiBUaGUgbGluayBsYXllciwgYW5kIHRoZSB3aG9sZSBqb3VybmV5PC9hPi4="
+}
+</script>
+</div>
+```

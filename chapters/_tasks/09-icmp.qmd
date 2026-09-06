@@ -1,0 +1,33 @@
+```{=html}
+<div class="tk-task">
+<script type="application/json">
+{
+ "type": "input",
+ "title": "ICMP by the numbers",
+ "prompt": "The network talking about itself.",
+ "fields": [
+  {
+   "label": "ICMP type of an echo request (ping):",
+   "answers": [
+    177629
+   ]
+  },
+  {
+   "label": "ICMP type of “time exceeded”:",
+   "answers": [
+    5861575
+   ]
+  },
+  {
+   "label": "The TTL that reveals the third router on a path:",
+   "answers": [
+    177624
+   ]
+  }
+ ],
+ "done": "traceroute is the TTL safeguard, repurposed as a measuring tape.",
+ "sol": "SUNNUCB0eXBlIG9mIGFuIGVjaG8gcmVxdWVzdCAocGluZyk6IDgKSUNNUCB0eXBlIG9mIOKAnHRpbWUgZXhjZWVkZWTigJ06IDExClRoZSBUVEwgdGhhdCByZXZlYWxzIHRoZSB0aGlyZCByb3V0ZXIgb24gYSBwYXRoOiAzCkVjaG8gcmVxdWVzdCBpcyB0eXBlIDg7IHRpbWUgZXhjZWVkZWQgaXMgdHlwZSAxMTsgVFRMIDMgZXhwaXJlcyBhdCB0aGUgdGhpcmQgcm91dGVyLgpTZWU6IDxhIGhyZWY9IiNleG0tdHJhY2Vyb3V0ZSI+RXhhbXBsZSDigJxIb3cgdHJhY2Vyb3V0ZSByZWFsbHkgd29ya3PigJ08L2E+Lg=="
+}
+</script>
+</div>
+```

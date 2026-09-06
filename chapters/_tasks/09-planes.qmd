@@ -1,0 +1,32 @@
+```{=html}
+<div class="tk-task">
+<script type="application/json">
+{
+ "type": "sort",
+ "title": "Forwarding or routing?",
+ "prompt": "The data plane and the control plane - sort the statements.",
+ "buckets": [
+  "Forwarding",
+  "Routing"
+ ],
+ "chips": [
+  "the data plane",
+  "per packet, in nanoseconds",
+  "moves the packet to the right outgoing link",
+  "the control plane",
+  "network-wide, in the background",
+  "computes which paths the tables should hold"
+ ],
+ "key": [
+  243176327,
+  304972732,
+  1463740150,
+  1728493232,
+  2822831886,
+  3628835268
+ ],
+ "sol": "Rm9yd2FyZGluZzogdGhlIGRhdGEgcGxhbmU7IHBlciBwYWNrZXQsIGluIG5hbm9zZWNvbmRzOyBtb3ZlcyB0aGUgcGFja2V0IHRvIHRoZSByaWdodCBvdXRnb2luZyBsaW5rClJvdXRpbmc6IHRoZSBjb250cm9sIHBsYW5lOyBuZXR3b3JrLXdpZGUsIGluIHRoZSBiYWNrZ3JvdW5kOyBjb21wdXRlcyB3aGljaCBwYXRocyB0aGUgdGFibGVzIHNob3VsZCBob2xkCkZvcndhcmRpbmcgaXMgdGhlIHBlci1wYWNrZXQgZGF0YSBwbGFuZTsgcm91dGluZyBpcyB0aGUgYmFja2dyb3VuZCBjb250cm9sIHBsYW5lLgpTZWU6IDxhIGhyZWY9IiNkZWYtZm9yd2FyZGluZyI+RGVmaW5pdGlvbiDigJxGb3J3YXJkaW5nIGFuZCByb3V0aW5n4oCdPC9hPi4="
+}
+</script>
+</div>
+```

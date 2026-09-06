@@ -1,0 +1,32 @@
+```{=html}
+<div class="tk-task">
+<script type="application/json">
+{
+ "type": "sort",
+ "title": "Four sources of delay",
+ "prompt": "Every hop charges four kinds of delay - match the descriptions.",
+ "buckets": [
+  "Processing",
+  "Queuing",
+  "Transmission",
+  "Propagation"
+ ],
+ "chips": [
+  "the router reads the header and decides the next hop",
+  "waiting behind other packets on the link",
+  "the one that grows as the link gets busy",
+  "pushing all the bits onto the link",
+  "the signal physically travelling the distance"
+ ],
+ "key": [
+  1630841041,
+  2059450536,
+  2710507820,
+  2992372281,
+  3195176855
+ ],
+ "sol": "UHJvY2Vzc2luZzogdGhlIHJvdXRlciByZWFkcyB0aGUgaGVhZGVyIGFuZCBkZWNpZGVzIHRoZSBuZXh0IGhvcApRdWV1aW5nOiB3YWl0aW5nIGJlaGluZCBvdGhlciBwYWNrZXRzIG9uIHRoZSBsaW5rOyB0aGUgb25lIHRoYXQgZ3Jvd3MgYXMgdGhlIGxpbmsgZ2V0cyBidXN5ClRyYW5zbWlzc2lvbjogcHVzaGluZyBhbGwgdGhlIGJpdHMgb250byB0aGUgbGluawpQcm9wYWdhdGlvbjogdGhlIHNpZ25hbCBwaHlzaWNhbGx5IHRyYXZlbGxpbmcgdGhlIGRpc3RhbmNlClByb2Nlc3NpbmcsIHF1ZXVpbmcsIHRyYW5zbWlzc2lvbiwgcHJvcGFnYXRpb24gLSBxdWV1aW5nIGdyb3dzIHdpdGggbG9hZC4KU2VlOiA8YSBocmVmPSIjc2VjLTA2LWxheWVycyI+TGF5ZXJlZCBtb2RlbHM8L2E+Lg=="
+}
+</script>
+</div>
+```

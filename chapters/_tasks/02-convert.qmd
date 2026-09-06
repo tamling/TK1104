@@ -1,0 +1,29 @@
+```{=html}
+<div class="tk-task">
+<script type="application/json">
+{
+ "type": "input",
+ "title": "Both directions",
+ "prompt": "Convert - weights for one direction, subtraction or division for the other.",
+ "fields": [
+  {
+   "label": "1101 0110₂ in decimal:",
+   "answers": [
+    193433116
+   ]
+  },
+  {
+   "label": "77₁₀ in binary:",
+   "answers": [
+    857549337,
+    857549337,
+    4150837481,
+    4150837481
+   ]
+  }
+ ],
+ "sol": "MTEwMSAwMTEw4oKCIGluIGRlY2ltYWw6IDIxNAo3N+KCgeKCgCBpbiBiaW5hcnk6IDEwMCAxMTAxClN1bSB0aGUgd2VpZ2h0cyBvZiB0aGUgMXMgb25lIHdheTsgc3VidHJhY3QgcG93ZXJzIG9mIHR3byBvciBkaXZpZGUgYnkgdHdvIHRoZSBvdGhlci4KU2VlOiA8YSBocmVmPSIjc2VjLTAyLWNvbnZlcnRpbmciPkJpbmFyeSBudW1iZXJzOiBDb252ZXJ0aW5nIGluIGJvdGggZGlyZWN0aW9uczwvYT4u"
+}
+</script>
+</div>
+```

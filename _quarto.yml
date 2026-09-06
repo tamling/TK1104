@@ -42,3 +42,7 @@ format:
     toc: true
     number-sections: true
     include-in-header: includes/hypothesis.html
+    # Interactive self-check engine (sort / order / input tasks): loaded
+    # on every page; the tasks themselves are generated snippets under
+    # chapters/_tasks/ — see _interactive/make_tasks.py.
+    include-after-body: includes/interactive.html

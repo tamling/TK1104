@@ -1,0 +1,28 @@
+```{=html}
+<div class="tk-task">
+<script type="application/json">
+{
+ "type": "input",
+ "title": "Nyquist on the spec sheet",
+ "prompt": "Human hearing reaches about 20 kHz.",
+ "fields": [
+  {
+   "label": "The Nyquist minimum sample rate, in kHz:",
+   "answers": [
+    5861673
+   ]
+  },
+  {
+   "label": "The CD's actual sample rate, in kHz:",
+   "answers": [
+    2088400458,
+    2088400524
+   ]
+  }
+ ],
+ "done": "The CD is the minimum plus a small engineering margin.",
+ "sol": "VGhlIE55cXVpc3QgbWluaW11bSBzYW1wbGUgcmF0ZSwgaW4ga0h6OiA0MApUaGUgQ0QmI3gyNztzIGFjdHVhbCBzYW1wbGUgcmF0ZSwgaW4ga0h6OiA0NC4xClNhbXBsZSBhdCBsZWFzdCB0d2ljZSB0aGUgaGlnaGVzdCBmcmVxdWVuY3k6IDIgw5cgMjAga0h6LCBwbHVzIGEgbWFyZ2luLgpTZWU6IDxhIGhyZWY9IiNkZWYtbnlxdWlzdCI+RGVmaW5pdGlvbiDigJxOeXF1aXN0JiN4Mjc7cyB0aGVvcmVt4oCdPC9hPi4="
+}
+</script>
+</div>
+```

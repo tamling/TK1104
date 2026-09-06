@@ -1,0 +1,28 @@
+```{=html}
+<div class="tk-task">
+<script type="application/json">
+{
+ "type": "gate",
+ "title": "Mystery gate I",
+ "prompt": "Two switches, one lamp, one hidden gate.",
+ "tt": [
+  0,
+  0,
+  0,
+  1
+ ],
+ "options": [
+  "AND",
+  "OR",
+  "XOR",
+  "NAND"
+ ],
+ "key": [
+  107803285
+ ],
+ "done": "The lamp lights only when both switches are on - that is AND.",
+ "sol": "QT0wIEI9MCDihpIgbGFtcCBvZmYKQT0wIEI9MSDihpIgbGFtcCBvZmYKQT0xIEI9MCDihpIgbGFtcCBvZmYKQT0xIEI9MSDihpIgbGFtcCBPTgpUaGF0IGJlaGF2aW91ciBpcyBBTkQuCkFORCBvdXRwdXRzIDEgb25seSBpZiBib3RoIGlucHV0cyBhcmUgMS4KU2VlOiA8YSBocmVmPSIjZGVmLWdhdGVzIj5EZWZpbml0aW9uIOKAnExvZ2ljIGdhdGVz4oCdPC9hPi4="
+}
+</script>
+</div>
+```

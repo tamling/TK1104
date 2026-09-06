@@ -1,0 +1,24 @@
+```{=html}
+<div class="tk-task">
+<script type="application/json">
+{
+ "type": "order",
+ "title": "Fast retransmit",
+ "prompt": "A segment is lost - put the recovery in order.",
+ "chips": [
+  "A segment goes missing on the way",
+  "The receiver keeps ACKing the last in-order byte",
+  "The sender sees three duplicate ACKs",
+  "The sender retransmits at once, without waiting for the timer"
+ ],
+ "key": [
+  1112101032,
+  2091158678,
+  2615951804,
+  4087573082
+ ],
+ "sol": "MS4gQSBzZWdtZW50IGdvZXMgbWlzc2luZyBvbiB0aGUgd2F5CjIuIFRoZSByZWNlaXZlciBrZWVwcyBBQ0tpbmcgdGhlIGxhc3QgaW4tb3JkZXIgYnl0ZQozLiBUaGUgc2VuZGVyIHNlZXMgdGhyZWUgZHVwbGljYXRlIEFDS3MKNC4gVGhlIHNlbmRlciByZXRyYW5zbWl0cyBhdCBvbmNlLCB3aXRob3V0IHdhaXRpbmcgZm9yIHRoZSB0aW1lcgpUaHJlZSBkdXBsaWNhdGUgQUNLcyBzaWduYWwgYSBtaXNzaW5nIHNlZ21lbnQgLSByZXNlbmQgd2l0aG91dCB3YWl0aW5nIGZvciB0aGUgdGltZXIuClNlZTogPGEgaHJlZj0iI3NlYy0wOC1yZWxmbG93Ij5UQ1A6IFJlbGlhYmlsaXR5IGFuZCBmbG93PC9hPi4="
+}
+</script>
+</div>
+```

@@ -1,0 +1,24 @@
+```{=html}
+<div class="tk-task">
+<script type="application/json">
+{
+ "type": "order",
+ "title": "The DHCP lease",
+ "prompt": "Put the four DORA steps in order.",
+ "chips": [
+  "Discover - the client broadcasts, having no address yet",
+  "Offer - the server proposes an address",
+  "Request - the client asks for it",
+  "Acknowledge - the server confirms the lease"
+ ],
+ "key": [
+  18945577,
+  1260043455,
+  3441590393,
+  3874805569
+ ],
+ "sol": "MS4gRGlzY292ZXIgLSB0aGUgY2xpZW50IGJyb2FkY2FzdHMsIGhhdmluZyBubyBhZGRyZXNzIHlldAoyLiBPZmZlciAtIHRoZSBzZXJ2ZXIgcHJvcG9zZXMgYW4gYWRkcmVzcwozLiBSZXF1ZXN0IC0gdGhlIGNsaWVudCBhc2tzIGZvciBpdAo0LiBBY2tub3dsZWRnZSAtIHRoZSBzZXJ2ZXIgY29uZmlybXMgdGhlIGxlYXNlCkRpc2NvdmVyLCBPZmZlciwgUmVxdWVzdCwgQWNrbm93bGVkZ2UgLSB0aGUgZmlyc3Qgc3RlcCBtdXN0IGJyb2FkY2FzdC4KU2VlOiA8YSBocmVmPSIjc2VjLTA5LWRpYWciPkdldHRpbmcgYW4gYWRkcmVzcywgYW5kIHJlYWRpbmcgdGhlIG5ldHdvcms8L2E+Lg=="
+}
+</script>
+</div>
+```

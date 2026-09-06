@@ -1,0 +1,29 @@
+```{=html}
+<div class="tk-task">
+<script type="application/json">
+{
+ "type": "input",
+ "title": "Block-1 warm-up",
+ "prompt": "The core skill, one more time - place values 128–64–32–16–8–4–2–1.",
+ "fields": [
+  {
+   "label": "0001 1010₂ in decimal:",
+   "answers": [
+    5861613
+   ]
+  },
+  {
+   "label": "45₁₀ in binary:",
+   "answers": [
+    2108430633,
+    2108430633,
+    2898504905,
+    2898504905
+   ]
+  }
+ ],
+ "sol": "MDAwMSAxMDEw4oKCIGluIGRlY2ltYWw6IDI2CjQ14oKB4oKAIGluIGJpbmFyeTogMTAgMTEwMQpQbGFjZSB2YWx1ZXMgMTI4LTY0LTMyLTE2LTgtNC0yLTE6IHN1bSB0aGUgMXMsIG9yIHN1YnRyYWN0IHBvd2VycyBvZiB0d28uClNlZTogPGEgaHJlZj0iI3NlYy0xMS1ibG9jazEiPkJsb2NrIDE6IERhdGEgYW5kIG51bWJlcnM8L2E+Lg=="
+}
+</script>
+</div>
+```

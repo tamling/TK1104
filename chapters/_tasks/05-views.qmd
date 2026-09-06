@@ -1,0 +1,32 @@
+```{=html}
+<div class="tk-task">
+<script type="application/json">
+{
+ "type": "sort",
+ "title": "The two views of an OS",
+ "prompt": "Sort each phrase under the view it belongs to.",
+ "buckets": [
+  "Abstraction (top-down)",
+  "Resource management (bottom-up)"
+ ],
+ "chips": [
+  "files instead of disk blocks",
+  "windows instead of pixels",
+  "a simpler “virtual machine” for programs",
+  "scheduling CPU time",
+  "allocating memory to processes",
+  "deciding who runs next"
+ ],
+ "key": [
+  529610030,
+  964960111,
+  1859728245,
+  2407650595,
+  3035159594,
+  3280104478
+ ],
+ "sol": "QWJzdHJhY3Rpb24gKHRvcC1kb3duKTogZmlsZXMgaW5zdGVhZCBvZiBkaXNrIGJsb2Nrczsgd2luZG93cyBpbnN0ZWFkIG9mIHBpeGVsczsgYSBzaW1wbGVyIOKAnHZpcnR1YWwgbWFjaGluZeKAnSBmb3IgcHJvZ3JhbXMKUmVzb3VyY2UgbWFuYWdlbWVudCAoYm90dG9tLXVwKTogc2NoZWR1bGluZyBDUFUgdGltZTsgYWxsb2NhdGluZyBtZW1vcnkgdG8gcHJvY2Vzc2VzOyBkZWNpZGluZyB3aG8gcnVucyBuZXh0ClRvcC1kb3duIHRoZSBPUyBhYnN0cmFjdHM7IGJvdHRvbS11cCBpdCBtYW5hZ2VzIGFuZCBzaGFyZXMgcmVzb3VyY2VzLgpTZWU6IDxhIGhyZWY9IiNkZWYtb3MiPkRlZmluaXRpb24g4oCcT3BlcmF0aW5nIHN5c3RlbeKAnTwvYT4u"
+}
+</script>
+</div>
+```

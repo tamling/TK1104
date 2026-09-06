@@ -1,0 +1,26 @@
+```{=html}
+<div class="tk-task">
+<script type="application/json">
+{
+ "type": "order",
+ "title": "How the internet grew",
+ "prompt": "Put the milestones in chronological order.",
+ "chips": [
+  "ARPANET - the first packet-switched network",
+  "TCP/IP - the common protocol that let networks join",
+  "DNS - names instead of raw addresses",
+  "The World Wide Web opens to everyone",
+  "The always-on mobile-and-cloud era"
+ ],
+ "key": [
+  3441581,
+  163498174,
+  3124081989,
+  3959225369,
+  3979629436
+ ],
+ "sol": "MS4gQVJQQU5FVCAtIHRoZSBmaXJzdCBwYWNrZXQtc3dpdGNoZWQgbmV0d29yawoyLiBUQ1AvSVAgLSB0aGUgY29tbW9uIHByb3RvY29sIHRoYXQgbGV0IG5ldHdvcmtzIGpvaW4KMy4gRE5TIC0gbmFtZXMgaW5zdGVhZCBvZiByYXcgYWRkcmVzc2VzCjQuIFRoZSBXb3JsZCBXaWRlIFdlYiBvcGVucyB0byBldmVyeW9uZQo1LiBUaGUgYWx3YXlzLW9uIG1vYmlsZS1hbmQtY2xvdWQgZXJhCjE5NjkgQVJQQU5FVCwgMTk3NC04MyBUQ1AvSVAsIDE5ODMgRE5TLCAxOTkxIHRoZSBXZWIsIHRoZW4gbW9iaWxlIGFuZCBjbG91ZC4KU2VlOiA8YSBocmVmPSIjc2VjLTA2LWludGVybmV0LXdlYiI+VGhlIGludGVybmV0IGFuZCB0aGUgd2ViPC9hPi4="
+}
+</script>
+</div>
+```

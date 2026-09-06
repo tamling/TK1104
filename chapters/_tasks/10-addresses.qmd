@@ -1,0 +1,30 @@
+```{=html}
+<div class="tk-task">
+<script type="application/json">
+{
+ "type": "input",
+ "title": "Addresses along a path",
+ "prompt": "A packet crosses four links from your laptop to a server. How many times does each address change?",
+ "fields": [
+  {
+   "label": "IP source and destination change … times:",
+   "answers": [
+    177621,
+    268365125,
+    2090971781
+   ]
+  },
+  {
+   "label": "The MAC pair changes … times:",
+   "answers": [
+    177625,
+    2090264033
+   ]
+  }
+ ],
+ "done": "IP is end-to-end; MAC has per-link scope only.",
+ "sol": "SVAgc291cmNlIGFuZCBkZXN0aW5hdGlvbiBjaGFuZ2Ug4oCmIHRpbWVzOiAwClRoZSBNQUMgcGFpciBjaGFuZ2VzIOKApiB0aW1lczogNApJUCBhZGRyZXNzZXMgYXJlIGVuZC10by1lbmQ7IHRoZSBNQUMgcGFpciBpcyByZW5ld2VkIG9uIGV2ZXJ5IGhvcC4KU2VlOiA8YSBocmVmPSIjc2VjLTEwLWFycCI+TGluayBhZGRyZXNzZXMgYW5kIEFSUDwvYT4u"
+}
+</script>
+</div>
+```

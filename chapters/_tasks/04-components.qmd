@@ -1,0 +1,35 @@
+```{=html}
+<div class="tk-task">
+<script type="application/json">
+{
+ "type": "sort",
+ "title": "The five Von Neumann components",
+ "prompt": "Which of these belong to the five hardware components - and which do not?",
+ "buckets": [
+  "One of the five components",
+  "Not one of them"
+ ],
+ "chips": [
+  "control unit",
+  "ALU",
+  "memory",
+  "input",
+  "output",
+  "the operating system",
+  "the compiler"
+ ],
+ "key": [
+  253199315,
+  828351266,
+  953402606,
+  1565921234,
+  2026924170,
+  2670124065,
+  3891728609
+ ],
+ "done": "The OS and the compiler are software - not hardware components.",
+ "sol": "T25lIG9mIHRoZSBmaXZlIGNvbXBvbmVudHM6IGNvbnRyb2wgdW5pdDsgQUxVOyBtZW1vcnk7IGlucHV0OyBvdXRwdXQKTm90IG9uZSBvZiB0aGVtOiB0aGUgb3BlcmF0aW5nIHN5c3RlbTsgdGhlIGNvbXBpbGVyCkNvbnRyb2wgdW5pdCwgQUxVLCBtZW1vcnksIGlucHV0IGFuZCBvdXRwdXQgYXJlIGhhcmR3YXJlOyB0aGUgT1MgaXMgc29mdHdhcmUuClNlZTogPGEgaHJlZj0iI3NlYy0wNC12b25uZXVtYW5uIj5UaGUgVm9uIE5ldW1hbm4gYXJjaGl0ZWN0dXJlLCBwcm9wZXJseTwvYT4u"
+}
+</script>
+</div>
+```

@@ -1,0 +1,35 @@
+```{=html}
+<div class="tk-task">
+<script type="application/json">
+{
+ "type": "sort",
+ "title": "The revision map",
+ "prompt": "Sort each concept into its revision block.",
+ "buckets": [
+  "Block 1 - data & numbers",
+  "Block 2 - logic & the computer",
+  "Blocks 3–5 - networking"
+ ],
+ "chips": [
+  "two's complement",
+  "UTF-8",
+  "the HIDAS cycle",
+  "virtual memory",
+  "the three-way handshake",
+  "ARP",
+  "CIDR"
+ ],
+ "key": [
+  253409494,
+  1208170853,
+  1291753202,
+  1293526252,
+  2843870169,
+  2858639729,
+  4134703861
+ ],
+ "sol": "QmxvY2sgMSAtIGRhdGEgJmFtcDsgbnVtYmVyczogdHdvJiN4Mjc7cyBjb21wbGVtZW50OyBVVEYtOApCbG9jayAyIC0gbG9naWMgJmFtcDsgdGhlIGNvbXB1dGVyOiB0aGUgSElEQVMgY3ljbGU7IHZpcnR1YWwgbWVtb3J5CkJsb2NrcyAz4oCTNSAtIG5ldHdvcmtpbmc6IHRoZSB0aHJlZS13YXkgaGFuZHNoYWtlOyBBUlA7IENJRFIKQmxvY2tzIDEtMiBjb3ZlciBkYXRhIGFuZCB0aGUgbWFjaGluZTsgYmxvY2tzIDMtNSBjb3ZlciB0aGUgbmV0d29yayBzdGFjay4KU2VlOiA8YSBocmVmPSIjc2VjLTExLXJlcGV0aXRpb24iPlJlcGV0aXRpb248L2E+Lg=="
+}
+</script>
+</div>
+```

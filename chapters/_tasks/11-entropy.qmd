@@ -1,0 +1,27 @@
+```{=html}
+<div class="tk-task">
+<script type="application/json">
+{
+ "type": "input",
+ "title": "Password entropy",
+ "prompt": "Strength is entropy in bits: log₂(alphabet^length).",
+ "fields": [
+  {
+   "label": "Four random words from a 2000-word list give ≈ … bits:",
+   "answers": [
+    5861677
+   ]
+  },
+  {
+   "label": "Password strength is measured as … in bits:",
+   "answers": [
+    1803849590
+   ]
+  }
+ ],
+ "done": "Length adds entropy faster than exotic symbols.",
+ "sol": "Rm91ciByYW5kb20gd29yZHMgZnJvbSBhIDIwMDAtd29yZCBsaXN0IGdpdmUg4omIIOKApiBiaXRzOiA0NApQYXNzd29yZCBzdHJlbmd0aCBpcyBtZWFzdXJlZCBhcyDigKYgaW4gYml0czogZW50cm9weQpsb2figoIoMjAwMOKBtCkg4omIIDQ0IGJpdHMgLSBsZW5ndGggYmVhdHMgZXhvdGljIHN5bWJvbHMuClNlZTogPGEgaHJlZj0iI3NlYy0xMS1iaWctcGljdHVyZSI+VGhlIGJpZyBwaWN0dXJlIC0gYW5kIG9uZSBjbG9zaW5nIG5vdGU8L2E+Lg=="
+}
+</script>
+</div>
+```

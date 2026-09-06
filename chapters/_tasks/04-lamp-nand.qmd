@@ -1,0 +1,29 @@
+```{=html}
+<div class="tk-task">
+<script type="application/json">
+{
+ "type": "gate",
+ "title": "Mystery gate III",
+ "prompt": "One more - and this one can build all the others.",
+ "tt": [
+  1,
+  1,
+  1,
+  0
+ ],
+ "options": [
+  "AND",
+  "OR",
+  "XOR",
+  "NAND",
+  "NOR"
+ ],
+ "key": [
+  2320417187
+ ],
+ "done": "AND, then inverted - and NAND alone can build every other gate.",
+ "sol": "QT0wIEI9MCDihpIgbGFtcCBPTgpBPTAgQj0xIOKGkiBsYW1wIE9OCkE9MSBCPTAg4oaSIGxhbXAgT04KQT0xIEI9MSDihpIgbGFtcCBvZmYKVGhhdCBiZWhhdmlvdXIgaXMgTkFORC4KTkFORCBpcyBBTkQgZm9sbG93ZWQgYnkgTk9UIC0gYW5kIGl0IGFsb25lIGNhbiBidWlsZCBldmVyeSBvdGhlciBnYXRlLgpTZWU6IDxhIGhyZWY9IiNzZWMtMDQtZ2F0ZXMiPkZyb20gdGhlIHN3aXRjaCB0byB0aGUgZ2F0ZTwvYT4u"
+}
+</script>
+</div>
+```

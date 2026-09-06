@@ -1,0 +1,30 @@
+```{=html}
+<div class="tk-task">
+<script type="application/json">
+{
+ "type": "sort",
+ "title": "User mode or kernel mode?",
+ "prompt": "Where does each of these run?",
+ "buckets": [
+  "User mode",
+  "Kernel mode"
+ ],
+ "chips": [
+  "an application's own code",
+  "a game's rendering loop",
+  "the scheduler",
+  "a context switch",
+  "direct access to the disk hardware"
+ ],
+ "key": [
+  1738184220,
+  2682861138,
+  2930516746,
+  3532727998,
+  3857737821
+ ],
+ "sol": "VXNlciBtb2RlOiBhbiBhcHBsaWNhdGlvbiYjeDI3O3Mgb3duIGNvZGU7IGEgZ2FtZSYjeDI3O3MgcmVuZGVyaW5nIGxvb3AKS2VybmVsIG1vZGU6IHRoZSBzY2hlZHVsZXI7IGEgY29udGV4dCBzd2l0Y2g7IGRpcmVjdCBhY2Nlc3MgdG8gdGhlIGRpc2sgaGFyZHdhcmUKQXBwbGljYXRpb25zIGFyZSBib3hlZCBpbnRvIHVzZXIgbW9kZTsgcHJpdmlsZWdlZCB3b3JrIHJ1bnMgaW4ga2VybmVsIG1vZGUuClNlZTogPGEgaHJlZj0iI3NlYy0wNS1wcm9jZXNzZXMiPlByb2Nlc3NlcyBhbmQgc2NoZWR1bGluZzwvYT4u"
+}
+</script>
+</div>
+```

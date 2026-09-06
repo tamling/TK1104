@@ -1,0 +1,28 @@
+```{=html}
+<div class="tk-task">
+<script type="application/json">
+{
+ "type": "input",
+ "title": "The address bus",
+ "prompt": "An N-bit bus reaches 2^N locations.",
+ "fields": [
+  {
+   "label": "Locations a 16-bit address bus reaches:",
+   "answers": [
+    200156078,
+    200156078
+   ]
+  },
+  {
+   "label": "Where 32-bit systems topped out, in GB:",
+   "answers": [
+    177625,
+    193437122
+   ]
+  }
+ ],
+ "sol": "TG9jYXRpb25zIGEgMTYtYml0IGFkZHJlc3MgYnVzIHJlYWNoZXM6IDY1NTM2CldoZXJlIDMyLWJpdCBzeXN0ZW1zIHRvcHBlZCBvdXQsIGluIEdCOiA0IEdCCkFuIE4tYml0IGJ1cyByZWFjaGVzIDJeTiBjZWxsczogMsK54oG2ID0gNjUgNTM2LCBhbmQgMsKzwrIg4omIIDQgR0IuClNlZTogPGEgaHJlZj0iI3NlYy0wNC1tZW1hZGRyIj5NZW1vcnkgYW5kIGFkZHJlc3Npbmc8L2E+Lg=="
+}
+</script>
+</div>
+```

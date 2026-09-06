@@ -1,0 +1,32 @@
+```{=html}
+<div class="tk-task">
+<script type="application/json">
+{
+ "type": "sort",
+ "title": "Networks by reach",
+ "prompt": "PAN, LAN, MAN or WAN - sort the examples.",
+ "buckets": [
+  "PAN",
+  "LAN",
+  "MAN",
+  "WAN"
+ ],
+ "chips": [
+  "Bluetooth earbuds on your desk",
+  "your home Wi-Fi",
+  "an office or campus network",
+  "a network spanning a city",
+  "the internet - the largest of all"
+ ],
+ "key": [
+  124492390,
+  1278671062,
+  2353113900,
+  2900830465,
+  2994725920
+ ],
+ "sol": "UEFOOiBCbHVldG9vdGggZWFyYnVkcyBvbiB5b3VyIGRlc2sKTEFOOiB5b3VyIGhvbWUgV2ktRmk7IGFuIG9mZmljZSBvciBjYW1wdXMgbmV0d29yawpNQU46IGEgbmV0d29yayBzcGFubmluZyBhIGNpdHkKV0FOOiB0aGUgaW50ZXJuZXQgLSB0aGUgbGFyZ2VzdCBvZiBhbGwKUEFOLCBMQU4sIE1BTiwgV0FOIC0gY2xhc3NpZmllZCBieSByZWFjaCwgYW5kIHRoZSBpbnRlcm5ldCBpcyB0aGUgbGFyZ2VzdCBXQU4uClNlZTogPGEgaHJlZj0iI3NlYy0wNi1pbnRlcm5ldC13ZWIiPlRoZSBpbnRlcm5ldCBhbmQgdGhlIHdlYjwvYT4u"
+}
+</script>
+</div>
+```

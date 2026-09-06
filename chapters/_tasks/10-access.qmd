@@ -1,0 +1,33 @@
+```{=html}
+<div class="tk-task">
+<script type="application/json">
+{
+ "type": "sort",
+ "title": "Sharing the medium",
+ "prompt": "Three families of access rules - sort the examples.",
+ "buckets": [
+  "Channel partitioning",
+  "Taking turns",
+  "Random access"
+ ],
+ "chips": [
+  "TDMA, FDMA, CDMA",
+  "wasteful for bursty traffic",
+  "a circulating token",
+  "a polling controller",
+  "CSMA/CD on classic Ethernet",
+  "CSMA/CA on Wi-Fi"
+ ],
+ "key": [
+  1402540489,
+  2003385547,
+  3275068380,
+  3861735659,
+  4078681228,
+  4214897827
+ ],
+ "sol": "Q2hhbm5lbCBwYXJ0aXRpb25pbmc6IFRETUEsIEZETUEsIENETUE7IHdhc3RlZnVsIGZvciBidXJzdHkgdHJhZmZpYwpUYWtpbmcgdHVybnM6IGEgY2lyY3VsYXRpbmcgdG9rZW47IGEgcG9sbGluZyBjb250cm9sbGVyClJhbmRvbSBhY2Nlc3M6IENTTUEvQ0Qgb24gY2xhc3NpYyBFdGhlcm5ldDsgQ1NNQS9DQSBvbiBXaS1GaQpQYXJ0aXRpb24gdGhlIGNoYW5uZWwsIHRha2UgdHVybnMsIG9yIGVtYnJhY2UgcmFuZG9tIGFjY2VzcyB3aXRoIGJhY2stb2ZmLgpTZWU6IDxhIGhyZWY9IiNzZWMtMTAtc2hhcmluZyI+U2hhcmluZyB0aGUgbWVkaXVtPC9hPi4="
+}
+</script>
+</div>
+```

@@ -1,0 +1,34 @@
+```{=html}
+<div class="tk-task">
+<script type="application/json">
+{
+ "type": "sort",
+ "title": "Magic numbers",
+ "prompt": "The first bytes say what a file really is - match each magic number to its format.",
+ "buckets": [
+  "PDF",
+  "JPEG",
+  "ZIP",
+  "GIF",
+  "Linux executable"
+ ],
+ "chips": [
+  "%PDF-",
+  "FF D8 FF",
+  "50 4B (“PK”)",
+  "GIF89a",
+  "7F 45 4C 46 (“ELF”)"
+ ],
+ "key": [
+  121335229,
+  248993404,
+  813071453,
+  924138598,
+  2715723027
+ ],
+ "done": "The extension is convention; the magic number is reality.",
+ "sol": "UERGOiAlUERGLQpKUEVHOiBGRiBEOCBGRgpaSVA6IDUwIDRCICjigJxQS+KAnSkKR0lGOiBHSUY4OWEKTGludXggZXhlY3V0YWJsZTogN0YgNDUgNEMgNDYgKOKAnEVMRuKAnSkKU29mdHdhcmUgaWRlbnRpZmllcyBmb3JtYXRzIGJ5IHRoZSBmaXJzdCBieXRlcywgbm90IHRoZSBmaWxlIG5hbWUuClNlZTogPGEgaHJlZj0iI3NlYy0wMy1tYWdpYyI+VGV4dCBmaWxlcywgYmluYXJ5IGZpbGVzLCBhbmQgbWFnaWMgbnVtYmVyczwvYT4u"
+}
+</script>
+</div>
+```

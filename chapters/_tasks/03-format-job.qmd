@@ -1,0 +1,31 @@
+```{=html}
+<div class="tk-task">
+<script type="application/json">
+{
+ "type": "sort",
+ "title": "The right format for the job",
+ "prompt": "Match each format to the job it fits best.",
+ "buckets": [
+  "Screenshot of a table",
+  "Holiday photo",
+  "Logo from favicon to billboard",
+  "Music archive"
+ ],
+ "chips": [
+  "PNG",
+  "JPEG",
+  "SVG",
+  "FLAC"
+ ],
+ "key": [
+  122009720,
+  271044758,
+  274890019,
+  4255543658
+ ],
+ "done": "Crisp text, small photos, infinite scaling, bit-perfect audio.",
+ "sol": "U2NyZWVuc2hvdCBvZiBhIHRhYmxlOiBQTkcKSG9saWRheSBwaG90bzogSlBFRwpMb2dvIGZyb20gZmF2aWNvbiB0byBiaWxsYm9hcmQ6IFNWRwpNdXNpYyBhcmNoaXZlOiBGTEFDCkNyaXNwIHRleHQgbmVlZHMgbG9zc2xlc3M7IHBob3RvcyBoaWRlIGxvc3N5IGFydGVmYWN0czsgbG9nb3MgbXVzdCBzY2FsZTsgYXJjaGl2ZXMgbXVzdCBiZSBiaXQtcGVyZmVjdC4KU2VlOiA8YSBocmVmPSIjc2VjLTAzLWNvbXByZXNzaW9uIj5Db21wcmVzc2lvbjwvYT4u"
+}
+</script>
+</div>
+```

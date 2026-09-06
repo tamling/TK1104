@@ -1,0 +1,28 @@
+```{=html}
+<div class="tk-task">
+<script type="application/json">
+{
+ "type": "gate",
+ "title": "Mystery gate II",
+ "prompt": "Same wiring, different box.",
+ "tt": [
+  0,
+  1,
+  1,
+  0
+ ],
+ "options": [
+  "AND",
+  "OR",
+  "XOR",
+  "NAND"
+ ],
+ "key": [
+  2918811739
+ ],
+ "done": "Exactly one switch on lights the lamp - the inputs must differ.",
+ "sol": "QT0wIEI9MCDihpIgbGFtcCBvZmYKQT0wIEI9MSDihpIgbGFtcCBPTgpBPTEgQj0wIOKGkiBsYW1wIE9OCkE9MSBCPTEg4oaSIGxhbXAgb2ZmClRoYXQgYmVoYXZpb3VyIGlzIFhPUi4KWE9SIG91dHB1dHMgMSBpZiBleGFjdGx5IG9uZSBpbnB1dCBpcyAxIC0gdGhlIGlucHV0cyBtdXN0IGRpZmZlci4KU2VlOiA8YSBocmVmPSIjZGVmLWdhdGVzIj5EZWZpbml0aW9uIOKAnExvZ2ljIGdhdGVz4oCdPC9hPi4="
+}
+</script>
+</div>
+```

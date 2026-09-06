@@ -1,8 +1,8 @@
-# TK1104 — course script (Quarto)
+# TK1104 - course script (Quarto)
 
 Quarto book project for the TK1104 *Digital Technology* lecture script,
 set up like the SKY2100 course script (`tamling/SKY2100`): One chapter per
-lecture, rendered as an HTML book — and **every page has a dark mode**
+lecture, rendered as an HTML book - and **every page has a dark mode**
 (light/dark theme toggle in the navbar, configured in `_quarto.yml`).
 
 ```
@@ -15,10 +15,10 @@ _tikz/                    TikZ sources for the figures + build.sh → chapters/f
 appendix/                 abbreviations, revision history
 theme.scss                shared course styling (didactic bridges)
 theme-dark.scss           dark-mode fixes (light backing card behind figures)
-.github/workflows/        publish.yml — quarto render → GitHub Pages
+.github/workflows/        publish.yml - quarto render → GitHub Pages
 ```
 
-Render: `quarto render`. The dark mode needs no build step — Quarto
+Render: `quarto render`. The dark mode needs no build step - Quarto
 renders the theme toggle on every page from the `theme.light`/`theme.dark`
 pair in `_quarto.yml`.
 
@@ -33,7 +33,7 @@ _tikz/build.sh   # needs pdflatex + TikZ, pdfcrop, pdftocairo (poppler)
 ```
 
 In dark mode the SVGs (dark ink, transparent background) sit on a light
-backing card — see `theme-dark.scss`.
+backing card - see `theme-dark.scss`.
 
 ## Conventions carried over from the LaTeX script
 
@@ -41,7 +41,7 @@ backing card — see `theme-dark.scss`.
   blocks `#def-…`, `#exm-…`, `#exr-…`); every concept is defined once,
   before it is used.
 * Grey **Excursus** callouts: Enrichment from the classic textbooks
-  (Tanenbaum et al.) — background, not exam material.
+  (Tanenbaum et al.) - background, not exam material.
 * Blue **Worked exercise** callouts: Small tasks with compact solutions,
   next to the technique they practise.
 * Each chapter ends with a **Self-check** (sketch answers in a collapsed

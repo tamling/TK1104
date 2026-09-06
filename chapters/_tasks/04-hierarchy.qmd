@@ -1,0 +1,27 @@
+```{=html}
+<div class="tk-task">
+<script type="application/json">
+{
+ "type": "order",
+ "title": "The memory hierarchy",
+ "prompt": "Order the levels from fastest (top) to slowest (bottom).",
+ "chips": [
+  "Registers",
+  "Cache (L1/L2/L3)",
+  "RAM",
+  "SSD",
+  "HDD"
+ ],
+ "key": [
+  261194757,
+  272955955,
+  274778942,
+  1448305577,
+  2766110415
+ ],
+ "done": "Each level is faster, smaller and costlier than the one below.",
+ "sol": "MS4gUmVnaXN0ZXJzCjIuIENhY2hlIChMMS9MMi9MMykKMy4gUkFNCjQuIFNTRAo1LiBIREQKUmVnaXN0ZXJzIHNpdCBpbnNpZGUgdGhlIENQVTsgZWFjaCBsZXZlbCBiZWxvdyBpcyBsYXJnZXIsIHNsb3dlciBhbmQgY2hlYXBlci4KU2VlOiA8YSBocmVmPSIjc2VjLTA0LW1lbWFkZHIiPk1lbW9yeSBhbmQgYWRkcmVzc2luZzwvYT4u"
+}
+</script>
+</div>
+```

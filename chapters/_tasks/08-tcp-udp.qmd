@@ -1,0 +1,32 @@
+```{=html}
+<div class="tk-task">
+<script type="application/json">
+{
+ "type": "sort",
+ "title": "TCP or UDP?",
+ "prompt": "Pick the transport protocol each application would choose.",
+ "buckets": [
+  "TCP",
+  "UDP"
+ ],
+ "chips": [
+  "downloading a software update",
+  "loading a web page over HTTPS",
+  "sending an e-mail",
+  "the voice channel of an online game",
+  "a DNS lookup",
+  "a live video stream"
+ ],
+ "key": [
+  289115770,
+  507064518,
+  612772498,
+  628994525,
+  2816143798,
+  2865287301
+ ],
+ "sol": "VENQOiBkb3dubG9hZGluZyBhIHNvZnR3YXJlIHVwZGF0ZTsgbG9hZGluZyBhIHdlYiBwYWdlIG92ZXIgSFRUUFM7IHNlbmRpbmcgYW4gZS1tYWlsClVEUDogdGhlIHZvaWNlIGNoYW5uZWwgb2YgYW4gb25saW5lIGdhbWU7IGEgRE5TIGxvb2t1cDsgYSBsaXZlIHZpZGVvIHN0cmVhbQpObyBsb3NzIGFsbG93ZWQg4oaSIFRDUDsgYSBnbGl0Y2ggYmVhdHMgYSBzdGFsbCDihpIgVURQLgpTZWU6IDxhIGhyZWY9IiNzZWMtMDgtcG9ydHMiPlRyYW5zcG9ydCBiYXNpY3M6IFBvcnRzIGFuZCBzb2NrZXRzPC9hPi4="
+}
+</script>
+</div>
+```

@@ -1,0 +1,30 @@
+```{=html}
+<div class="tk-task">
+<script type="application/json">
+{
+ "type": "sort",
+ "title": "Hear the word, know the layer",
+ "prompt": "Match each data unit to its layer.",
+ "buckets": [
+  "Application",
+  "Transport",
+  "Network",
+  "Link"
+ ],
+ "chips": [
+  "message",
+  "segment",
+  "datagram",
+  "frame"
+ ],
+ "key": [
+  505687924,
+  1758572950,
+  2051998533,
+  3229136383
+ ],
+ "sol": "QXBwbGljYXRpb246IG1lc3NhZ2UKVHJhbnNwb3J0OiBzZWdtZW50Ck5ldHdvcms6IGRhdGFncmFtCkxpbms6IGZyYW1lCk1lc3NhZ2UsIHNlZ21lbnQsIGRhdGFncmFtLCBmcmFtZSAtIHRoZSB1bml0JiN4Mjc7cyBuYW1lIHRlbGxzIHlvdSB0aGUgbGF5ZXIuClNlZTogPGEgaHJlZj0iI3NlYy0wNi1lbmNhcHN1bGF0aW9uIj5FbmNhcHN1bGF0aW9uPC9hPi4="
+}
+</script>
+</div>
+```

@@ -1,0 +1,26 @@
+```{=html}
+<div class="tk-task">
+<script type="application/json">
+{
+ "type": "order",
+ "title": "Resolving a name",
+ "prompt": "Put the steps of a fresh DNS lookup in order.",
+ "chips": [
+  "Your PC asks the local resolver",
+  "The resolver asks the root server",
+  "The resolver asks the TLD server",
+  "The resolver asks the authoritative server",
+  "The answer comes back - and is cached"
+ ],
+ "key": [
+  173560834,
+  557077475,
+  1096643290,
+  1157981940,
+  2945360563
+ ],
+ "sol": "MS4gWW91ciBQQyBhc2tzIHRoZSBsb2NhbCByZXNvbHZlcgoyLiBUaGUgcmVzb2x2ZXIgYXNrcyB0aGUgcm9vdCBzZXJ2ZXIKMy4gVGhlIHJlc29sdmVyIGFza3MgdGhlIFRMRCBzZXJ2ZXIKNC4gVGhlIHJlc29sdmVyIGFza3MgdGhlIGF1dGhvcml0YXRpdmUgc2VydmVyCjUuIFRoZSBhbnN3ZXIgY29tZXMgYmFjayAtIGFuZCBpcyBjYWNoZWQKVGhlIHJlc29sdmVyIHdhbGtzIHJvb3QsIFRMRCBhbmQgYXV0aG9yaXRhdGl2ZSBzZXJ2ZXIsIHRoZW4gY2FjaGVzIHRoZSBhbnN3ZXIuClNlZTogPGEgaHJlZj0iI2V4bS1kbnNyZXNvbHZlIj5FeGFtcGxlIOKAnFJlc29sdmluZyBhIG5hbWUsIHN0ZXAgYnkgc3RlcOKAnTwvYT4u"
+}
+</script>
+</div>
+```

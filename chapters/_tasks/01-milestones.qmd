@@ -1,0 +1,28 @@
+```{=html}
+<div class="tk-task">
+<script type="application/json">
+{
+ "type": "order",
+ "title": "Eighty years in six milestones",
+ "prompt": "Put the milestones in chronological order.",
+ "chips": [
+  "ENIAC - the first general-purpose electronic computer",
+  "The microprocessor - Intel's 4004",
+  "The IBM PC reaches businesses and homes",
+  "The World Wide Web launches at CERN",
+  "The iPhone takes the smartphone mainstream",
+  "ChatGPT puts generative AI in everyone's hands"
+ ],
+ "key": [
+  20205060,
+  387107501,
+  701911373,
+  916616212,
+  1155364376,
+  3448531863
+ ],
+ "sol": "MS4gRU5JQUMgLSB0aGUgZmlyc3QgZ2VuZXJhbC1wdXJwb3NlIGVsZWN0cm9uaWMgY29tcHV0ZXIKMi4gVGhlIG1pY3JvcHJvY2Vzc29yIC0gSW50ZWwmI3gyNztzIDQwMDQKMy4gVGhlIElCTSBQQyByZWFjaGVzIGJ1c2luZXNzZXMgYW5kIGhvbWVzCjQuIFRoZSBXb3JsZCBXaWRlIFdlYiBsYXVuY2hlcyBhdCBDRVJOCjUuIFRoZSBpUGhvbmUgdGFrZXMgdGhlIHNtYXJ0cGhvbmUgbWFpbnN0cmVhbQo2LiBDaGF0R1BUIHB1dHMgZ2VuZXJhdGl2ZSBBSSBpbiBldmVyeW9uZSYjeDI3O3MgaGFuZHMKMTk0NSwgMTk3MSwgMTk4MSwgMTk5MSwgMjAwNywgMjAyMiAtIHRoZSBhcmMgZnJvbSBFTklBQyB0byBldmVyeWRheSBBSS4KU2VlOiA8YSBocmVmPSIjc2VjLTAxLW1pbGVzdG9uZXMiPkVpZ2h0eSB5ZWFycyBpbiBzaXggbWlsZXN0b25lczwvYT4u"
+}
+</script>
+</div>
+```

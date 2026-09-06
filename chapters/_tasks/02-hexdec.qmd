@@ -1,0 +1,27 @@
+```{=html}
+<div class="tk-task">
+<script type="application/json">
+{
+ "type": "input",
+ "title": "Hex both ways",
+ "prompt": "One conversion in each direction.",
+ "fields": [
+  {
+   "label": "F3₁₆ in decimal:",
+   "answers": [
+    193433214
+   ]
+  },
+  {
+   "label": "42₁₀ in hexadecimal:",
+   "answers": [
+    5861656,
+    2088331008
+   ]
+  }
+ ],
+ "sol": "RjPigoHigoYgaW4gZGVjaW1hbDogMjQzCjQy4oKB4oKAIGluIGhleGFkZWNpbWFsOiAyQQpGMyA9IDE1wrcxNiArIDMgPSAyNDM7IDQyID0gMsK3MTYgKyAxMCA9IDJBLgpTZWU6IDxhIGhyZWY9IiNzZWMtMDItaGV4Ij5IZXhhZGVjaW1hbCBhbmQgb2N0YWw8L2E+Lg=="
+}
+</script>
+</div>
+```

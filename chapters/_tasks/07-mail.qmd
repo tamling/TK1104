@@ -1,0 +1,30 @@
+```{=html}
+<div class="tk-task">
+<script type="application/json">
+{
+ "type": "sort",
+ "title": "The mail protocols",
+ "prompt": "Push or pull, and for whom - sort the statements.",
+ "buckets": [
+  "SMTP",
+  "IMAP",
+  "POP3"
+ ],
+ "chips": [
+  "pushes mail towards the recipient",
+  "also carries mail server-to-server",
+  "keeps mail on the server, in sync across devices",
+  "downloads to one client, often removing it from the server"
+ ],
+ "key": [
+  279796055,
+  3160357690,
+  3591450960,
+  4243989812
+ ],
+ "done": "SMTP pushes; IMAP and POP3 pull - different lifestyles.",
+ "sol": "U01UUDogcHVzaGVzIG1haWwgdG93YXJkcyB0aGUgcmVjaXBpZW50OyBhbHNvIGNhcnJpZXMgbWFpbCBzZXJ2ZXItdG8tc2VydmVyCklNQVA6IGtlZXBzIG1haWwgb24gdGhlIHNlcnZlciwgaW4gc3luYyBhY3Jvc3MgZGV2aWNlcwpQT1AzOiBkb3dubG9hZHMgdG8gb25lIGNsaWVudCwgb2Z0ZW4gcmVtb3ZpbmcgaXQgZnJvbSB0aGUgc2VydmVyClNNVFAgcHVzaGVzIHRvd2FyZHMgdGhlIHJlY2lwaWVudDsgSU1BUCBzeW5jcyBvbiB0aGUgc2VydmVyOyBQT1AzIGRvd25sb2FkcyB0byBvbmUgY2xpZW50LgpTZWU6IDxhIGhyZWY9IiNzZWMtMDctZW1haWwiPkUtbWFpbDwvYT4u"
+}
+</script>
+</div>
+```
