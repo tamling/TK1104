@@ -1,0 +1,32 @@
+```{=html}
+<div class="tk-task">
+<script type="application/json">
+{
+ "type": "sort",
+ "title": "IPv4 or IPv6?",
+ "prompt": "Sort the properties.",
+ "buckets": [
+  "IPv4",
+  "IPv6"
+ ],
+ "chips": [
+  "32-bit addresses",
+  "dotted decimal, four bytes",
+  "needs NAT to stretch its space",
+  "128-bit addresses",
+  "hex groups, with :: abbreviating zeros",
+  "removes the need for NAT"
+ ],
+ "key": [
+  24981844,
+  2129543520,
+  2935734167,
+  2966967615,
+  3151518483,
+  3520783066
+ ],
+ "sol": "SVB2NDogMzItYml0IGFkZHJlc3NlczsgZG90dGVkIGRlY2ltYWwsIGZvdXIgYnl0ZXM7IG5lZWRzIE5BVCB0byBzdHJldGNoIGl0cyBzcGFjZQpJUHY2OiAxMjgtYml0IGFkZHJlc3NlczsgaGV4IGdyb3Vwcywgd2l0aCA6OiBhYmJyZXZpYXRpbmcgemVyb3M7IHJlbW92ZXMgdGhlIG5lZWQgZm9yIE5BVApJUHY0IGlzIDMyIGJpdHMgaW4gZG90dGVkIGRlY2ltYWw7IElQdjYgaXMgMTI4IGJpdHMgaW4gaGV4IGdyb3VwcyBhbmQgbmVlZHMgbm8gTkFULgpTZWU6IDxhIGhyZWY9IiNzZWMtMDktaXAiPklQIGFkZHJlc3NlczwvYT4u"
+}
+</script>
+</div>
+```

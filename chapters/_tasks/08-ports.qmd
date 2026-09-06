@@ -1,0 +1,32 @@
+```{=html}
+<div class="tk-task">
+<script type="application/json">
+{
+ "type": "input",
+ "title": "Well-known ports",
+ "prompt": "Three port numbers that recur in every lab and exam.",
+ "fields": [
+  {
+   "label": "HTTPS:",
+   "answers": [
+    193435392
+   ]
+  },
+  {
+   "label": "SSH:",
+   "answers": [
+    5861609
+   ]
+  },
+  {
+   "label": "DNS:",
+   "answers": [
+    5861709
+   ]
+  }
+ ],
+ "sol": "SFRUUFM6IDQ0MwpTU0g6IDIyCkROUzogNTMKV2VsbC1rbm93biBwb3J0cyAwLTEwMjMgbmFtZSBzdGFuZGFyZCBzZXJ2aWNlczogNDQzIEhUVFBTLCAyMiBTU0gsIDUzIEROUy4KU2VlOiA8YSBocmVmPSIjZGVmLXBvcnQiPkRlZmluaXRpb24g4oCcUG9ydCwgc29ja2V04oCdPC9hPi4="
+}
+</script>
+</div>
+```

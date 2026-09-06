@@ -1,0 +1,40 @@
+```{=html}
+<div class="tk-task">
+<script type="application/json">
+{
+ "type": "sort",
+ "title": "The IPOS model",
+ "prompt": "Place each device where it belongs in the Input–Processing–Output–Storage loop.",
+ "buckets": [
+  "Input",
+  "Processing",
+  "Output",
+  "Storage"
+ ],
+ "chips": [
+  "keyboard",
+  "mouse",
+  "sensor",
+  "CPU",
+  "GPU",
+  "screen",
+  "printer",
+  "SSD",
+  "RAM"
+ ],
+ "key": [
+  83307915,
+  136454434,
+  255714906,
+  260458590,
+  272955956,
+  274778942,
+  1934914227,
+  3112540535,
+  3586005434
+ ],
+ "sol": "SW5wdXQ6IGtleWJvYXJkOyBtb3VzZTsgc2Vuc29yClByb2Nlc3Npbmc6IENQVTsgR1BVCk91dHB1dDogc2NyZWVuOyBwcmludGVyClN0b3JhZ2U6IFNTRDsgUkFNCklucHV0IGZsb3dzIGludG8gcHJvY2Vzc2luZywgd2hpY2ggcHJvZHVjZXMgb3V0cHV0LCB3aXRoIHN0b3JhZ2UgdW5kZXIgdGhlIGxvb3AuClNlZTogPGEgaHJlZj0iI3NlYy0wMS1pcG9zIj5IYXJkd2FyZSwgc29mdHdhcmUsIGFuZCB0aGUgSVBPUyBsb29wPC9hPi4="
+}
+</script>
+</div>
+```

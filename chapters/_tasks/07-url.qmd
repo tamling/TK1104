@@ -1,0 +1,37 @@
+```{=html}
+<div class="tk-task">
+<script type="application/json">
+{
+ "type": "sort",
+ "title": "Take a URL apart",
+ "prompt": "Assign each piece of <code>https://api.campus.no:8080/kurs/tk1104?week=3#plan</code> to its component.",
+ "buckets": [
+  "Scheme",
+  "Host",
+  "Port",
+  "Path",
+  "Query",
+  "Fragment"
+ ],
+ "chips": [
+  "https",
+  "api.campus.no",
+  "8080",
+  "/kurs/tk1104",
+  "week=3",
+  "plan"
+ ],
+ "key": [
+  197568398,
+  351942273,
+  1618031364,
+  2382631363,
+  2689783921,
+  3226365500
+ ],
+ "done": "DNS resolves the host; the request line carries path and query.",
+ "sol": "U2NoZW1lOiBodHRwcwpIb3N0OiBhcGkuY2FtcHVzLm5vClBvcnQ6IDgwODAKUGF0aDogL2t1cnMvdGsxMTA0ClF1ZXJ5OiB3ZWVrPTMKRnJhZ21lbnQ6IHBsYW4KU2NoZW1lLCBob3N0LCBwb3J0LCBwYXRoLCBxdWVyeSwgZnJhZ21lbnQgLSBETlMgcmVzb2x2ZXMgb25seSB0aGUgaG9zdC4KU2VlOiA8YSBocmVmPSIjc2VjLTA3LWh0dHAiPlRoZSB3ZWIgYW5kIEhUVFA8L2E+Lg=="
+}
+</script>
+</div>
+```

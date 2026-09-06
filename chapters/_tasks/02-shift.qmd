@@ -1,0 +1,27 @@
+```{=html}
+<div class="tk-task">
+<script type="application/json">
+{
+ "type": "input",
+ "title": "Shifting is arithmetic",
+ "prompt": "Start from <code>0000 0110</code> (decimal 6).",
+ "fields": [
+  {
+   "label": "Shifted left one place, as decimal:",
+   "answers": [
+    5861576
+   ]
+  },
+  {
+   "label": "Shifted right one place, as decimal:",
+   "answers": [
+    177624
+   ]
+  }
+ ],
+ "done": "Left doubles, right halves - cheaper than multiplication.",
+ "sol": "U2hpZnRlZCBsZWZ0IG9uZSBwbGFjZSwgYXMgZGVjaW1hbDogMTIKU2hpZnRlZCByaWdodCBvbmUgcGxhY2UsIGFzIGRlY2ltYWw6IDMKQSBsZWZ0IHNoaWZ0IG11bHRpcGxpZXMgYnkgdHdvLCBhIHJpZ2h0IHNoaWZ0IGRpdmlkZXMgYnkgdHdvLgpTZWU6IDxhIGhyZWY9IiNzZWMtMDItYXJpdGhtZXRpYyI+QmluYXJ5IGFyaXRobWV0aWMgYW5kIHR3byYjeDI3O3MgY29tcGxlbWVudDwvYT4u"
+}
+</script>
+</div>
+```

@@ -1,0 +1,28 @@
+```{=html}
+<div class="tk-task">
+<script type="application/json">
+{
+ "type": "input",
+ "title": "Two's complement",
+ "prompt": "Invert and add 1 - then read a pattern back.",
+ "fields": [
+  {
+   "label": "−13 in 8-bit two's complement:",
+   "answers": [
+    3859891819,
+    3859891819
+   ]
+  },
+  {
+   "label": "1111 1111 read as a signed 8-bit value:",
+   "answers": [
+    5861443,
+    6147784
+   ]
+  }
+ ],
+ "sol": "4oiSMTMgaW4gOC1iaXQgdHdvJiN4Mjc7cyBjb21wbGVtZW50OiAxMTExIDAwMTEKMTExMSAxMTExIHJlYWQgYXMgYSBzaWduZWQgOC1iaXQgdmFsdWU6IOKIkjEKSW52ZXJ0IGV2ZXJ5IGJpdCBhbmQgYWRkIDE7IGFsbC1vbmVzIGlzIHRoZXJlZm9yZSDiiJIxLgpTZWU6IDxhIGhyZWY9IiNkZWYtdHdvc2NvbXAiPkRlZmluaXRpb24g4oCcVHdvJiN4Mjc7cyBjb21wbGVtZW504oCdPC9hPi4="
+}
+</script>
+</div>
+```

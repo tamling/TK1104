@@ -1,0 +1,28 @@
+```{=html}
+<div class="tk-task">
+<script type="application/json">
+{
+ "type": "sort",
+ "title": "OSI or TCP/IP?",
+ "prompt": "Two reference models - sort the statements.",
+ "buckets": [
+  "OSI model",
+  "TCP/IP five-layer model"
+ ],
+ "chips": [
+  "seven layers",
+  "the teaching reference",
+  "five layers",
+  "what the internet actually runs"
+ ],
+ "key": [
+  321897175,
+  1456667404,
+  1909614212,
+  2068512098
+ ],
+ "sol": "T1NJIG1vZGVsOiBzZXZlbiBsYXllcnM7IHRoZSB0ZWFjaGluZyByZWZlcmVuY2UKVENQL0lQIGZpdmUtbGF5ZXIgbW9kZWw6IGZpdmUgbGF5ZXJzOyB3aGF0IHRoZSBpbnRlcm5ldCBhY3R1YWxseSBydW5zCk9TSSYjeDI3O3Mgc2V2ZW4gbGF5ZXJzIGFyZSB0aGUgdGVhY2hpbmcgcmVmZXJlbmNlOyB0aGUgaW50ZXJuZXQgcnVucyB0aGUgZml2ZS1sYXllciBUQ1AvSVAgc3RhY2suClNlZTogPGEgaHJlZj0iI3NlYy0xMS1ibG9jazMiPkJsb2NrIDM6IFRoZSBpbnRlcm5ldCBhbmQgdGhlIGFwcGxpY2F0aW9uIGxheWVyPC9hPi4="
+}
+</script>
+</div>
+```

@@ -1,0 +1,31 @@
+```{=html}
+<div class="tk-task">
+<script type="application/json">
+{
+ "type": "sort",
+ "title": "Hex digits are nibbles",
+ "prompt": "Each hex digit is exactly four bits - match each bit group to its digit.",
+ "buckets": [
+  "A",
+  "5",
+  "F",
+  "3"
+ ],
+ "chips": [
+  "1010",
+  "0101",
+  "1111",
+  "0011"
+ ],
+ "key": [
+  2069297750,
+  2070447732,
+  2108432051,
+  2109619063
+ ],
+ "done": "Grouping, not arithmetic - that is the whole trick.",
+ "sol": "QTogMTAxMAo1OiAwMTAxCkY6IDExMTEKMzogMDAxMQoxNiA9IDLigbQsIHNvIGVhY2ggaGV4IGRpZ2l0IG1hcHMgY2xlYW5seSBvbnRvIGZvdXIgYml0cy4KU2VlOiA8YSBocmVmPSIjc2VjLTAyLWhleCI+SGV4YWRlY2ltYWwgYW5kIG9jdGFsPC9hPi4="
+}
+</script>
+</div>
+```

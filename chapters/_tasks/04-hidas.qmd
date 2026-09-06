@@ -1,0 +1,26 @@
+```{=html}
+<div class="tk-task">
+<script type="application/json">
+{
+ "type": "order",
+ "title": "The HIDAS cycle",
+ "prompt": "Put the five steps of the CPU's cycle in order.",
+ "chips": [
+  "Holen - fetch the instruction into IR",
+  "Inkrementieren - increment the PC",
+  "Dekodieren - decode the instruction",
+  "Ausführen - execute the operation",
+  "Speichern - store the result"
+ ],
+ "key": [
+  1958754081,
+  2319499230,
+  2415097848,
+  2777770614,
+  3114817840
+ ],
+ "sol": "MS4gSG9sZW4gLSBmZXRjaCB0aGUgaW5zdHJ1Y3Rpb24gaW50byBJUgoyLiBJbmtyZW1lbnRpZXJlbiAtIGluY3JlbWVudCB0aGUgUEMKMy4gRGVrb2RpZXJlbiAtIGRlY29kZSB0aGUgaW5zdHJ1Y3Rpb24KNC4gQXVzZsO8aHJlbiAtIGV4ZWN1dGUgdGhlIG9wZXJhdGlvbgo1LiBTcGVpY2hlcm4gLSBzdG9yZSB0aGUgcmVzdWx0CkZldGNoLCBpbmNyZW1lbnQsIGRlY29kZSwgZXhlY3V0ZSwgc3RvcmUgLSBpbmNyZW1lbnRpbmcgZWFybHkgbGV0cyBqdW1wcyBvdmVycmlkZSB0aGUgUEMuClNlZTogPGEgaHJlZj0iI2RlZi1oaWRhcyI+RGVmaW5pdGlvbiDigJxUaGUgSElEQVMgY3ljbGXigJ08L2E+Lg=="
+}
+</script>
+</div>
+```

@@ -1,0 +1,34 @@
+```{=html}
+<div class="tk-task">
+<script type="application/json">
+{
+ "type": "sort",
+ "title": "Spot the base",
+ "prompt": "Source-code prefixes mark the base - sort the literals.",
+ "buckets": [
+  "Binary",
+  "Octal",
+  "Hexadecimal"
+ ],
+ "chips": [
+  "0b1011",
+  "0b0001",
+  "0o755",
+  "0o644",
+  "0xA39F",
+  "0xFF"
+ ],
+ "key": [
+  2038840239,
+  2040063186,
+  2156646439,
+  3008225092,
+  3047396422,
+  3277322510
+ ],
+ "done": "0b, 0o, 0x - the prefix is the convention, spelled out.",
+ "sol": "QmluYXJ5OiAwYjEwMTE7IDBiMDAwMQpPY3RhbDogMG83NTU7IDBvNjQ0CkhleGFkZWNpbWFsOiAweEEzOUY7IDB4RkYKVGhlIHByZWZpeGVzIDBiLCAwbyBhbmQgMHggbWFyayB0aGUgYmFzZSBpbiBzb3VyY2UgY29kZS4KU2VlOiA8YSBocmVmPSIjc2VjLTAyLXBvc2l0aW9uYWwiPlBvc2l0aW9uYWwgbnVtYmVyIHN5c3RlbXM8L2E+Lg=="
+}
+</script>
+</div>
+```

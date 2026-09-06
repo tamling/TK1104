@@ -1,0 +1,28 @@
+```{=html}
+<div class="tk-task">
+<script type="application/json">
+{
+ "type": "input",
+ "title": "Which network, how many hosts",
+ "prompt": "Host <code>192.168.40.77</code> has the mask <code>255.255.255.224</code> (a /27). AND the fourth octets, then count the host bits.",
+ "fields": [
+  {
+   "label": "Network address:",
+   "answers": [
+    1892924080,
+    2984551192
+   ]
+  },
+  {
+   "label": "Usable hosts:",
+   "answers": [
+    5861640
+   ]
+  }
+ ],
+ "done": "Only the mask's 1-bits survive the AND; 2⁵ − 2 = 30.",
+ "sol": "TmV0d29yayBhZGRyZXNzOiAxOTIuMTY4LjQwLjY0ClVzYWJsZSBob3N0czogMzAKNzcgQU5EIDIyNCA9IDY0LCBzbyB0aGUgbmV0d29yayBpcyAxOTIuMTY4LjQwLjY0LzI3IHdpdGggMuKBtSDiiJIgMiA9IDMwIHVzYWJsZSBob3N0cy4KU2VlOiA8YSBocmVmPSIjZXhtLWNpZHIiPkV4YW1wbGUg4oCcV2hpY2ggbmV0d29yaz/igJ08L2E+Lg=="
+}
+</script>
+</div>
+```

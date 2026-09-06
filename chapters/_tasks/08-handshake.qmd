@@ -1,0 +1,22 @@
+```{=html}
+<div class="tk-task">
+<script type="application/json">
+{
+ "type": "order",
+ "title": "The three-way handshake",
+ "prompt": "Put the packets that open a TCP connection in order.",
+ "chips": [
+  "SYN - the client's opening move",
+  "SYN+ACK - the server answers",
+  "ACK - the client confirms; the connection is open"
+ ],
+ "key": [
+  1414204014,
+  2100824074,
+  3110041497
+ ],
+ "sol": "MS4gU1lOIC0gdGhlIGNsaWVudCYjeDI3O3Mgb3BlbmluZyBtb3ZlCjIuIFNZTitBQ0sgLSB0aGUgc2VydmVyIGFuc3dlcnMKMy4gQUNLIC0gdGhlIGNsaWVudCBjb25maXJtczsgdGhlIGNvbm5lY3Rpb24gaXMgb3BlbgpTWU4sIFNZTitBQ0ssIEFDSyAtIHNlcXVlbmNlIG51bWJlcnMgZXhjaGFuZ2VkLCBjb25uZWN0aW9uIG9wZW4uClNlZTogPGEgaHJlZj0iI2RlZi1oYW5kc2hha2UiPkRlZmluaXRpb24g4oCcVGhlIHRocmVlLXdheSBoYW5kc2hha2XigJ08L2E+Lg=="
+}
+</script>
+</div>
+```

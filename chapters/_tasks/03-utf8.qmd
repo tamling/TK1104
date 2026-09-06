@@ -1,0 +1,36 @@
+```{=html}
+<div class="tk-task">
+<script type="application/json">
+{
+ "type": "input",
+ "title": "UTF-8 byte counts",
+ "prompt": "How many bytes does UTF-8 spend on each character?",
+ "fields": [
+  {
+   "label": "A plain A (U+0041):",
+   "answers": [
+    177622,
+    193501607
+   ]
+  },
+  {
+   "label": "The Norwegian å (U+00E5):",
+   "answers": [
+    177623,
+    193507359
+   ]
+  },
+  {
+   "label": "The emoji 😀 (U+1F600):",
+   "answers": [
+    177625,
+    2090264033
+   ]
+  }
+ ],
+ "done": "Same “length” in characters is not the same length in bytes.",
+ "sol": "QSBwbGFpbiBBIChVKzAwNDEpOiAxClRoZSBOb3J3ZWdpYW4gw6UgKFUrMDBFNSk6IDIKVGhlIGVtb2ppIPCfmIAgKFUrMUY2MDApOiA0CkFTQ0lJIHN0YXlzIG9uZSBieXRlOyBMYXRpbiBsZXR0ZXJzIHdpdGggZGlhY3JpdGljcyB0YWtlIHR3bzsgZW1vamkgdGFrZSBmb3VyLgpTZWU6IDxhIGhyZWY9IiNleG0tdXRmOCI+RXhhbXBsZSDigJxFbmNvZGluZyDDhSBieSBoYW5k4oCdPC9hPi4="
+}
+</script>
+</div>
+```

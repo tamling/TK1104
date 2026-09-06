@@ -1,0 +1,23 @@
+```{=html}
+<div class="tk-task">
+<script type="application/json">
+{
+ "type": "order",
+ "title": "Catching corrupted bits",
+ "prompt": "Order the error checks from weakest to strongest.",
+ "chips": [
+  "Parity bit - one extra bit, catches a single flip",
+  "Checksum - a sum over the data, as UDP and TCP use",
+  "CRC - the polynomial code in the Ethernet trailer"
+ ],
+ "key": [
+  126158370,
+  3496977743,
+  3916804528
+ ],
+ "done": "Detection below, recovery above - TCP rebuilds reliability.",
+ "sol": "MS4gUGFyaXR5IGJpdCAtIG9uZSBleHRyYSBiaXQsIGNhdGNoZXMgYSBzaW5nbGUgZmxpcAoyLiBDaGVja3N1bSAtIGEgc3VtIG92ZXIgdGhlIGRhdGEsIGFzIFVEUCBhbmQgVENQIHVzZQozLiBDUkMgLSB0aGUgcG9seW5vbWlhbCBjb2RlIGluIHRoZSBFdGhlcm5ldCB0cmFpbGVyClBhcml0eSBjYXRjaGVzIG9uZSBmbGlwLCBjaGVja3N1bXMgc3VtIHRoZSBkYXRhLCB0aGUgQ1JDIGNhdGNoZXMgYWxtb3N0IGV2ZXJ5dGhpbmcuClNlZTogPGEgaHJlZj0iI3NlYy0xMC13aXJlbGVzcyI+V2lyZWxlc3MgLSBhbmQgdGhlIHdob2xlIGpvdXJuZXk8L2E+Lg=="
+}
+</script>
+</div>
+```

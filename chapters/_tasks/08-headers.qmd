@@ -1,0 +1,32 @@
+```{=html}
+<div class="tk-task">
+<script type="application/json">
+{
+ "type": "sort",
+ "title": "Whose property is it?",
+ "prompt": "TCP or UDP - sort the statements.",
+ "buckets": [
+  "TCP",
+  "UDP"
+ ],
+ "chips": [
+  "a three-way handshake before any data",
+  "sequence numbers order every byte",
+  "a FIN closes each direction",
+  "an 8-byte header - four small fields",
+  "“fire and forget”",
+  "the base that QUIC builds on"
+ ],
+ "key": [
+  532544420,
+  967424817,
+  2042730378,
+  2821110620,
+  3196753345,
+  3553451723
+ ],
+ "sol": "VENQOiBhIHRocmVlLXdheSBoYW5kc2hha2UgYmVmb3JlIGFueSBkYXRhOyBzZXF1ZW5jZSBudW1iZXJzIG9yZGVyIGV2ZXJ5IGJ5dGU7IGEgRklOIGNsb3NlcyBlYWNoIGRpcmVjdGlvbgpVRFA6IGFuIDgtYnl0ZSBoZWFkZXIgLSBmb3VyIHNtYWxsIGZpZWxkczsg4oCcZmlyZSBhbmQgZm9yZ2V04oCdOyB0aGUgYmFzZSB0aGF0IFFVSUMgYnVpbGRzIG9uClRDUCBjYXJyaWVzIHRoZSBtYWNoaW5lcnkgb2YgcmVsaWFiaWxpdHk7IFVEUCBpcyB0aGUgOC1ieXRlIG1pbmltdW0uClNlZTogPGEgaHJlZj0iI3NlYy0wOC11ZHAiPlVEUDogVGhlIG1pbmltYWwgb3B0aW9uPC9hPi4="
+}
+</script>
+</div>
+```

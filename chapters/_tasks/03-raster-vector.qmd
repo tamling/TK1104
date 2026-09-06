@@ -1,0 +1,32 @@
+```{=html}
+<div class="tk-task">
+<script type="application/json">
+{
+ "type": "sort",
+ "title": "Pixels or instructions?",
+ "prompt": "Raster stores the result, vector stores the recipe - sort the formats.",
+ "buckets": [
+  "Raster (pixels)",
+  "Vector (instructions)"
+ ],
+ "chips": [
+  "JPEG",
+  "PNG",
+  "GIF",
+  "WebP",
+  "SVG",
+  "PDF drawing instructions"
+ ],
+ "key": [
+  122009719,
+  260190695,
+  271044758,
+  274890018,
+  617626687,
+  1299789677
+ ],
+ "sol": "UmFzdGVyIChwaXhlbHMpOiBKUEVHOyBQTkc7IEdJRjsgV2ViUApWZWN0b3IgKGluc3RydWN0aW9ucyk6IFNWRzsgUERGIGRyYXdpbmcgaW5zdHJ1Y3Rpb25zClJhc3RlciBzdG9yZXMgdGhlIHBpeGVsczsgdmVjdG9yIHN0b3JlcyBkcmF3aW5nIGluc3RydWN0aW9ucyB0aGF0IHNjYWxlLgpTZWU6IDxhIGhyZWY9IiNzZWMtMDMtaW1hZ2VzIj5JbWFnZXM6IFBpeGVscyBvciBpbnN0cnVjdGlvbnM8L2E+Lg=="
+}
+</script>
+</div>
+```

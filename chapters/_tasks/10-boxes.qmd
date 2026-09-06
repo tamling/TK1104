@@ -1,0 +1,33 @@
+```{=html}
+<div class="tk-task">
+<script type="application/json">
+{
+ "type": "sort",
+ "title": "Hub, switch, router",
+ "prompt": "Three boxes, three layers - sort the statements.",
+ "buckets": [
+  "Hub",
+  "Switch",
+  "Router"
+ ],
+ "chips": [
+  "physical layer - reads nothing",
+  "repeats every bit to all ports",
+  "link layer - reads MAC addresses",
+  "isolates collision domains, port by port",
+  "network layer - reads IP addresses",
+  "connects networks; needs configuration"
+ ],
+ "key": [
+  1071426127,
+  1287587006,
+  1508185352,
+  1615913278,
+  3335268227,
+  4252821741
+ ],
+ "sol": "SHViOiBwaHlzaWNhbCBsYXllciAtIHJlYWRzIG5vdGhpbmc7IHJlcGVhdHMgZXZlcnkgYml0IHRvIGFsbCBwb3J0cwpTd2l0Y2g6IGxpbmsgbGF5ZXIgLSByZWFkcyBNQUMgYWRkcmVzc2VzOyBpc29sYXRlcyBjb2xsaXNpb24gZG9tYWlucywgcG9ydCBieSBwb3J0ClJvdXRlcjogbmV0d29yayBsYXllciAtIHJlYWRzIElQIGFkZHJlc3NlczsgY29ubmVjdHMgbmV0d29ya3M7IG5lZWRzIGNvbmZpZ3VyYXRpb24KSHViIHJlcGVhdHMgYmxpbmRseTsgdGhlIHN3aXRjaCByZWFkcyBNQUNzIGFuZCBpc29sYXRlcyBwb3J0czsgdGhlIHJvdXRlciByZWFkcyBJUHMuClNlZTogPGEgaHJlZj0iI3NlYy0xMC1ldGhlcm5ldCI+RXRoZXJuZXQgYW5kIHN3aXRjaGVzPC9hPi4="
+}
+</script>
+</div>
+```

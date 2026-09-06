@@ -1,0 +1,31 @@
+```{=html}
+<div class="tk-task">
+<script type="application/json">
+{
+ "type": "sort",
+ "title": "Gone at power-off?",
+ "prompt": "Sort the memory levels: which forget at power-off, which survive?",
+ "buckets": [
+  "Volatile (contents vanish)",
+  "Persistent (survives power-off)"
+ ],
+ "chips": [
+  "registers",
+  "cache",
+  "RAM",
+  "SSD",
+  "HDD"
+ ],
+ "key": [
+  261194754,
+  272955953,
+  274778940,
+  1448305577,
+  2986590245
+ ],
+ "done": "That is why unsaved work dies with the power - it lived in RAM.",
+ "sol": "Vm9sYXRpbGUgKGNvbnRlbnRzIHZhbmlzaCk6IHJlZ2lzdGVyczsgY2FjaGU7IFJBTQpQZXJzaXN0ZW50IChzdXJ2aXZlcyBwb3dlci1vZmYpOiBTU0Q7IEhERApSQU0gYW5kIGV2ZXJ5dGhpbmcgYWJvdmUgaXQgZm9yZ2V0IGF0IHBvd2VyLW9mZjsgU1NEIGFuZCBIREQgcGVyc2lzdC4KU2VlOiA8YSBocmVmPSIjc2VjLTAxLXZvbm5ldW1hbm4iPkluc2lkZSB0aGUgbWFjaGluZTogVm9uIE5ldW1hbm48L2E+Lg=="
+}
+</script>
+</div>
+```

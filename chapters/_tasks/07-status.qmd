@@ -1,0 +1,34 @@
+```{=html}
+<div class="tk-task">
+<script type="application/json">
+{
+ "type": "sort",
+ "title": "Status codes",
+ "prompt": "Sort the responses by their category - the first digit decides.",
+ "buckets": [
+  "Success (2xx)",
+  "Redirection (3xx)",
+  "Client error (4xx)",
+  "Server error (5xx)"
+ ],
+ "chips": [
+  "200 OK",
+  "301 Moved Permanently",
+  "404 Not Found",
+  "403 Forbidden",
+  "500 Internal Server Error",
+  "502 Bad Gateway"
+ ],
+ "key": [
+  362088868,
+  393560592,
+  1863559575,
+  2151311069,
+  2568242087,
+  3560405304
+ ],
+ "sol": "U3VjY2VzcyAoMnh4KTogMjAwIE9LClJlZGlyZWN0aW9uICgzeHgpOiAzMDEgTW92ZWQgUGVybWFuZW50bHkKQ2xpZW50IGVycm9yICg0eHgpOiA0MDQgTm90IEZvdW5kOyA0MDMgRm9yYmlkZGVuClNlcnZlciBlcnJvciAoNXh4KTogNTAwIEludGVybmFsIFNlcnZlciBFcnJvcjsgNTAyIEJhZCBHYXRld2F5CjJ4eCBzdWNjZXNzLCAzeHggcmVkaXJlY3Rpb24sIDR4eCBjbGllbnQgZXJyb3IsIDV4eCBzZXJ2ZXIgZXJyb3IuClNlZTogPGEgaHJlZj0iI3NlYy0wNy1odHRwIj5UaGUgd2ViIGFuZCBIVFRQPC9hPi4="
+}
+</script>
+</div>
+```

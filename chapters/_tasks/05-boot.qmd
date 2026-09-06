@@ -1,0 +1,24 @@
+```{=html}
+<div class="tk-task">
+<script type="application/json">
+{
+ "type": "order",
+ "title": "The boot chain",
+ "prompt": "Put the power-on hand-over in order.",
+ "chips": [
+  "Firmware (BIOS/UEFI) checks the hardware",
+  "The boot loader starts",
+  "The kernel is loaded into memory",
+  "The rest of the system starts, up to the login screen"
+ ],
+ "key": [
+  1440652397,
+  1521078655,
+  2485794173,
+  2933908068
+ ],
+ "sol": "MS4gRmlybXdhcmUgKEJJT1MvVUVGSSkgY2hlY2tzIHRoZSBoYXJkd2FyZQoyLiBUaGUgYm9vdCBsb2FkZXIgc3RhcnRzCjMuIFRoZSBrZXJuZWwgaXMgbG9hZGVkIGludG8gbWVtb3J5CjQuIFRoZSByZXN0IG9mIHRoZSBzeXN0ZW0gc3RhcnRzLCB1cCB0byB0aGUgbG9naW4gc2NyZWVuCkZpcm13YXJlIHN0YXJ0cyB0aGUgYm9vdCBsb2FkZXIsIHdoaWNoIGxvYWRzIHRoZSBrZXJuZWwsIHdoaWNoIHN0YXJ0cyB0aGUgc3lzdGVtLgpTZWU6IDxhIGhyZWY9IiNzZWMtMDUtdXNlcnMtdmlldyI+VGhlIHVzZXImI3gyNztzIHZpZXc8L2E+Lg=="
+}
+</script>
+</div>
+```

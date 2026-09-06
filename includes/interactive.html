@@ -1,0 +1,453 @@
+<!-- Interactive self-check engine, loaded on every HTML page via
+     include-after-body in _quarto.yml. Renders every div.tk-task whose
+     embedded JSON config describes one of three task types:
+       sort  - drag/tap chips into labelled category buckets
+       order - tap steps into their correct sequence
+       input - short answers typed into fields, checked on demand
+     Answers are compared via djb2 hashes of normalised strings, so the
+     correct answers never appear in plain text in the page source. Tasks
+     are generated from _interactive/make_tasks.py - edit and re-run that
+     script rather than the snippets under chapters/_tasks/. Everything
+     runs client-side: instant feedback, nothing recorded. -->
+<style>
+.tk-task {
+  --tk-border: #adb5bd;
+  --tk-chip-bg: #f1f3f5;
+  --tk-chip-border: #ced4da;
+  --tk-zone-bg: rgba(0, 0, 0, 0.02);
+  --tk-accent: #d81e2e;
+  --tk-ok: #2e7d32;
+  border: 1px solid var(--tk-border);
+  border-left: 4px solid var(--tk-accent);
+  border-radius: 6px;
+  padding: 1rem 1.1rem;
+  margin: 1.4rem 0;
+}
+body.quarto-dark .tk-task {
+  --tk-border: #495057;
+  --tk-chip-bg: #343a40;
+  --tk-chip-border: #495057;
+  --tk-zone-bg: rgba(255, 255, 255, 0.03);
+  --tk-ok: #81c784;
+}
+.tk-task > script { display: none; }
+.tk-prompt { margin: 0 0 0.8rem; }
+.tk-pool {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin-bottom: 0.9rem;
+  min-height: 2.2rem;
+}
+.tk-chip {
+  font: inherit;
+  font-size: 0.88em;
+  padding: 0.25rem 0.65rem;
+  border: 1px solid var(--tk-chip-border);
+  border-radius: 999px;
+  background: var(--tk-chip-bg);
+  color: inherit;
+  cursor: pointer;
+  text-align: left;
+}
+.tk-chip.tk-selected { outline: 2px solid var(--tk-accent); }
+.tk-chip.tk-wrong { border-color: var(--tk-accent); color: var(--tk-accent); }
+.tk-buckets {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  align-items: stretch;
+}
+.tk-buckets .tk-zone { flex: 1 1 10rem; min-width: 9rem; }
+.tk-slots { display: flex; flex-direction: column; gap: 0.45rem; }
+.tk-slots .tk-zone { display: flex; align-items: center; gap: 0.6rem; }
+.tk-zone-label { font-size: 0.85em; font-weight: 600; margin-bottom: 0.25rem; }
+.tk-slots .tk-zone-label {
+  margin-bottom: 0;
+  min-width: 1.4rem;
+  text-align: right;
+  color: var(--tk-border);
+}
+.tk-zone-drop {
+  border: 1.5px dashed var(--tk-border);
+  border-radius: 6px;
+  background: var(--tk-zone-bg);
+  min-height: 2.3rem;
+  padding: 0.3rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  align-content: flex-start;
+}
+.tk-slots .tk-zone-drop { flex: 1; min-height: 2.1rem; }
+.tk-zone-drop.tk-ok-zone { border-style: solid; border-color: var(--tk-ok); }
+.tk-fields { display: flex; flex-direction: column; gap: 0.55rem; margin-bottom: 0.8rem; }
+.tk-field { display: flex; flex-wrap: wrap; align-items: center; gap: 0.6rem; }
+.tk-field label { font-size: 0.92em; }
+.tk-field input {
+  font: inherit;
+  font-size: 0.92em;
+  font-family: var(--bs-font-monospace, monospace);
+  padding: 0.25rem 0.5rem;
+  border: 1.5px solid var(--tk-border);
+  border-radius: 4px;
+  background: transparent;
+  color: inherit;
+  width: 11rem;
+}
+.tk-field input.tk-ok-input { border-color: var(--tk-ok); }
+.tk-field input.tk-wrong-input { border-color: var(--tk-accent); }
+.tk-status { margin: 0.8rem 0 0.3rem; font-size: 0.92em; }
+.tk-status-ok { color: var(--tk-ok); font-weight: 600; }
+.tk-status-bad { color: var(--tk-accent); }
+.tk-btn {
+  font: inherit;
+  font-size: 0.85em;
+  padding: 0.2rem 0.7rem;
+  border: 1px solid var(--tk-border);
+  border-radius: 4px;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+  margin-right: 0.4rem;
+}
+.tk-spoiler { font-size: 0.82em; font-style: italic; opacity: 0.75; }
+.tk-solution {
+  margin-top: 0.6rem;
+  padding: 0.6rem 0.8rem;
+  border: 1px dashed var(--tk-border);
+  border-radius: 6px;
+  font-size: 0.9em;
+  white-space: pre-line;
+}
+.tk-circuit {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  margin: 0.9rem 0 1rem;
+}
+.tk-switches { display: flex; flex-direction: column; gap: 0.5rem; }
+.tk-switch {
+  font: inherit;
+  font-family: var(--bs-font-monospace, monospace);
+  font-size: 0.95em;
+  padding: 0.35rem 0.8rem;
+  border: 1.5px solid var(--tk-border);
+  border-radius: 6px;
+  background: var(--tk-chip-bg);
+  color: inherit;
+  cursor: pointer;
+}
+.tk-switch.tk-on { border-color: var(--tk-ok); font-weight: 700; }
+.tk-wire { font-size: 1.3em; opacity: 0.6; }
+.tk-gatebox {
+  min-width: 4.2rem;
+  min-height: 3.2rem;
+  border: 2px solid var(--tk-border);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4em;
+  font-weight: 700;
+}
+.tk-gatebox.tk-ok-zone { border-color: var(--tk-ok); color: var(--tk-ok); font-size: 1em; }
+.tk-lamp { font-size: 2em; filter: grayscale(1) opacity(0.45); transition: filter 0.15s; }
+.tk-lamp.tk-lit { filter: none; text-shadow: 0 0 14px rgba(255, 200, 40, 0.9); }
+</style>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  "use strict";
+  function djb2(s) {
+    var h = 5381;
+    for (var i = 0; i < s.length; i++) h = (Math.imul(h, 33) + s.charCodeAt(i)) >>> 0;
+    return h;
+  }
+  function norm(s) { return s.toLowerCase().replace(/\s+/g, ""); }
+  function shuffle(a) {
+    for (var i = a.length - 1; i > 0; i--) {
+      var j = Math.floor(Math.random() * (i + 1));
+      var t = a[i]; a[i] = a[j]; a[j] = t;
+    }
+    return a;
+  }
+  function el(tag, cls, text) {
+    var e = document.createElement(tag);
+    if (cls) e.className = cls;
+    if (text != null) e.textContent = text;
+    return e;
+  }
+  function b64utf8(s) {
+    return new TextDecoder().decode(
+      Uint8Array.from(atob(s), function (c) { return c.charCodeAt(0); }));
+  }
+  // "Show solution" button with a gentle spoiler warning.
+  function addSolution(root, cfg) {
+    if (!cfg.sol) return;
+    var btn = root.appendChild(el("button", "tk-btn", "Show solution"));
+    btn.type = "button";
+    var hint = root.appendChild(el("span", "tk-spoiler",
+      "- fair warning: clicking it straight away is no fun."));
+    var box = null;
+    btn.addEventListener("click", function () {
+      if (box) {
+        box.remove();
+        box = null;
+        btn.textContent = "Show solution";
+        hint.hidden = false;
+      } else {
+        box = root.appendChild(el("div", "tk-solution"));
+        // the decoded solution is generator-produced HTML: escaped
+        // answer lines plus a short explanation and a "See:" link
+        box.innerHTML = b64utf8(cfg.sol);
+        btn.textContent = "Hide solution";
+        hint.hidden = true;
+      }
+    });
+  }
+
+  // sort: labelled buckets, any number of chips each.
+  // order: numbered slots, exactly one chip each.
+  function buildPlacement(root, cfg) {
+    var isOrder = cfg.type === "order";
+    var keySet = {};
+    cfg.key.forEach(function (k) { keySet[k] = 1; });
+    var hint = isOrder
+      ? "Tap the items in order - the first step first. Tap a placed item to take it back."
+      : "Drag each term into a category - or tap a term, then tap a category. Tap a placed term to take it back.";
+    root.appendChild(el("p", "tk-prompt")).innerHTML =
+      "<strong>" + cfg.title + ".</strong> " + cfg.prompt + " <em>" + hint + "</em>";
+    var pool = root.appendChild(el("div", "tk-pool"));
+    var zonesWrap = root.appendChild(el("div", isOrder ? "tk-slots" : "tk-buckets"));
+    var status = el("p", "tk-status", "");
+    var selected = null;
+    var zones = [];
+
+    var labels = isOrder
+      ? cfg.chips.map(function (_, i) { return String(i + 1) + "."; })
+      : cfg.buckets;
+    labels.forEach(function (lab, i) {
+      var zone = zonesWrap.appendChild(el("div", "tk-zone"));
+      zone.appendChild(el("div", "tk-zone-label", lab));
+      var drop = zone.appendChild(el("div", "tk-zone-drop"));
+      drop.dataset.zone = i;
+      zones.push(drop);
+      drop.addEventListener("dragover", function (e) { if (accepts(drop)) e.preventDefault(); });
+      drop.addEventListener("drop", function (e) {
+        e.preventDefault();
+        var chip = findInPool(e.dataTransfer.getData("text/plain"));
+        if (chip && accepts(drop)) place(drop, chip);
+      });
+      // the whole zone (label included) is a click target; chip clicks
+      // stop propagation, so this only fires for "place here" intents
+      zone.addEventListener("click", function () {
+        if (selected && accepts(drop)) place(drop, selected);
+      });
+    });
+    root.appendChild(status);
+    var controls = root.appendChild(el("div"));
+    var reset = controls.appendChild(el("button", "tk-btn", "Reset"));
+    reset.type = "button";
+    reset.addEventListener("click", function () {
+      root.querySelectorAll(".tk-zone-drop .tk-chip").forEach(function (c) { pool.appendChild(c); });
+      root.querySelectorAll(".tk-chip").forEach(function (c) { c.classList.remove("tk-wrong", "tk-selected"); });
+      shuffle(Array.prototype.slice.call(pool.children)).forEach(function (c) { pool.appendChild(c); });
+      selected = null;
+      evaluate();
+    });
+
+    function accepts(drop) { return !isOrder || !drop.firstElementChild; }
+    function findInPool(text) {
+      return Array.prototype.find.call(pool.querySelectorAll(".tk-chip"), function (c) {
+        return c.textContent === text;
+      });
+    }
+    function select(chip) {
+      if (selected) selected.classList.remove("tk-selected");
+      selected = selected === chip ? null : chip;
+      if (selected) selected.classList.add("tk-selected");
+    }
+    function place(drop, chip) {
+      chip.classList.remove("tk-selected", "tk-wrong");
+      drop.appendChild(chip);
+      if (selected === chip) selected = null;
+      evaluate();
+    }
+    function firstFreeZone() {
+      return zones.find(function (z) { return !z.firstElementChild; });
+    }
+    function evaluate() {
+      zones.forEach(function (z) { z.classList.remove("tk-ok-zone"); });
+      var placed = 0;
+      zones.forEach(function (z) { placed += z.querySelectorAll(".tk-chip").length; });
+      if (placed < cfg.chips.length) {
+        status.className = "tk-status";
+        status.textContent = isOrder
+          ? "Build the full sequence - " + (cfg.chips.length - placed) + " to go."
+          : "Place every term - " + (cfg.chips.length - placed) + " to go.";
+        return;
+      }
+      var wrong = [];
+      zones.forEach(function (z, i) {
+        z.querySelectorAll(".tk-chip").forEach(function (c) {
+          if (!keySet[djb2(norm(c.textContent) + "|" + i)]) wrong.push(c);
+        });
+      });
+      if (wrong.length === 0) {
+        status.className = "tk-status tk-status-ok";
+        status.textContent = "✓ Correct!" + (cfg.done ? " " + cfg.done : "");
+        zones.forEach(function (z) { z.classList.add("tk-ok-zone"); });
+      } else {
+        wrong.forEach(function (c) { c.classList.add("tk-wrong"); });
+        status.className = "tk-status tk-status-bad";
+        status.textContent = "Not quite - the highlighted " +
+          (isOrder ? "items are in the wrong position." : "terms are in the wrong category.") +
+          " Tap them to take them back and try again.";
+      }
+    }
+
+    addSolution(controls, cfg);
+
+    shuffle(cfg.chips.slice()).forEach(function (term) {
+      var chip = pool.appendChild(el("button", "tk-chip", term));
+      chip.type = "button";
+      chip.draggable = !isOrder;
+      chip.addEventListener("dragstart", function (e) {
+        e.dataTransfer.setData("text/plain", term);
+        select(null);
+      });
+      chip.addEventListener("click", function (e) {
+        e.stopPropagation();
+        if (chip.parentElement.classList.contains("tk-zone-drop")) {
+          pool.appendChild(chip);
+          chip.classList.remove("tk-wrong");
+          evaluate();
+        } else if (isOrder) {
+          var z = firstFreeZone();
+          if (z) place(z, chip);
+        } else {
+          select(chip);
+        }
+      });
+    });
+    evaluate();
+  }
+
+  function buildInput(root, cfg) {
+    root.appendChild(el("p", "tk-prompt")).innerHTML =
+      "<strong>" + cfg.title + ".</strong> " + cfg.prompt;
+    var wrap = root.appendChild(el("div", "tk-fields"));
+    var status = el("p", "tk-status", "");
+    var inputs = cfg.fields.map(function (f) {
+      var row = wrap.appendChild(el("div", "tk-field"));
+      var input = el("input");
+      input.type = "text";
+      input.autocomplete = "off";
+      input.spellcheck = false;
+      var label = row.appendChild(el("label", null, f.label));
+      row.appendChild(input);
+      label.appendChild(document.createTextNode(""));
+      input.addEventListener("input", function () {
+        input.classList.remove("tk-ok-input", "tk-wrong-input");
+      });
+      input.addEventListener("keydown", function (e) { if (e.key === "Enter") check(); });
+      return { input: input, answers: f.answers };
+    });
+    var controls = root.appendChild(el("div"));
+    var btn = controls.appendChild(el("button", "tk-btn", "Check"));
+    btn.type = "button";
+    addSolution(controls, cfg);
+    root.appendChild(status);
+    function check() {
+      var allOk = true, empty = false;
+      inputs.forEach(function (f) {
+        var v = norm(f.input.value);
+        if (!v) { empty = true; allOk = false; f.input.classList.remove("tk-ok-input", "tk-wrong-input"); return; }
+        var ok = f.answers.indexOf(djb2(v)) !== -1;
+        f.input.classList.toggle("tk-ok-input", ok);
+        f.input.classList.toggle("tk-wrong-input", !ok);
+        if (!ok) allOk = false;
+      });
+      if (allOk) {
+        status.className = "tk-status tk-status-ok";
+        status.textContent = "✓ Correct!" + (cfg.done ? " " + cfg.done : "");
+      } else {
+        status.className = "tk-status tk-status-bad";
+        status.textContent = empty
+          ? "Fill in every field, then check again."
+          : "Not quite - the red fields need another look.";
+      }
+    }
+    btn.addEventListener("click", check);
+  }
+
+  // Mystery gate: two toggle switches drive a hidden gate (its truth
+  // table in cfg.tt, indexed A*2+B) that lights a lamp; the student
+  // experiments, then names the gate.
+  function buildGate(root, cfg) {
+    var keySet = {};
+    cfg.key.forEach(function (k) { keySet[k] = 1; });
+    root.appendChild(el("p", "tk-prompt")).innerHTML =
+      "<strong>" + cfg.title + ".</strong> " + cfg.prompt +
+      " <em>Flip the switches, watch the lamp - then name the gate " +
+      "hiding in the box.</em>";
+    var circuit = root.appendChild(el("div", "tk-circuit"));
+    var sw = circuit.appendChild(el("div", "tk-switches"));
+    var a = { v: 0 }, b = { v: 0 };
+    var btnA = sw.appendChild(el("button", "tk-switch", "A = 0"));
+    var btnB = sw.appendChild(el("button", "tk-switch", "B = 0"));
+    btnA.type = btnB.type = "button";
+    circuit.appendChild(el("span", "tk-wire", "⟶"));
+    var box = circuit.appendChild(el("div", "tk-gatebox", "?"));
+    circuit.appendChild(el("span", "tk-wire", "⟶"));
+    var lamp = circuit.appendChild(el("span", "tk-lamp", "💡"));
+    function update() {
+      btnA.textContent = "A = " + a.v;
+      btnB.textContent = "B = " + b.v;
+      btnA.classList.toggle("tk-on", a.v === 1);
+      btnB.classList.toggle("tk-on", b.v === 1);
+      lamp.classList.toggle("tk-lit", cfg.tt[a.v * 2 + b.v] === 1);
+    }
+    btnA.addEventListener("click", function () { a.v = 1 - a.v; update(); });
+    btnB.addEventListener("click", function () { b.v = 1 - b.v; update(); });
+    update();
+
+    var pool = root.appendChild(el("div", "tk-pool"));
+    var status = el("p", "tk-status", "Try all four switch combinations before you answer.");
+    var solved = false;
+    shuffle(cfg.options.slice()).forEach(function (name) {
+      var chip = pool.appendChild(el("button", "tk-chip", name));
+      chip.type = "button";
+      chip.addEventListener("click", function () {
+        if (solved) return;
+        if (keySet[djb2(norm(name) + "|gate")]) {
+          solved = true;
+          box.textContent = name;
+          box.classList.add("tk-ok-zone");
+          status.className = "tk-status tk-status-ok";
+          status.textContent = "✓ Correct!" + (cfg.done ? " " + cfg.done : "");
+          pool.querySelectorAll(".tk-chip").forEach(function (c) { c.classList.remove("tk-wrong"); });
+        } else {
+          chip.classList.add("tk-wrong");
+          status.className = "tk-status tk-status-bad";
+          status.textContent = "Not " + name + " - check the combination where the lamp surprises you.";
+        }
+      });
+    });
+    root.appendChild(status);
+    var controls = root.appendChild(el("div"));
+    addSolution(controls, cfg);
+  }
+
+  document.querySelectorAll(".tk-task").forEach(function (root) {
+    var cfgEl = root.querySelector('script[type="application/json"]');
+    if (!cfgEl) return;
+    var cfg;
+    try { cfg = JSON.parse(cfgEl.textContent); } catch (e) { return; }
+    if (cfg.type === "sort" || cfg.type === "order") buildPlacement(root, cfg);
+    else if (cfg.type === "input") buildInput(root, cfg);
+    else if (cfg.type === "gate") buildGate(root, cfg);
+  });
+});
+</script>

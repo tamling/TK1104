@@ -1,0 +1,43 @@
+```{=html}
+<div class="tk-task">
+<script type="application/json">
+{
+ "type": "sort",
+ "title": "Keyword to layer",
+ "prompt": "Sort each keyword into the layer where it lives.",
+ "buckets": [
+  "Application",
+  "Transport",
+  "Network",
+  "Link",
+  "Physical"
+ ],
+ "chips": [
+  "HTTP",
+  "DNS",
+  "port number",
+  "TCP",
+  "IP address",
+  "routing",
+  "MAC address",
+  "ARP",
+  "fibre cable",
+  "radio signal"
+ ],
+ "key": [
+  49031473,
+  253409495,
+  256826774,
+  275402937,
+  1081851522,
+  2259713211,
+  3630617707,
+  3695405684,
+  3816181120,
+  4076740146
+ ],
+ "sol": "QXBwbGljYXRpb246IEhUVFA7IEROUwpUcmFuc3BvcnQ6IHBvcnQgbnVtYmVyOyBUQ1AKTmV0d29yazogSVAgYWRkcmVzczsgcm91dGluZwpMaW5rOiBNQUMgYWRkcmVzczsgQVJQClBoeXNpY2FsOiBmaWJyZSBjYWJsZTsgcmFkaW8gc2lnbmFsCkVhY2gga2V5d29yZCBsaXZlcyBhdCBleGFjdGx5IG9uZSBsYXllciBvZiB0aGUgZml2ZS1sYXllciBzdGFjay4KU2VlOiA8YSBocmVmPSIjc2VjLTExLWJsb2NrMyI+QmxvY2sgMzogVGhlIGludGVybmV0IGFuZCB0aGUgYXBwbGljYXRpb24gbGF5ZXI8L2E+Lg=="
+}
+</script>
+</div>
+```

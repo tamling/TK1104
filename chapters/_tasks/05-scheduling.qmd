@@ -1,0 +1,31 @@
+```{=html}
+<div class="tk-task">
+<script type="application/json">
+{
+ "type": "sort",
+ "title": "Scheduling strategies",
+ "prompt": "Match each statement to the strategy it describes.",
+ "buckets": [
+  "Round-robin",
+  "First-come-first-served",
+  "Priority"
+ ],
+ "chips": [
+  "a fixed time slice for each process, in turn",
+  "the workhorse of interactive systems",
+  "processes run in arrival order",
+  "one long job delays all the rest",
+  "the important processes first"
+ ],
+ "key": [
+  1239039618,
+  2209614177,
+  2854516953,
+  3095461700,
+  3593436785
+ ],
+ "sol": "Um91bmQtcm9iaW46IGEgZml4ZWQgdGltZSBzbGljZSBmb3IgZWFjaCBwcm9jZXNzLCBpbiB0dXJuOyB0aGUgd29ya2hvcnNlIG9mIGludGVyYWN0aXZlIHN5c3RlbXMKRmlyc3QtY29tZS1maXJzdC1zZXJ2ZWQ6IHByb2Nlc3NlcyBydW4gaW4gYXJyaXZhbCBvcmRlcjsgb25lIGxvbmcgam9iIGRlbGF5cyBhbGwgdGhlIHJlc3QKUHJpb3JpdHk6IHRoZSBpbXBvcnRhbnQgcHJvY2Vzc2VzIGZpcnN0ClJvdW5kLXJvYmluIHNsaWNlcyB0aW1lOyBGQ0ZTIHF1ZXVlcyBieSBhcnJpdmFsOyBwcmlvcml0eSBydW5zIHRoZSBpbXBvcnRhbnQgZmlyc3QuClNlZTogPGEgaHJlZj0iI3NlYy0wNS1wcm9jZXNzZXMiPlByb2Nlc3NlcyBhbmQgc2NoZWR1bGluZzwvYT4u"
+}
+</script>
+</div>
+```

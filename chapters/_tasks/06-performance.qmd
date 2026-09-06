@@ -1,0 +1,32 @@
+```{=html}
+<div class="tk-task">
+<script type="application/json">
+{
+ "type": "input",
+ "title": "Three numbers of a connection",
+ "prompt": "Name the performance measure each phrase describes.",
+ "fields": [
+  {
+   "label": "The pipe's width - the maximum rate a link could carry:",
+   "answers": [
+    337649818
+   ]
+  },
+  {
+   "label": "What you actually get, after overhead and sharing:",
+   "answers": [
+    189075295
+   ]
+  },
+  {
+   "label": "The delay there and back - what ping reports (abbrev.):",
+   "answers": [
+    193505087
+   ]
+  }
+ ],
+ "sol": "VGhlIHBpcGUmI3gyNztzIHdpZHRoIC0gdGhlIG1heGltdW0gcmF0ZSBhIGxpbmsgY291bGQgY2Fycnk6IGJhbmR3aWR0aApXaGF0IHlvdSBhY3R1YWxseSBnZXQsIGFmdGVyIG92ZXJoZWFkIGFuZCBzaGFyaW5nOiB0aHJvdWdocHV0ClRoZSBkZWxheSB0aGVyZSBhbmQgYmFjayAtIHdoYXQgcGluZyByZXBvcnRzIChhYmJyZXYuKTogUlRUCkJhbmR3aWR0aCBpcyB0aGUgcGlwZSYjeDI3O3Mgd2lkdGgsIHRocm91Z2hwdXQgd2hhdCB5b3UgZ2V0LCBsYXRlbmN5IHRoZSBkZWxheSAtIFJUVCBpcyB0aGVyZSBhbmQgYmFjay4KU2VlOiA8YSBocmVmPSIjc2VjLTA2LWxheWVycyI+TGF5ZXJlZCBtb2RlbHM8L2E+Lg=="
+}
+</script>
+</div>
+```

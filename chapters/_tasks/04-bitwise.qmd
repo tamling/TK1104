@@ -1,0 +1,27 @@
+```{=html}
+<div class="tk-task">
+<script type="application/json">
+{
+ "type": "input",
+ "title": "Bitwise, by hand",
+ "prompt": "Apply the operations column by column - no carries.",
+ "fields": [
+  {
+   "label": "1100 AND 1010:",
+   "answers": [
+    2088288422
+   ]
+  },
+  {
+   "label": "1100 XOR 1010:",
+   "answers": [
+    193432023,
+    2088253607
+   ]
+  }
+ ],
+ "sol": "MTEwMCBBTkQgMTAxMDogMTAwMAoxMTAwIFhPUiAxMDEwOiAwMTEwCkFORCBrZWVwcyBvbmx5IHNoYXJlZCAxczsgWE9SIGtlZXBzIHRoZSBwb3NpdGlvbnMgd2hlcmUgdGhlIGlucHV0cyBkaWZmZXIuClNlZTogPGEgaHJlZj0iI3NlYy0wNC1nYXRlcyI+RnJvbSB0aGUgc3dpdGNoIHRvIHRoZSBnYXRlPC9hPi4="
+}
+</script>
+</div>
+```

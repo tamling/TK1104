@@ -1,0 +1,33 @@
+```{=html}
+<div class="tk-task">
+<script type="application/json">
+{
+ "type": "input",
+ "title": "The small family of units",
+ "prompt": "Three numbers everyone in this course knows cold.",
+ "fields": [
+  {
+   "label": "Bits in one byte:",
+   "answers": [
+    177629,
+    257819350
+   ]
+  },
+  {
+   "label": "Distinct values of one byte:",
+   "answers": [
+    193433250
+   ]
+  },
+  {
+   "label": "Word size of a modern PC, in bits:",
+   "answers": [
+    5861743
+   ]
+  }
+ ],
+ "sol": "Qml0cyBpbiBvbmUgYnl0ZTogOApEaXN0aW5jdCB2YWx1ZXMgb2Ygb25lIGJ5dGU6IDI1NgpXb3JkIHNpemUgb2YgYSBtb2Rlcm4gUEMsIGluIGJpdHM6IDY0CjggYml0cyBtYWtlIGEgYnl0ZSwgMuKBuCA9IDI1NiB2YWx1ZXM7IG1vZGVybiBtYWNoaW5lcyB1c2UgNjQtYml0IHdvcmRzLgpTZWU6IDxhIGhyZWY9IiNkZWYtYml0Ij5EZWZpbml0aW9uIOKAnEJpdCwgYnl0ZSwgd29yZOKAnTwvYT4u"
+}
+</script>
+</div>
+```

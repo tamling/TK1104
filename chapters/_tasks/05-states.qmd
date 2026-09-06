@@ -1,0 +1,31 @@
+```{=html}
+<div class="tk-task">
+<script type="application/json">
+{
+ "type": "sort",
+ "title": "Name the state",
+ "prompt": "Classify each situation as running, ready or blocked.",
+ "buckets": [
+  "Running",
+  "Ready",
+  "Blocked"
+ ],
+ "chips": [
+  "crunching frames on core 3 right now",
+  "runnable, but all cores are busy",
+  "time slice just ended, queued again",
+  "waiting for a disk read to finish",
+  "waiting for data from the network card"
+ ],
+ "key": [
+  127730640,
+  544804697,
+  1120633760,
+  2660357307,
+  3453523884
+ ],
+ "sol": "UnVubmluZzogY3J1bmNoaW5nIGZyYW1lcyBvbiBjb3JlIDMgcmlnaHQgbm93ClJlYWR5OiBydW5uYWJsZSwgYnV0IGFsbCBjb3JlcyBhcmUgYnVzeTsgdGltZSBzbGljZSBqdXN0IGVuZGVkLCBxdWV1ZWQgYWdhaW4KQmxvY2tlZDogd2FpdGluZyBmb3IgYSBkaXNrIHJlYWQgdG8gZmluaXNoOyB3YWl0aW5nIGZvciBkYXRhIGZyb20gdGhlIG5ldHdvcmsgY2FyZApSdW5uaW5nIGhvbGRzIGEgY29yZTsgcmVhZHkgd2FpdHMgZm9yIHRoZSBzY2hlZHVsZXI7IGJsb2NrZWQgd2FpdHMgZm9yIEkvTy4KU2VlOiA8YSBocmVmPSIjc2VjLTA1LXByb2Nlc3NlcyI+UHJvY2Vzc2VzIGFuZCBzY2hlZHVsaW5nPC9hPi4="
+}
+</script>
+</div>
+```

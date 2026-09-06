@@ -1,0 +1,27 @@
+```{=html}
+<div class="tk-task">
+<script type="application/json">
+{
+ "type": "input",
+ "title": "One byte, your call",
+ "prompt": "Read the byte <code>01001010</code> two ways, exactly as in the worked exercise.",
+ "fields": [
+  {
+   "label": "As an unsigned integer:",
+   "answers": [
+    5861776
+   ]
+  },
+  {
+   "label": "As an ASCII character:",
+   "answers": [
+    177679
+   ]
+  }
+ ],
+ "done": "Same bits, two readings - the convention decides.",
+ "sol": "QXMgYW4gdW5zaWduZWQgaW50ZWdlcjogNzQKQXMgYW4gQVNDSUkgY2hhcmFjdGVyOiBKClRoZSBiaXRzIG5ldmVyIGNoYW5nZTsgdGhlIHJlYWRpbmcgY29udmVudGlvbiBhc3NpZ25zIHRoZSBtZWFuaW5nLgpTZWU6IDxhIGhyZWY9IiNleG0tYnl0ZTN3YXlzIj5FeGFtcGxlIOKAnE9uZSBieXRlLCB0aHJlZSBtZWFuaW5nc+KAnTwvYT4u"
+}
+</script>
+</div>
+```

@@ -1,0 +1,30 @@
+```{=html}
+<div class="tk-task">
+<script type="application/json">
+{
+ "type": "sort",
+ "title": "Flow or congestion control?",
+ "prompt": "Two different protections - sort the statements.",
+ "buckets": [
+  "Flow control",
+  "Congestion control"
+ ],
+ "chips": [
+  "protects the receiver's buffer",
+  "reacts to the advertised window",
+  "protects the network's shared links",
+  "reacts to packet loss",
+  "slow start and the sawtooth"
+ ],
+ "key": [
+  57094223,
+  291765074,
+  1507956378,
+  3365975312,
+  3833506339
+ ],
+ "sol": "RmxvdyBjb250cm9sOiBwcm90ZWN0cyB0aGUgcmVjZWl2ZXImI3gyNztzIGJ1ZmZlcjsgcmVhY3RzIHRvIHRoZSBhZHZlcnRpc2VkIHdpbmRvdwpDb25nZXN0aW9uIGNvbnRyb2w6IHByb3RlY3RzIHRoZSBuZXR3b3JrJiN4Mjc7cyBzaGFyZWQgbGlua3M7IHJlYWN0cyB0byBwYWNrZXQgbG9zczsgc2xvdyBzdGFydCBhbmQgdGhlIHNhd3Rvb3RoCkZsb3cgY29udHJvbCBwcm90ZWN0cyB0aGUgcmVjZWl2ZXI7IGNvbmdlc3Rpb24gY29udHJvbCBwcm90ZWN0cyB0aGUgbmV0d29yay4KU2VlOiA8YSBocmVmPSIjc2VjLTA4LWNvbmdlc3Rpb24iPkNvbmdlc3Rpb24sIGZhaXJuZXNzLCBhbmQgUVVJQzwvYT4u"
+}
+</script>
+</div>
+```
