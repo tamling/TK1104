@@ -1,9 +1,11 @@
 <!-- Customised StatiCrypt template (base: staticrypt 3.5.4
-     lib/password_template.html). Changes against the original:
-       1. the "Remember me" checkbox is pre-checked, so students type the
-          password once and every later page auto-decrypts;
-       2. decryption-on-load starts immediately instead of on
-          window.onload, shortening the flash between pages.
+     lib/password_template.html). Single change against the original:
+     the "Remember me" checkbox is pre-checked, so students type the
+     password once and every later page auto-decrypts. The decrypt-on-
+     load flow is deliberately kept on window.onload exactly as
+     upstream: document.write only replaces the page reliably after the
+     shell has fully loaded (running earlier left the spinner shell in
+     place with the content appended below it).
      Used by .github/workflows/publish.yml via --template. -->
 <!DOCTYPE html>
 <html class="staticrypt-html">
@@ -246,7 +248,7 @@
             const staticrypt = staticryptInitiator.init(staticryptConfig, templateConfig);
 
             // try to automatically decrypt on load if there is a saved password
-            (async function () {
+            window.onload = async function () {
                 const { isSuccessful } = await staticrypt.handleDecryptOnLoad();
 
                 // if we didn't decrypt anything on load, show the password prompt. Otherwise the content has already been
@@ -262,7 +264,7 @@
                         document.getElementById("staticrypt-remember-label").classList.remove("hidden");
                     }
                 }
-            })();
+            };
 
             // toggle password visibility
             const toggleIcon = document.querySelector(".staticrypt-toggle-password-visibility");
