@@ -3,15 +3,19 @@ project:
   output-dir: _site
 
 # ── Annotations (Hypothesis) ─────────────────────────────────────────────
-# Same setup as the SKY2100 script: ON by default — every HTML page loads
+# Same setup as the SKY2100 script: ON by default - every HTML page loads
 # the Hypothesis client (see includes/hypothesis.html) so students can
 # annotate directly. Set to false (and drop include-in-header below) to
 # switch the layer off again.
 annotations: true
 
 book:
-  title: "TK1104 — Digital Technology"
-  subtitle: "Lecture script — a companion to the twelve lectures"
+  title: "TK1104 - Digital Technology"
+  # Search is off on purpose: the published site is password-protected
+  # (StatiCrypt in .github/workflows/publish.yml), and the search index
+  # (search.json) would otherwise carry the full text in plain text.
+  search: false
+  subtitle: "Lecture script - a companion to the twelve lectures"
   author: "Timo Amling"
   chapters:
     - index.qmd
@@ -44,5 +48,5 @@ format:
     include-in-header: includes/hypothesis.html
     # Interactive self-check engine (sort / order / input tasks): loaded
     # on every page; the tasks themselves are generated snippets under
-    # chapters/_tasks/ — see _interactive/make_tasks.py.
+    # chapters/_tasks/ - see _interactive/make_tasks.py.
     include-after-body: includes/interactive.html
