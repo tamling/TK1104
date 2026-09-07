@@ -183,7 +183,7 @@ body.quarto-dark .tk-task {
 .tk-score { font-size: 1.05em; font-weight: 700; margin: 1rem 0 0.4rem; }
 </style>
 <script>
-document.addEventListener("DOMContentLoaded", function () {
+(function () {
   "use strict";
   function djb2(s) {
     var h = 5381;
@@ -551,15 +551,26 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  document.querySelectorAll(".tk-task").forEach(function (root) {
-    var cfgEl = root.querySelector('script[type="application/json"]');
-    if (!cfgEl) return;
-    var cfg;
-    try { cfg = JSON.parse(cfgEl.textContent); } catch (e) { return; }
-    if (cfg.type === "sort" || cfg.type === "order") buildPlacement(root, cfg);
-    else if (cfg.type === "input") buildInput(root, cfg);
-    else if (cfg.type === "gate") buildGate(root, cfg);
-    else if (cfg.type === "quiz") buildQuiz(root, cfg);
-  });
-});
+  function initAll() {
+    document.querySelectorAll(".tk-task:not([data-tk-init])").forEach(function (root) {
+      var cfgEl = root.querySelector('script[type="application/json"]');
+      if (!cfgEl) return;
+      var cfg;
+      try { cfg = JSON.parse(cfgEl.textContent); } catch (e) { return; }
+      root.setAttribute("data-tk-init", "1");
+      if (cfg.type === "sort" || cfg.type === "order") buildPlacement(root, cfg);
+      else if (cfg.type === "input") buildInput(root, cfg);
+      else if (cfg.type === "gate") buildGate(root, cfg);
+      else if (cfg.type === "quiz") buildQuiz(root, cfg);
+    });
+  }
+  // This script sits at the end of the body, so the tasks above are
+  // already parsed: initialise immediately instead of waiting for
+  // DOMContentLoaded, which slow external scripts (or the StatiCrypt
+  // decrypt path) can delay by seconds - leaving visible but dead
+  // widgets. The listener is only a safety net for anything injected
+  // later; data-tk-init prevents double initialisation.
+  initAll();
+  document.addEventListener("DOMContentLoaded", initAll);
+})();
 </script>

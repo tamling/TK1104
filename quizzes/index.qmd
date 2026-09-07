@@ -1,0 +1,19 @@
+# Session quizzes {.unnumbered}
+
+One quiz per session, in the exam's own format: Eight questions,
+four options each, exactly one correct. Graded in your browser -
+nothing is recorded - with explanations and links back into the
+script. As in the exam, there is no penalty for guessing: Answer
+everything.
+
+* [Quiz 1 - Everything is bits](quiz-01.qmd)
+* [Quiz 2 - Binary, hex and two's complement](quiz-02.qmd)
+* [Quiz 3 - Text and multimedia](quiz-03.qmd)
+* [Quiz 4 - How the machine computes](quiz-04.qmd)
+* [Quiz 5 - Operating systems](quiz-05.qmd)
+* [Quiz 6 - The Internet](quiz-06.qmd)
+* [Quiz 7 - The application layer](quiz-07.qmd)
+* [Quiz 8 - The transport layer](quiz-08.qmd)
+* [Quiz 9 - The network layer](quiz-09.qmd)
+* [Quiz 10 - The link layer](quiz-10.qmd)
+* [Quiz 11 - Repetition - the whole course](quiz-11.qmd)
