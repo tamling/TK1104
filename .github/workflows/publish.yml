@@ -39,7 +39,8 @@ jobs:
           rm -f _site/search.json
           find _site -name '*.html' | while read -r f; do
             staticrypt "$f" -d "$(dirname "$f")" -p "$STATICRYPT_PASSWORD" \
-              --short --remember 30 \
+              --short --remember 365 \
+              --template _interactive/staticrypt_template.html \
               --template-title "TK1104 - Course Script" \
               --template-instructions "This course script is for TK1104 students. Enter the password from Canvas." \
               --template-button "Open the script" \
