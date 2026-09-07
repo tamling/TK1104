@@ -53,17 +53,17 @@ answers get an explanation and a link into the script.
    "sol": "MSBmb3IgMDEgYW5kIDEwLCAwIGZvciAwMCBhbmQgMTEuClNlZTogPGEgaHJlZj0iLi4vY2hhcHRlcnMvMTEtcmVwZXRpdGlvbi5odG1sI3NlYy0xMS1ibG9jazIiPkJsb2NrIDI6IExvZ2ljIGFuZCB0aGUgY29tcHV0ZXI8L2E+Lg=="
   },
   {
-   "q": "What is $0001\\,1010_2$ in decimal?",
+   "q": "What is 1010₂ in decimal?",
    "options": [
-    "26",
-    "24",
-    "28",
-    "32"
+    "10",
+    "8",
+    "12",
+    "5"
    ],
    "key": [
-    195527693
+    194126150
    ],
-   "sol": "MTYgKyA4ICsgMiA9IDI2LgpTZWU6IDxhIGhyZWY9Ii4uL2NoYXB0ZXJzLzExLXJlcGV0aXRpb24uaHRtbCNzZWMtMTEtYmxvY2sxIj5CbG9jayAxOiBEYXRhIGFuZCBudW1iZXJzPC9hPi4="
+   "sol": "OCArIDIgPSAxMC4KU2VlOiA8YSBocmVmPSIuLi9jaGFwdGVycy8xMS1yZXBldGl0aW9uLmh0bWwjc2VjLTExLWJsb2NrMSI+QmxvY2sgMTogRGF0YSBhbmQgbnVtYmVyczwvYT4u"
   },
   {
    "q": "ARP is used to find a node's ___ when you know its ___:",
