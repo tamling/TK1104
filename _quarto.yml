@@ -1,6 +1,11 @@
 project:
   type: book
   output-dir: _site
+  # Ship the vendored KaTeX (assets/katex/) with the site and rewrite
+  # the CDN references to it after rendering - see the script's docstring.
+  resources:
+    - assets/katex
+  post-render: _interactive/localize_katex.py
 
 # ── Annotations (Hypothesis) ─────────────────────────────────────────────
 # Same setup as the SKY2100 script: ON by default - every HTML page loads
@@ -61,7 +66,10 @@ format:
       dark: [darkly, theme.scss, theme-dark.scss]
     toc: true
     number-sections: true
-    include-in-header: includes/hypothesis.html
+    # KaTeX instead of the default MathJax: ~6x smaller and far cheaper
+    # to execute - MathJax's full bundle re-ran on every page behind the
+    # password gate and delayed interactivity by seconds.
+    html-math-method: katex
     # Interactive self-check engine (sort / order / input tasks): loaded
     # on every page; the tasks themselves are generated snippets under
     # chapters/_tasks/ - see _interactive/make_tasks.py.
