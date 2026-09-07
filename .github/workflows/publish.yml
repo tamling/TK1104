@@ -33,7 +33,7 @@ jobs:
       # secret named STATICRYPT_PASSWORD - it overrides the default below.
       - name: Password-protect site
         env:
-          STATICRYPT_PASSWORD: ${{ secrets.STATICRYPT_PASSWORD || 'tk1104-everything-is-bits' }}
+          STATICRYPT_PASSWORD: ${{ secrets.STATICRYPT_PASSWORD || 'TK1104-2026' }}
         run: |
           npm install -g staticrypt
           rm -f _site/search.json
