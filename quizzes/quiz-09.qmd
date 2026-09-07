@@ -1,0 +1,123 @@
+# Quiz 9 - The network layer {.unnumbered}
+
+Eight questions on Session 9, in the exam's own format:
+Four options, exactly one correct. As in the exam, there is no
+penalty for guessing - answer everything, then grade. Wrong
+answers get an explanation and a link into the script.
+
+```{=html}
+<div class="tk-task">
+<script type="application/json">
+{
+ "type": "quiz",
+ "title": "Quiz 9",
+ "questions": [
+  {
+   "q": "Forwarding, as opposed to routing, is:",
+   "options": [
+    "The per-packet data-plane action inside a router",
+    "The background computation of paths",
+    "A DNS lookup",
+    "An application-layer protocol"
+   ],
+   "key": [
+    2102101442
+   ],
+   "sol": "Rm9yd2FyZGluZyBtb3ZlcyBlYWNoIHBhY2tldCBpbiBuYW5vc2Vjb25kczsgcm91dGluZyBmaWxscyB0aGUgdGFibGVzIGJlaGluZCBpdC4KU2VlOiA8YSBocmVmPSIuLi9jaGFwdGVycy8wOS10aGUtbmV0d29yay1sYXllci5odG1sI2RlZi1mb3J3YXJkaW5nIj5EZWZpbml0aW9uIOKAnEZvcndhcmRpbmcgYW5kIHJvdXRpbmfigJ08L2E+Lg=="
+  },
+  {
+   "q": "How much of the path does a single router know?",
+   "options": [
+    "Only the next hop towards the destination",
+    "The complete path",
+    "The last three hops",
+    "Nothing at all"
+   ],
+   "key": [
+    1887125235
+   ],
+   "sol": "RWFjaCBmb3J3YXJkaW5nIHRhYmxlIG5hbWVzIG9ubHkgdGhlIG5leHQgaG9wIC0gYW5kIHRoYXQgaXMgZW5vdWdoLgpTZWU6IDxhIGhyZWY9Ii4uL2NoYXB0ZXJzLzA5LXRoZS1uZXR3b3JrLWxheWVyLmh0bWwjc2VjLTA5LXJvdXRpbmciPlJvdXRpbmcgcGFja2V0cywgaG9wIGJ5IGhvcDwvYT4u"
+  },
+  {
+   "q": "The TTL field:",
+   "options": [
+    "Drops by one per router; the packet is discarded at zero",
+    "Counts the packet's bytes",
+    "Encrypts the payload",
+    "Names the destination port"
+   ],
+   "key": [
+    958737209
+   ],
+   "sol": "QSBsb29wIHNhZmVndWFyZCAtIGFuZCwgZGVsaWJlcmF0ZWx5IGV4cGlyZWQsIHRoZSB0cmljayBiZWhpbmQgdHJhY2Vyb3V0ZS4KU2VlOiA8YSBocmVmPSIuLi9jaGFwdGVycy8wOS10aGUtbmV0d29yay1sYXllci5odG1sI3NlYy0wOS1yb3V0aW5nIj5Sb3V0aW5nIHBhY2tldHMsIGhvcCBieSBob3A8L2E+Lg=="
+  },
+  {
+   "q": "An IPv4 address is:",
+   "options": [
+    "32 bits, written as four decimal bytes",
+    "48 bits, written in hex",
+    "128 bits, written in hex groups",
+    "64 bits, written in octal"
+   ],
+   "key": [
+    2681279163
+   ],
+   "sol": "Rm91ciBvY3RldHMgb2YgMC0yNTUgLSB3aGljaCBpcyB3aHkgYW4gb2N0ZXQgc3RvcHMgYXQgMjU1OiBpdCBpcyBvbmUgYnl0ZS4KU2VlOiA8YSBocmVmPSIuLi9jaGFwdGVycy8wOS10aGUtbmV0d29yay1sYXllci5odG1sI2RlZi1pcHY0Ij5EZWZpbml0aW9uIOKAnElQdjQgYWRkcmVzc+KAnTwvYT4u"
+  },
+  {
+   "q": "Addresses like <code>192.168.1.7</code> are:",
+   "options": [
+    "Private - used inside a LAN, not routable on the internet",
+    "Reserved for governments",
+    "IPv6 addresses",
+    "Broadcast addresses"
+   ],
+   "key": [
+    3542251769
+   ],
+   "sol": "Um91dGVycyBkcm9wIHRoZW07IE5BVCBpcyB3aGF0IGxldHMgc3VjaCBkZXZpY2VzIHJlYWNoIHRoZSB3b3JsZC4KU2VlOiA8YSBocmVmPSIuLi9jaGFwdGVycy8wOS10aGUtbmV0d29yay1sYXllci5odG1sI3NlYy0wOS1pcCI+SVAgYWRkcmVzc2VzPC9hPi4="
+  },
+  {
+   "q": "A /24 network has how many usable host addresses?",
+   "options": [
+    "254",
+    "256",
+    "255",
+    "128"
+   ],
+   "key": [
+    2153687266
+   ],
+   "sol": "MuKBuCA9IDI1NiBhZGRyZXNzZXMgbWludXMgdGhlIG5ldHdvcmsgYW5kIGJyb2FkY2FzdCBhZGRyZXNzZXMuClNlZTogPGEgaHJlZj0iLi4vY2hhcHRlcnMvMDktdGhlLW5ldHdvcmstbGF5ZXIuaHRtbCNzZWMtMDktY2lkciI+U3VibmV0cyBhbmQgQ0lEUjwvYT4u"
+  },
+  {
+   "q": "DHCP's first step is a broadcast because:",
+   "options": [
+    "The client has no IP address yet and cannot address anyone",
+    "Broadcasts are faster",
+    "The server's name is secret",
+    "It is more secure"
+   ],
+   "key": [
+    3711076056
+   ],
+   "sol": "RGlzY292ZXIsIE9mZmVyLCBSZXF1ZXN0LCBBY2tub3dsZWRnZSAtIGFuZCBEaXNjb3ZlciBtdXN0IHNob3V0IHRvIHRoZSB3aG9sZSBMQU4uClNlZTogPGEgaHJlZj0iLi4vY2hhcHRlcnMvMDktdGhlLW5ldHdvcmstbGF5ZXIuaHRtbCNzZWMtMDktZGlhZyI+R2V0dGluZyBhbiBhZGRyZXNzLCBhbmQgcmVhZGluZyB0aGUgbmV0d29yazwvYT4u"
+  },
+  {
+   "q": "<code>traceroute</code> discovers routers by:",
+   "options": [
+    "Sending packets whose TTL expires on purpose, one hop at a time",
+    "Asking each router politely",
+    "Reading a global map",
+    "Scanning all ports"
+   ],
+   "key": [
+    2747705819
+   ],
+   "sol": "RWFjaCBleHBpcnkgcmV0dXJucyBJQ01QIOKAnHRpbWUgZXhjZWVkZWTigJ0gLSByZXZlYWxpbmcgdGhhdCByb3V0ZXImI3gyNztzIGFkZHJlc3MuClNlZTogPGEgaHJlZj0iLi4vY2hhcHRlcnMvMDktdGhlLW5ldHdvcmstbGF5ZXIuaHRtbCNleG0tdHJhY2Vyb3V0ZSI+RXhhbXBsZSDigJxIb3cgdHJhY2Vyb3V0ZSByZWFsbHkgd29ya3PigJ08L2E+Lg=="
+  }
+ ]
+}
+</script>
+</div>
+```

@@ -1,0 +1,123 @@
+# Quiz 10 - The link layer {.unnumbered}
+
+Eight questions on Session 10, in the exam's own format:
+Four options, exactly one correct. As in the exam, there is no
+penalty for guessing - answer everything, then grade. Wrong
+answers get an explanation and a link into the script.
+
+```{=html}
+<div class="tk-task">
+<script type="application/json">
+{
+ "type": "quiz",
+ "title": "Quiz 10",
+ "questions": [
+  {
+   "q": "The scope of a MAC address is:",
+   "options": [
+    "One local link only",
+    "The whole internet",
+    "One country",
+    "One ISP"
+   ],
+   "key": [
+    3608347423
+   ],
+   "sol": "RmxhdCBhbmQgbG9jYWwgLSB1bmxpa2UgdGhlIGhpZXJhcmNoaWNhbCwgZW5kLXRvLWVuZCBJUCBhZGRyZXNzLgpTZWU6IDxhIGhyZWY9Ii4uL2NoYXB0ZXJzLzEwLXRoZS1saW5rLWxheWVyLmh0bWwjZGVmLW1hYyI+RGVmaW5pdGlvbiDigJxNQUMgYWRkcmVzc+KAnTwvYT4u"
+  },
+  {
+   "q": "Over a four-link path, the packet's IP addresses change:",
+   "options": [
+    "Never - while the MAC pair changes on every hop",
+    "On every hop",
+    "Twice",
+    "Once, at the middle router"
+   ],
+   "key": [
+    1174696015
+   ],
+   "sol": "SVAgaXMgZW5kLXRvLWVuZDsgdGhlIGZyYW1lJiN4Mjc7cyBNQUMgcGFpciBpcyByZW5ld2VkIGxpbmsgYnkgbGluay4KU2VlOiA8YSBocmVmPSIuLi9jaGFwdGVycy8xMC10aGUtbGluay1sYXllci5odG1sI3NlYy0xMC1hcnAiPkxpbmsgYWRkcmVzc2VzIGFuZCBBUlA8L2E+Lg=="
+  },
+  {
+   "q": "ARP answers the question:",
+   "options": [
+    "Which MAC address belongs to this neighbour's IP?",
+    "Which IP belongs to this domain name?",
+    "Which port is open on this server?",
+    "Which route leads to this network?"
+   ],
+   "key": [
+    1769187176
+   ],
+   "sol": "QnJvYWRjYXN0IHRoZSBxdWVzdGlvbjsgb25seSB0aGUgb3duZXIgcmVwbGllczsgY2FjaGUgdGhlIGFuc3dlci4KU2VlOiA8YSBocmVmPSIuLi9jaGFwdGVycy8xMC10aGUtbGluay1sYXllci5odG1sI2RlZi1hcnAiPkRlZmluaXRpb24g4oCcQVJQ4oCdPC9hPi4="
+  },
+  {
+   "q": "Wi-Fi uses collision <em>avoidance</em> (CSMA/CA) because:",
+   "options": [
+    "A radio cannot listen while it transmits",
+    "Wi-Fi is faster than Ethernet",
+    "The air has no capacity limit",
+    "Access points forbid collisions"
+   ],
+   "key": [
+    2597942914
+   ],
+   "sol": "SXQgY2Fubm90IGRldGVjdCBpdHMgb3duIGNvbGxpc2lvbnMsIHNvIGl0IG11c3QgYXZvaWQgdGhlbSAtIHNlbnNlLCBiYWNrIG9mZiwgc2VuZC4KU2VlOiA8YSBocmVmPSIuLi9jaGFwdGVycy8xMC10aGUtbGluay1sYXllci5odG1sI3NlYy0xMC13aXJlbGVzcyI+V2lyZWxlc3MgLSBhbmQgdGhlIHdob2xlIGpvdXJuZXk8L2E+Lg=="
+  },
+  {
+   "q": "A switch differs from a hub in that it:",
+   "options": [
+    "Forwards each frame only to the destination's port",
+    "Repeats every bit to all ports",
+    "Works at the network layer",
+    "Requires no power"
+   ],
+   "key": [
+    3334554065
+   ],
+   "sol": "RWFjaCBwb3J0IGJlY29tZXMgaXRzIG93biBjb2xsaXNpb24gZG9tYWluIC0gZXZlcnlvbmUgY2FuIHNlbmQgYXQgb25jZS4KU2VlOiA8YSBocmVmPSIuLi9jaGFwdGVycy8xMC10aGUtbGluay1sYXllci5odG1sI3NlYy0xMC1ldGhlcm5ldCI+RXRoZXJuZXQgYW5kIHN3aXRjaGVzPC9hPi4="
+  },
+  {
+   "q": "A switch fills its MAC table by:",
+   "options": [
+    "Reading the source address of every arriving frame",
+    "Downloading it from the router",
+    "Manual configuration",
+    "Asking DNS"
+   ],
+   "key": [
+    1411622918
+   ],
+   "sol": "U2VsZi1sZWFybmluZzogdW5rbm93biBkZXN0aW5hdGlvbnMgYXJlIGZsb29kZWQgb25jZSwgdGhlbiBsZWFybmVkIGZyb20gdGhlIHJlcGx5LgpTZWU6IDxhIGhyZWY9Ii4uL2NoYXB0ZXJzLzEwLXRoZS1saW5rLWxheWVyLmh0bWwjZXhtLXN3aXRjaCI+RXhhbXBsZSDigJxTd2l0Y2ggc2VsZi1sZWFybmluZ+KAnTwvYT4u"
+  },
+  {
+   "q": "A router operates at the ___ layer and reads ___:",
+   "options": [
+    "Network layer - IP addresses",
+    "Link layer - MAC addresses",
+    "Physical layer - nothing",
+    "Application layer - URLs"
+   ],
+   "key": [
+    4119028563
+   ],
+   "sol": "SHViOiBwaHlzaWNhbCwgcmVhZHMgbm90aGluZy4gU3dpdGNoOiBsaW5rLCBNQUNzLiBSb3V0ZXI6IG5ldHdvcmssIElQcy4KU2VlOiA8YSBocmVmPSIuLi9jaGFwdGVycy8xMC10aGUtbGluay1sYXllci5odG1sI3NlYy0xMC1ldGhlcm5ldCI+RXRoZXJuZXQgYW5kIHN3aXRjaGVzPC9hPi4="
+  },
+  {
+   "q": "Ethernet's CRC trailer:",
+   "options": [
+    "Detects corrupted frames so they can be dropped early",
+    "Retransmits lost frames",
+    "Encrypts the payload",
+    "Compresses the frame"
+   ],
+   "key": [
+    561542795
+   ],
+   "sol": "RGV0ZWN0aW9uIGJlbG93LCByZWNvdmVyeSBhYm92ZSAtIHJlbGlhYmlsaXR5IGlzIHJlYnVpbHQgYnkgVENQLgpTZWU6IDxhIGhyZWY9Ii4uL2NoYXB0ZXJzLzEwLXRoZS1saW5rLWxheWVyLmh0bWwjc2VjLTEwLXdpcmVsZXNzIj5XaXJlbGVzcyAtIGFuZCB0aGUgd2hvbGUgam91cm5leTwvYT4u"
+  }
+ ]
+}
+</script>
+</div>
+```

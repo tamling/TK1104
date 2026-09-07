@@ -1,0 +1,123 @@
+# Quiz 4 - How the machine computes {.unnumbered}
+
+Eight questions on Session 4, in the exam's own format:
+Four options, exactly one correct. As in the exam, there is no
+penalty for guessing - answer everything, then grade. Wrong
+answers get an explanation and a link into the script.
+
+```{=html}
+<div class="tk-task">
+<script type="application/json">
+{
+ "type": "quiz",
+ "title": "Quiz 4",
+ "questions": [
+  {
+   "q": "Which gate outputs 1 only when <em>both</em> inputs are 1?",
+   "options": [
+    "AND",
+    "OR",
+    "XOR",
+    "NAND"
+   ],
+   "key": [
+    4062373205
+   ],
+   "sol": "QU5EIGlzIHRoZSDigJxib3Ro4oCdIGdhdGUgLSBhbmQsIGNoYWluZWQgd2l0aCBYT1IsIGhhbGYgb2YgYSBoYWxmLWFkZGVyLgpTZWU6IDxhIGhyZWY9Ii4uL2NoYXB0ZXJzLzA0LWhvdy10aGUtbWFjaGluZS1jb21wdXRlcy5odG1sI2RlZi1nYXRlcyI+RGVmaW5pdGlvbiDigJxMb2dpYyBnYXRlc+KAnTwvYT4u"
+  },
+  {
+   "q": "Which single gate type can build all the others?",
+   "options": [
+    "NAND",
+    "AND",
+    "OR",
+    "XOR"
+   ],
+   "key": [
+    25794788
+   ],
+   "sol": "Tk9ULCBBTkQgYW5kIE9SIGNhbiBlYWNoIGJlIHdpcmVkIGZyb20gTkFORHMgYWxvbmUgLSBvbmUgYnVpbGRpbmcgYmxvY2sgcGVyIGNoaXAuClNlZTogPGEgaHJlZj0iLi4vY2hhcHRlcnMvMDQtaG93LXRoZS1tYWNoaW5lLWNvbXB1dGVzLmh0bWwjc2VjLTA0LWdhdGVzIj5Gcm9tIHRoZSBzd2l0Y2ggdG8gdGhlIGdhdGU8L2E+Lg=="
+  },
+  {
+   "q": "A half-adder consists of:",
+   "options": [
+    "An XOR gate (sum) and an AND gate (carry)",
+    "Two OR gates",
+    "A NOT gate and a flip-flop",
+    "Eight full adders"
+   ],
+   "key": [
+    142401755
+   ],
+   "sol": "U3VtID0gWE9SLCBjYXJyeSA9IEFORDsgdGhlIGZ1bGwgYWRkZXIgYWRkcyBhIGNhcnJ5LWluIG9uIHRvcC4KU2VlOiA8YSBocmVmPSIuLi9jaGFwdGVycy8wNC1ob3ctdGhlLW1hY2hpbmUtY29tcHV0ZXMuaHRtbCNleG0tYWRkZXIiPkV4YW1wbGUg4oCcVGhlIGhhbGYtYWRkZXIgYW5kIHRoZSBmdWxsIGFkZGVy4oCdPC9hPi4="
+  },
+  {
+   "q": "The Von Neumann bottleneck is:",
+   "options": [
+    "The single bus all instructions and data share",
+    "The limited number of registers",
+    "The speed of the fan",
+    "The size of the screen"
+   ],
+   "key": [
+    1535450720
+   ],
+   "sol": "Q1BVIGFuZCBtZW1vcnkgbWVldCBvbiBvbmUgYnVzIC0gd2hpY2ggdGhlIGNhY2hlcyBleGlzdCB0byByZWxpZXZlLgpTZWU6IDxhIGhyZWY9Ii4uL2NoYXB0ZXJzLzA0LWhvdy10aGUtbWFjaGluZS1jb21wdXRlcy5odG1sI3NlYy0wNC12b25uZXVtYW5uIj5UaGUgVm9uIE5ldW1hbm4gYXJjaGl0ZWN0dXJlLCBwcm9wZXJseTwvYT4u"
+  },
+  {
+   "q": "In the HIDAS cycle, the PC is incremented <em>before</em> execute because:",
+   "options": [
+    "A jump may overwrite the PC during execute",
+    "Incrementing later is slower",
+    "The PC would otherwise overflow",
+    "Decode needs the new value"
+   ],
+   "key": [
+    756890977
+   ],
+   "sol": "SW5jcmVtZW50IGZpcnN0IG1ha2VzIOKAnG5leHQgaW5zdHJ1Y3Rpb27igJ0gdGhlIGRlZmF1bHQgdGhhdCBhIGp1bXAgbWF5IHRoZW4gb3ZlcnJpZGUuClNlZTogPGEgaHJlZj0iLi4vY2hhcHRlcnMvMDQtaG93LXRoZS1tYWNoaW5lLWNvbXB1dGVzLmh0bWwjZXhtLWhpZGFzdHJhY2UiPkV4YW1wbGUg4oCcVHJhY2luZyBMT0FEIDI1NuKAnTwvYT4u"
+  },
+  {
+   "q": "A little-endian machine stores the 32-bit value <code>0x12345678</code> with:",
+   "options": [
+    "78 at the lowest address",
+    "12 at the lowest address",
+    "The bytes in random order",
+    "Only the low 16 bits"
+   ],
+   "key": [
+    351092880
+   ],
+   "sol": "TGVhc3Qtc2lnbmlmaWNhbnQgYnl0ZSBmaXJzdDsgbmV0d29yayBwcm90b2NvbHMgdHJhbnNtaXQgdGhlIG9wcG9zaXRlLCBiaWctZW5kaWFuLgpTZWU6IDxhIGhyZWY9Ii4uL2NoYXB0ZXJzLzA0LWhvdy10aGUtbWFjaGluZS1jb21wdXRlcy5odG1sI2V4bS1lbmRpYW4iPkV4YW1wbGUg4oCcRW5kaWFubmVzc+KAnTwvYT4u"
+  },
+  {
+   "q": "Caches achieve 90-99 % hit rates because of:",
+   "options": [
+    "Locality - programs reuse the same and nearby data",
+    "Their enormous size",
+    "Compression of the stored data",
+    "Random luck"
+   ],
+   "key": [
+    1032405082
+   ],
+   "sol": "VGVtcG9yYWwgYW5kIHNwYXRpYWwgbG9jYWxpdHkgY29uY2VudHJhdGUgYWNjZXNzZXMgb24gYSBzbWFsbCB3b3JraW5nIHNldC4KU2VlOiA8YSBocmVmPSIuLi9jaGFwdGVycy8wNC1ob3ctdGhlLW1hY2hpbmUtY29tcHV0ZXMuaHRtbCNzZWMtMDQtbWVtYWRkciI+TWVtb3J5IGFuZCBhZGRyZXNzaW5nPC9hPi4="
+  },
+  {
+   "q": "Around 2005, clock speeds stopped rising mainly because of:",
+   "options": [
+    "Heat",
+    "Marketing",
+    "Software licences",
+    "A transistor shortage"
+   ],
+   "key": [
+    1008621163
+   ],
+   "sol": "UmlzaW5nIGhlYXQgY2FwcGVkIHRoZSBjbG9ja3MgLSBkZXNpZ25lcnMgYWRkZWQgY29yZXMgaW5zdGVhZC4KU2VlOiA8YSBocmVmPSIuLi9jaGFwdGVycy8wNC1ob3ctdGhlLW1hY2hpbmUtY29tcHV0ZXMuaHRtbCNzZWMtMDQtdHJlbmRzIj5QZXJmb3JtYW5jZSBhbmQgdHJlbmRzPC9hPi4="
+  }
+ ]
+}
+</script>
+</div>
+```
