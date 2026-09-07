@@ -27,7 +27,7 @@ answers get an explanation and a link into the script.
    "sol": "VGVuIHN0YXRlcyBpbiBvbmUgdm9sdGFnZSByYW5nZSBsZWF2ZSBubyBzYWZldHkgbWFyZ2luOyB0d28gc3Vydml2ZSBub2lzZSBhbmQgaGVhdC4KU2VlOiA8YSBocmVmPSIuLi9jaGFwdGVycy8wMi1iaW5hcnktaGV4LXR3b3MtY29tcGxlbWVudC5odG1sI3NlYy0wMi13aHktYmluYXJ5Ij5XaHkgYmluYXJ5PzwvYT4u"
   },
   {
-   "q": "What is $1011_2$ in decimal?",
+   "q": "What is 1011₂ in decimal?",
    "options": [
     "11",
     "9",
@@ -40,17 +40,17 @@ answers get an explanation and a link into the script.
    "sol": "OCArIDIgKyAxID0gMTEuClNlZTogPGEgaHJlZj0iLi4vY2hhcHRlcnMvMDItYmluYXJ5LWhleC10d29zLWNvbXBsZW1lbnQuaHRtbCNzZWMtMDItY29udmVydGluZyI+Q29udmVydGluZyBpbiBib3RoIGRpcmVjdGlvbnM8L2E+Lg=="
   },
   {
-   "q": "What is $25_{10}$ in binary?",
+   "q": "What is 5₁₀ in binary?",
    "options": [
-    "11001",
-    "10101",
-    "11011",
-    "10011"
+    "101",
+    "100",
+    "110",
+    "111"
    ],
    "key": [
-    3819691319
+    2108514454
    ],
-   "sol": "MTYgKyA4ICsgMSA9IDI1LCBzbyAxIDEwMDEuClNlZTogPGEgaHJlZj0iLi4vY2hhcHRlcnMvMDItYmluYXJ5LWhleC10d29zLWNvbXBsZW1lbnQuaHRtbCNzZWMtMDItY29udmVydGluZyI+Q29udmVydGluZyBpbiBib3RoIGRpcmVjdGlvbnM8L2E+Lg=="
+   "sol": "NCArIDEgPSA1LCBzbyAxMDEuClNlZTogPGEgaHJlZj0iLi4vY2hhcHRlcnMvMDItYmluYXJ5LWhleC10d29zLWNvbXBsZW1lbnQuaHRtbCNzZWMtMDItY29udmVydGluZyI+Q29udmVydGluZyBpbiBib3RoIGRpcmVjdGlvbnM8L2E+Lg=="
   },
   {
    "q": "One hexadecimal digit corresponds to exactly:",
@@ -66,17 +66,17 @@ answers get an explanation and a link into the script.
    "sol": "MTYgPSAy4oG0IC0gZWFjaCBoZXggZGlnaXQgaXMgb25lIG5pYmJsZS4KU2VlOiA8YSBocmVmPSIuLi9jaGFwdGVycy8wMi1iaW5hcnktaGV4LXR3b3MtY29tcGxlbWVudC5odG1sI3NlYy0wMi1oZXgiPkhleGFkZWNpbWFsIGFuZCBvY3RhbDwvYT4u"
   },
   {
-   "q": "What is $\\mathrm{FF}_{16}$ in decimal?",
+   "q": "Which hex digit stands for the value 10?",
    "options": [
-    "255",
-    "240",
-    "155",
-    "256"
+    "A",
+    "B",
+    "F",
+    "0"
    ],
    "key": [
-    2153723202
+    2090098311
    ],
-   "sol": "MTXCtzE2ICsgMTUgPSAyNTUgLSB0aGUgbGFyZ2VzdCB2YWx1ZSBvZiBvbmUgYnl0ZS4KU2VlOiA8YSBocmVmPSIuLi9jaGFwdGVycy8wMi1iaW5hcnktaGV4LXR3b3MtY29tcGxlbWVudC5odG1sI3NlYy0wMi1oZXgiPkhleGFkZWNpbWFsIGFuZCBvY3RhbDwvYT4u"
+   "sol": "SGV4IGJvcnJvd3MgMC05IGZyb20gZGVjaW1hbCBhbmQgYWRkcyBBLUYgZm9yIHRoZSB2YWx1ZXMgMTAtMTUuClNlZTogPGEgaHJlZj0iLi4vY2hhcHRlcnMvMDItYmluYXJ5LWhleC10d29zLWNvbXBsZW1lbnQuaHRtbCNzZWMtMDItaGV4Ij5IZXhhZGVjaW1hbCBhbmQgb2N0YWw8L2E+Lg=="
   },
   {
    "q": "−1 in 8-bit two's complement is:",
