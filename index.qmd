@@ -47,12 +47,4 @@ navigation bar to switch between the light and the dark theme. The
 setting is remembered as you move between chapters.
 :::
 
-::: {.callout-tip}
-## Annotate this script
-
-You can highlight and annotate any passage of this script with Hypothesis
-- select text and comment directly in the margin (a free account at
-[hypothes.is](https://hypothes.is) is needed).
-:::
-
 Timo Amling, 2026

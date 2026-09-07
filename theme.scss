@@ -1,6 +1,11 @@
 /*-- scss:defaults --*/
 $kristiania: #d81e2e;
 $kblue: #1f5c8b;
+// No external web-font import: the fonts.googleapis.com stylesheet that
+// cosmo/darkly pull in by default stalls script execution on every page
+// behind the StatiCrypt password gate. The themes fall back to the
+// system font stack.
+$web-font-path: false;
 
 /*-- scss:rules --*/
 // ── Didactic bridge ────────────────────────────────────────────────────
