@@ -26,6 +26,26 @@ jobs:
       # a toggle on every page); the figures are pre-built SVGs committed
       # under chapters/figures/, so no LaTeX is needed here.
       - run: quarto render
+      # Password-protect the published site: drop the plain-text search
+      # index and AES-encrypt every page with StatiCrypt (students unlock
+      # once per browser; "remember me" keeps it open for 30 days). To
+      # change the password without a code change, add a repository
+      # secret named STATICRYPT_PASSWORD - it overrides the default below.
+      - name: Password-protect site
+        env:
+          STATICRYPT_PASSWORD: ${{ secrets.STATICRYPT_PASSWORD || 'tk1104-everything-is-bits' }}
+        run: |
+          npm install -g staticrypt
+          rm -f _site/search.json
+          find _site -name '*.html' | while read -r f; do
+            staticrypt "$f" -d "$(dirname "$f")" -p "$STATICRYPT_PASSWORD" \
+              --short --remember 30 \
+              --template-title "TK1104 - Course Script" \
+              --template-instructions "This course script is for TK1104 students. Enter the password from Canvas." \
+              --template-button "Open the script" \
+              --template-color-primary "#d81e2e" \
+              --template-color-secondary "#595959" > /dev/null
+          done
       - uses: actions/upload-pages-artifact@v3
         with:
           path: _site

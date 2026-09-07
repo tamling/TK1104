@@ -35,6 +35,19 @@ _tikz/build.sh   # needs pdflatex + TikZ, pdfcrop, pdftocairo (poppler)
 In dark mode the SVGs (dark ink, transparent background) sit on a light
 backing card - see `theme-dark.scss`.
 
+## Password protection
+
+The published site is password-protected: the publish workflow encrypts
+every rendered page with [StatiCrypt](https://github.com/robinmoisson/staticrypt)
+(AES-256; "remember me" keeps a browser unlocked for 30 days) and removes
+the plain-text `search.json` (search is disabled in `_quarto.yml` for the
+same reason). The default password lives in
+`.github/workflows/publish.yml`; add a repository secret named
+`STATICRYPT_PASSWORD` to override it without a code change. Note that
+this protects the *site* only - while the repository is public, the
+sources remain readable; make the repository private for real
+confidentiality.
+
 ## Conventions carried over from the LaTeX script
 
 * Numbered **definitions**, **examples** and **exercises** (Quarto theorem
