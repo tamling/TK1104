@@ -1,8 +1,9 @@
 # Quiz 2 - Binary, hex and two's complement {.unnumbered}
 
 Eight questions on Session 2, in the exam's own format:
-Four options, exactly one correct. As in the exam, there is no
-penalty for guessing - answer everything, then grade. Wrong
+Four options, exactly one correct. Drag - or tap - one answer
+into the answer box of each question. As in the exam, there is
+no penalty for guessing - fill every box, then grade. Wrong
 answers get an explanation and a link into the script.
 
 ```{=html}
