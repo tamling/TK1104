@@ -1417,8 +1417,9 @@ def write_quizzes():
         page = (
             f"# Quiz {int(nn)} - {title} {{.unnumbered}}\n\n"
             f"Eight questions on Session {int(nn)}, in the exam's own format:\n"
-            "Four options, exactly one correct. As in the exam, there is no\n"
-            "penalty for guessing - answer everything, then grade. Wrong\n"
+            "Four options, exactly one correct. Drag - or tap - one answer\n"
+            "into the answer box of each question. As in the exam, there is\n"
+            "no penalty for guessing - fill every box, then grade. Wrong\n"
             "answers get an explanation and a link into the script.\n\n"
             "```{=html}\n"
             '<div class="tk-task">\n'

@@ -181,6 +181,10 @@ body.quarto-dark .tk-task {
 }
 .tk-q-expl.tk-q-expl-wrong { border-left-color: var(--tk-accent); }
 .tk-score { font-size: 1.05em; font-weight: 700; margin: 1rem 0 0.4rem; }
+.tk-q-answer { display: flex; align-items: center; gap: 0.6rem; margin-top: 0.5rem; }
+.tk-q-answer .tk-zone-label { margin-bottom: 0; white-space: nowrap; }
+.tk-q-slot { flex: 1; min-height: 2.4rem; }
+.tk-chip.tk-correct { border-color: var(--tk-ok); outline: 2px solid var(--tk-ok); }
 </style>
 <script>
 (function () {
@@ -466,25 +470,51 @@ body.quarto-dark .tk-task {
     addSolution(controls, cfg);
   }
 
-  // Exam-style quiz: four options per question, exactly one correct;
-  // graded on demand, with per-question explanations and score.
+  // Exam-style quiz: four answers per question, exactly one correct.
+  // The student drags (or taps) ONE answer into the answer box of each
+  // question - the same interaction as the chapter tasks - then grades.
   function buildQuiz(root, cfg) {
     var graded = false;
     var qs = cfg.questions.map(function (q, i) {
       var wrap = root.appendChild(el("div", "tk-q"));
       wrap.appendChild(el("p", "tk-q-text")).innerHTML =
         "<strong>" + (i + 1) + ".</strong> " + q.q;
-      var opts = wrap.appendChild(el("div", "tk-q-opts"));
-      var state = { idx: i, picked: null, key: q.key, sol: q.sol, buttons: [], wrap: wrap };
+      var pool = wrap.appendChild(el("div", "tk-pool"));
+      var slotRow = wrap.appendChild(el("div", "tk-q-answer"));
+      slotRow.appendChild(el("span", "tk-zone-label", "Your answer:"));
+      var slot = slotRow.appendChild(el("div", "tk-zone-drop tk-q-slot"));
+      var state = { idx: i, key: q.key, sol: q.sol, pool: pool, slot: slot, wrap: wrap };
+
+      function place(chip) {
+        if (graded) return;
+        var occupant = slot.firstElementChild;
+        if (occupant) pool.appendChild(occupant);
+        chip.classList.remove("tk-wrong", "tk-correct");
+        slot.appendChild(chip);
+      }
+      slot.addEventListener("dragover", function (e) { if (!graded) e.preventDefault(); });
+      slot.addEventListener("drop", function (e) {
+        e.preventDefault();
+        var text = e.dataTransfer.getData("text/plain");
+        var chip = Array.prototype.find.call(pool.querySelectorAll(".tk-chip"), function (c) {
+          return c.textContent === text;
+        });
+        if (chip) place(chip);
+      });
+      slotRow.addEventListener("click", function () {});
+
       shuffle(q.options.slice()).forEach(function (text) {
-        var b = opts.appendChild(el("button", "tk-opt", text));
-        b.type = "button";
-        state.buttons.push(b);
-        b.addEventListener("click", function () {
+        var chip = pool.appendChild(el("button", "tk-chip", text));
+        chip.type = "button";
+        chip.draggable = true;
+        chip.addEventListener("dragstart", function (e) {
+          e.dataTransfer.setData("text/plain", text);
+        });
+        chip.addEventListener("click", function (e) {
+          e.stopPropagation();
           if (graded) return;
-          state.buttons.forEach(function (o) { o.classList.remove("tk-picked"); });
-          b.classList.add("tk-picked");
-          state.picked = b;
+          if (chip.parentElement === slot) pool.appendChild(chip);
+          else place(chip);
         });
       });
       return state;
@@ -492,7 +522,7 @@ body.quarto-dark .tk-task {
     var score = root.appendChild(el("p", "tk-score", ""));
     score.hidden = true;
     var status = el("p", "tk-status",
-      "Pick one answer per question, then grade - there is no penalty for guessing.");
+      "Drag - or tap - one answer into each answer box, then grade. There is no penalty for guessing.");
     root.appendChild(status);
     var btn = root.appendChild(el("button", "tk-btn", "Grade quiz"));
     btn.type = "button";
@@ -502,36 +532,40 @@ body.quarto-dark .tk-task {
         score.hidden = true;
         btn.textContent = "Grade quiz";
         status.className = "tk-status";
-        status.textContent = "Pick one answer per question, then grade - there is no penalty for guessing.";
+        status.textContent = "Drag - or tap - one answer into each answer box, then grade. There is no penalty for guessing.";
         qs.forEach(function (s) {
-          s.picked = null;
-          s.buttons.forEach(function (o) {
-            o.classList.remove("tk-picked", "tk-opt-correct", "tk-opt-wrong");
+          if (s.slot.firstElementChild) s.pool.appendChild(s.slot.firstElementChild);
+          s.slot.classList.remove("tk-ok-zone");
+          s.pool.querySelectorAll(".tk-chip").forEach(function (c) {
+            c.classList.remove("tk-wrong", "tk-correct");
           });
-          shuffle(s.buttons.slice()).forEach(function (o) { o.parentElement.appendChild(o); });
+          shuffle(Array.prototype.slice.call(s.pool.children)).forEach(function (c) {
+            s.pool.appendChild(c);
+          });
           var e = s.wrap.querySelector(".tk-q-expl");
           if (e) e.remove();
         });
         return;
       }
-      var unanswered = qs.filter(function (s) { return !s.picked; }).length;
+      var unanswered = qs.filter(function (s) { return !s.slot.firstElementChild; }).length;
       if (unanswered > 0) {
         status.className = "tk-status tk-status-bad";
-        status.textContent = "Answer every question first (" + unanswered +
+        status.textContent = "Fill every answer box first (" + unanswered +
           " to go) - blank scores zero, a guess might not.";
         return;
       }
       var right = 0;
       qs.forEach(function (s) {
-        var isRight = s.key.indexOf(djb2(norm(s.picked.textContent) + "|q" + s.idx)) !== -1;
+        var chip = s.slot.firstElementChild;
+        var isRight = s.key.indexOf(djb2(norm(chip.textContent) + "|q" + s.idx)) !== -1;
         if (isRight) {
           right++;
-          s.picked.classList.add("tk-opt-correct");
+          s.slot.classList.add("tk-ok-zone");
         } else {
-          s.picked.classList.add("tk-opt-wrong");
-          s.buttons.forEach(function (o) {
-            if (s.key.indexOf(djb2(norm(o.textContent) + "|q" + s.idx)) !== -1) {
-              o.classList.add("tk-opt-correct");
+          chip.classList.add("tk-wrong");
+          s.pool.querySelectorAll(".tk-chip").forEach(function (c) {
+            if (s.key.indexOf(djb2(norm(c.textContent) + "|q" + s.idx)) !== -1) {
+              c.classList.add("tk-correct");
             }
           });
         }
