@@ -27,6 +27,8 @@ jobs:
       # under chapters/figures/, so no LaTeX is needed here.
       - run: quarto render
       # Password-protect the published site: drop the plain-text search
+      # (the salt is pinned so that remembered logins survive re-deploys;
+      # changing the password does NOT require changing the salt)
       # index and AES-encrypt every page with StatiCrypt (students unlock
       # once per browser; "remember me" keeps it open for 30 days). To
       # change the password without a code change, add a repository
@@ -40,6 +42,7 @@ jobs:
           find _site -name '*.html' | while read -r f; do
             staticrypt "$f" -d "$(dirname "$f")" -p "$STATICRYPT_PASSWORD" \
               --short --remember 365 \
+              --salt b6c1193f0a2f31be3a0e2f0b6a8f4c27 \
               --template _interactive/staticrypt_template.html \
               --template-title "TK1104 - Course Script" \
               --template-instructions "This course script is for TK1104 students. Enter the password from Canvas." \
