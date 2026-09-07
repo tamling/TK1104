@@ -33,7 +33,7 @@ book:
     # Second, independent part of the site: one exam-style quiz per
     # session (pages are unnumbered so the script keeps chapters 1-11).
     # Generated from _interactive/make_tasks.py like the in-chapter tasks.
-    - part: "Session quizzes"
+    - part: quizzes/index.qmd
       chapters:
         - quizzes/quiz-01.qmd
         - quizzes/quiz-02.qmd

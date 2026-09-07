@@ -1429,7 +1429,19 @@ def write_quizzes():
             "```\n"
         )
         (qdir / f"quiz-{nn}.qmd").write_text(page)
-    print(f"wrote {len(QUIZZES)} quiz pages to {qdir}")
+    # landing page for the "Session quizzes" part, so the sidebar entry
+    # is a real link rather than a collapse-only toggle
+    rows = "\n".join(
+        f"* [Quiz {int(nn)} - {title}](quiz-{nn}.qmd)"
+        for nn, (title, _) in QUIZZES.items())
+    (qdir / "index.qmd").write_text(
+        "# Session quizzes {.unnumbered}\n\n"
+        "One quiz per session, in the exam's own format: Eight questions,\n"
+        "four options each, exactly one correct. Graded in your browser -\n"
+        "nothing is recorded - with explanations and links back into the\n"
+        "script. As in the exam, there is no penalty for guessing: Answer\n"
+        "everything.\n\n" + rows + "\n")
+    print(f"wrote {len(QUIZZES)} quiz pages + index to {qdir}")
 
 if __name__ == "__main__":
     main()
