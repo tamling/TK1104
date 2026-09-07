@@ -1,0 +1,123 @@
+# Quiz 11 - Repetition - the whole course {.unnumbered}
+
+Eight questions on Session 11, in the exam's own format:
+Four options, exactly one correct. As in the exam, there is no
+penalty for guessing - answer everything, then grade. Wrong
+answers get an explanation and a link into the script.
+
+```{=html}
+<div class="tk-task">
+<script type="application/json">
+{
+ "type": "quiz",
+ "title": "Quiz 11",
+ "questions": [
+  {
+   "q": "Loading a page runs, in order:",
+   "options": [
+    "DNS, TCP, IP routing, ARP + frames, HTTP",
+    "HTTP, TCP, DNS, ARP, IP",
+    "ARP, DNS, HTTP, TCP, IP",
+    "TCP, DNS, IP, HTTP, ARP"
+   ],
+   "key": [
+    4147917643
+   ],
+   "sol": "UmVzb2x2ZSB0aGUgbmFtZSwgb3BlbiB0aGUgY29ubmVjdGlvbiwgcm91dGUsIGNyb3NzIGVhY2ggaG9wLCByZW5kZXIgdGhlIHBhZ2UuClNlZTogPGEgaHJlZj0iLi4vY2hhcHRlcnMvMTEtcmVwZXRpdGlvbi5odG1sI3NlYy0xMS1ibG9jazUiPkJsb2NrIDU6IFRoZSBsaW5rIGxheWVyLCBhbmQgdGhlIHdob2xlIGpvdXJuZXk8L2E+Lg=="
+  },
+  {
+   "q": "Port numbers live at the ___ layer:",
+   "options": [
+    "Transport",
+    "Network",
+    "Link",
+    "Physical"
+   ],
+   "key": [
+    1509281360
+   ],
+   "sol": "UG9ydHMgbmFtZSBwcm9jZXNzZXMgLSBJUCBwbHVzIHBvcnQgaXMgYSBzb2NrZXQuClNlZTogPGEgaHJlZj0iLi4vY2hhcHRlcnMvMTEtcmVwZXRpdGlvbi5odG1sI3NlYy0xMS1ibG9jazQiPkJsb2NrIDQ6IFRyYW5zcG9ydCBhbmQgbmV0d29yazwvYT4u"
+  },
+  {
+   "q": "Which gate outputs 1 only when its two inputs differ?",
+   "options": [
+    "XOR",
+    "AND",
+    "OR",
+    "NAND"
+   ],
+   "key": [
+    669208989
+   ],
+   "sol": "MSBmb3IgMDEgYW5kIDEwLCAwIGZvciAwMCBhbmQgMTEuClNlZTogPGEgaHJlZj0iLi4vY2hhcHRlcnMvMTEtcmVwZXRpdGlvbi5odG1sI3NlYy0xMS1ibG9jazIiPkJsb2NrIDI6IExvZ2ljIGFuZCB0aGUgY29tcHV0ZXI8L2E+Lg=="
+  },
+  {
+   "q": "What is $0001\\,1010_2$ in decimal?",
+   "options": [
+    "26",
+    "24",
+    "28",
+    "32"
+   ],
+   "key": [
+    195527693
+   ],
+   "sol": "MTYgKyA4ICsgMiA9IDI2LgpTZWU6IDxhIGhyZWY9Ii4uL2NoYXB0ZXJzLzExLXJlcGV0aXRpb24uaHRtbCNzZWMtMTEtYmxvY2sxIj5CbG9jayAxOiBEYXRhIGFuZCBudW1iZXJzPC9hPi4="
+  },
+  {
+   "q": "ARP is used to find a node's ___ when you know its ___:",
+   "options": [
+    "MAC / IP",
+    "IP / MAC",
+    "port / IP",
+    "name / IP"
+   ],
+   "key": [
+    1243470623
+   ],
+   "sol": "QVJQIG1hcHMgYSBrbm93biBJUCB0byB0aGUgbWF0Y2hpbmcgaGFyZHdhcmUgTUFDIG9uIHRoZSBsb2NhbCBsaW5rLgpTZWU6IDxhIGhyZWY9Ii4uL2NoYXB0ZXJzLzExLXJlcGV0aXRpb24uaHRtbCNzZWMtMTEtYmxvY2s1Ij5CbG9jayA1OiBUaGUgbGluayBsYXllciwgYW5kIHRoZSB3aG9sZSBqb3VybmV5PC9hPi4="
+  },
+  {
+   "q": "Which transport protocol is connectionless and best for live video?",
+   "options": [
+    "UDP",
+    "TCP",
+    "IP",
+    "ARP"
+   ],
+   "key": [
+    538685808
+   ],
+   "sol": "Tm8gaGFuZHNoYWtlLCB0b2xlcmF0ZXMgbG9zcyAtIGEgZ2xpdGNoIGJlYXRzIGEgc3RhbGwuClNlZTogPGEgaHJlZj0iLi4vY2hhcHRlcnMvMTEtcmVwZXRpdGlvbi5odG1sI3NlYy0xMS1ibG9jazQiPkJsb2NrIDQ6IFRyYW5zcG9ydCBhbmQgbmV0d29yazwvYT4u"
+  },
+  {
+   "q": "NAT keeps replies to different inside devices apart using:",
+   "options": [
+    "A translation table keyed by ports",
+    "Different cables",
+    "The devices' MAC addresses",
+    "Random guessing"
+   ],
+   "key": [
+    1748676165
+   ],
+   "sol": "RWFjaCBpbnNpZGUgc29ja2V0IG1hcHMgdG8gaXRzIG93biBwdWJsaWMgcG9ydDsgcmVwbGllcyBhcmUgcmV3cml0dGVuIGJhY2suClNlZTogPGEgaHJlZj0iLi4vY2hhcHRlcnMvMTEtcmVwZXRpdGlvbi5odG1sI3NlYy0xMS1ibG9jazQiPkJsb2NrIDQ6IFRyYW5zcG9ydCBhbmQgbmV0d29yazwvYT4u"
+  },
+  {
+   "q": "The strongest password below, by entropy:",
+   "options": [
+    "Four random words from a large list",
+    "P@ss1",
+    "Your birthday backwards",
+    "The word “password” with a 9"
+   ],
+   "key": [
+    2487452273
+   ],
+   "sol": "TGVuZ3RoIGFkZHMgZW50cm9weSBmYXN0ZXIgdGhhbiBleG90aWMgc3ltYm9scyAtIGxvZ+KCgigyMDAw4oG0KSDiiYggNDQgYml0cy4KU2VlOiA8YSBocmVmPSIuLi9jaGFwdGVycy8xMS1yZXBldGl0aW9uLmh0bWwjc2VjLTExLWJpZy1waWN0dXJlIj5UaGUgYmlnIHBpY3R1cmUgLSBhbmQgb25lIGNsb3Npbmcgbm90ZTwvYT4u"
+  }
+ ]
+}
+</script>
+</div>
+```

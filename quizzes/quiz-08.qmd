@@ -1,0 +1,123 @@
+# Quiz 8 - The transport layer {.unnumbered}
+
+Eight questions on Session 8, in the exam's own format:
+Four options, exactly one correct. As in the exam, there is no
+penalty for guessing - answer everything, then grade. Wrong
+answers get an explanation and a link into the script.
+
+```{=html}
+<div class="tk-task">
+<script type="application/json">
+{
+ "type": "quiz",
+ "title": "Quiz 8",
+ "questions": [
+  {
+   "q": "The transport layer reaches the right ___ on a host:",
+   "options": [
+    "Process, via port numbers",
+    "Cable",
+    "Router",
+    "User"
+   ],
+   "key": [
+    2258566286
+   ],
+   "sol": "SVAgZmluZHMgdGhlIG1hY2hpbmU7IHRoZSBwb3J0IGZpbmRzIHRoZSBwcm9ncmFtLgpTZWU6IDxhIGhyZWY9Ii4uL2NoYXB0ZXJzLzA4LXRoZS10cmFuc3BvcnQtbGF5ZXIuaHRtbCNzZWMtMDgtcG9ydHMiPlRyYW5zcG9ydCBiYXNpY3M6IFBvcnRzIGFuZCBzb2NrZXRzPC9hPi4="
+  },
+  {
+   "q": "A socket is:",
+   "options": [
+    "An IP address plus a port number",
+    "A physical plug",
+    "A CPU register",
+    "A DNS record"
+   ],
+   "key": [
+    1131873796
+   ],
+   "sol": "T25lIGVuZHBvaW50IG9mIGEgY29udmVyc2F0aW9uIC0gYSBzb2NrZXQgcGFpciBuYW1lcyBhIFRDUCBjb25uZWN0aW9uLgpTZWU6IDxhIGhyZWY9Ii4uL2NoYXB0ZXJzLzA4LXRoZS10cmFuc3BvcnQtbGF5ZXIuaHRtbCNkZWYtcG9ydCI+RGVmaW5pdGlvbiDigJxQb3J0LCBzb2NrZXTigJ08L2E+Lg=="
+  },
+  {
+   "q": "The UDP header is:",
+   "options": [
+    "8 bytes - four small fields",
+    "20+ bytes like TCP's",
+    "64 bytes",
+    "Variable, up to 1500 bytes"
+   ],
+   "key": [
+    1872976316
+   ],
+   "sol": "U291cmNlIHBvcnQsIGRlc3RpbmF0aW9uIHBvcnQsIGxlbmd0aCwgY2hlY2tzdW0gLSB0aGUgd2hvbGUgcG9pbnQgaXMgdGhlIHNtYWxsIGNvc3QuClNlZTogPGEgaHJlZj0iLi4vY2hhcHRlcnMvMDgtdGhlLXRyYW5zcG9ydC1sYXllci5odG1sI3NlYy0wOC11ZHAiPlVEUDogVGhlIG1pbmltYWwgb3B0aW9uPC9hPi4="
+  },
+  {
+   "q": "The three-way handshake runs:",
+   "options": [
+    "SYN, SYN+ACK, ACK",
+    "ACK, SYN, FIN",
+    "HELLO, OK, GO",
+    "GET, 200, ACK"
+   ],
+   "key": [
+    331569178
+   ],
+   "sol": "U2VxdWVuY2UgbnVtYmVycyBleGNoYW5nZWQsIHBhcmFtZXRlcnMgYWdyZWVkIC0gdGhlIGNvbm5lY3Rpb24gaXMgb3Blbi4KU2VlOiA8YSBocmVmPSIuLi9jaGFwdGVycy8wOC10aGUtdHJhbnNwb3J0LWxheWVyLmh0bWwjZGVmLWhhbmRzaGFrZSI+RGVmaW5pdGlvbiDigJxUaGUgdGhyZWUtd2F5IGhhbmRzaGFrZeKAnTwvYT4u"
+  },
+  {
+   "q": "Three duplicate ACKs make the sender:",
+   "options": [
+    "Retransmit the missing segment immediately",
+    "Close the connection",
+    "Wait for the full timeout",
+    "Halve the window forever"
+   ],
+   "key": [
+    1205994769
+   ],
+   "sol": "RmFzdCByZXRyYW5zbWl0IC0gdGhlIEFDSyBwYXR0ZXJuIHJldmVhbHMgdGhlIGxvc3Mgc29vbmVyIHRoYW4gYW55IHRpbWVyLgpTZWU6IDxhIGhyZWY9Ii4uL2NoYXB0ZXJzLzA4LXRoZS10cmFuc3BvcnQtbGF5ZXIuaHRtbCNzZWMtMDgtcmVsZmxvdyI+VENQOiBSZWxpYWJpbGl0eSBhbmQgZmxvdzwvYT4u"
+  },
+  {
+   "q": "Flow control protects:",
+   "options": [
+    "The receiver's buffer",
+    "The network's shared links",
+    "The sender's CPU",
+    "The DNS resolver"
+   ],
+   "key": [
+    3262783313
+   ],
+   "sol": "SXQgcmVhY3RzIHRvIHRoZSBhZHZlcnRpc2VkIHdpbmRvdzsgY29uZ2VzdGlvbiBjb250cm9sIHByb3RlY3RzIHRoZSBuZXR3b3JrLgpTZWU6IDxhIGhyZWY9Ii4uL2NoYXB0ZXJzLzA4LXRoZS10cmFuc3BvcnQtbGF5ZXIuaHRtbCNzZWMtMDgtcmVsZmxvdyI+VENQOiBSZWxpYWJpbGl0eSBhbmQgZmxvdzwvYT4u"
+  },
+  {
+   "q": "TCP reacts to packet loss by:",
+   "options": [
+    "Halving its send rate, then climbing again - the sawtooth",
+    "Sending faster to compensate",
+    "Switching to UDP",
+    "Rebooting the router"
+   ],
+   "key": [
+    1609904254
+   ],
+   "sol": "TG9zcyBzaWduYWxzIGNvbmdlc3Rpb24sIHNvIHNlbmRlcnMgYmFjayBvZmYgYW5kIHJlLXByb2JlIHRoZSBjYXBhY2l0eS4KU2VlOiA8YSBocmVmPSIuLi9jaGFwdGVycy8wOC10aGUtdHJhbnNwb3J0LWxheWVyLmh0bWwjc2VjLTA4LWNvbmdlc3Rpb24iPkNvbmdlc3Rpb24sIGZhaXJuZXNzLCBhbmQgUVVJQzwvYT4u"
+  },
+  {
+   "q": "QUIC (the carrier of HTTP/3) is built on:",
+   "options": [
+    "UDP",
+    "TCP",
+    "Ethernet",
+    "ICMP"
+   ],
+   "key": [
+    538685810
+   ],
+   "sol": "SXQgcmVidWlsZHMgcmVsaWFiaWxpdHkgYW5kIGNvbmdlc3Rpb24gY29udHJvbCBpdHNlbGYsIG92ZXIgdGhlIGxlYW5lciBVRFAuClNlZTogPGEgaHJlZj0iLi4vY2hhcHRlcnMvMDgtdGhlLXRyYW5zcG9ydC1sYXllci5odG1sI3NlYy0wOC1jb25nZXN0aW9uIj5Db25nZXN0aW9uLCBmYWlybmVzcywgYW5kIFFVSUM8L2E+Lg=="
+  }
+ ]
+}
+</script>
+</div>
+```

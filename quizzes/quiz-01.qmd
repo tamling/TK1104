@@ -1,0 +1,123 @@
+# Quiz 1 - Everything is bits {.unnumbered}
+
+Eight questions on Session 1, in the exam's own format:
+Four options, exactly one correct. As in the exam, there is no
+penalty for guessing - answer everything, then grade. Wrong
+answers get an explanation and a link into the script.
+
+```{=html}
+<div class="tk-task">
+<script type="application/json">
+{
+ "type": "quiz",
+ "title": "Quiz 1",
+ "questions": [
+  {
+   "q": "What turns data into information?",
+   "options": [
+    "A shared convention for reading it",
+    "A larger amount of data",
+    "Storing it on a disk",
+    "Converting it to decimal"
+   ],
+   "key": [
+    590980027
+   ],
+   "sol": "RGF0YSBhcmUgcmF3IHN5bWJvbHM7IGluZm9ybWF0aW9uIGlzIGRhdGEgcGx1cyBhIHNoYXJlZCBydWxlIGZvciByZWFkaW5nIGl0LgpTZWU6IDxhIGhyZWY9Ii4uL2NoYXB0ZXJzLzAxLWludHJvZHVjdGlvbi1ldmVyeXRoaW5nLWlzLWJpdHMuaHRtbCNkZWYtZGF0YS1pbmZvIj5EZWZpbml0aW9uIOKAnERhdGEgYW5kIGluZm9ybWF0aW9u4oCdPC9hPi4="
+  },
+  {
+   "q": "The byte <code>01000001</code> read as an ASCII character is:",
+   "options": [
+    "A",
+    "a",
+    "Z",
+    "@"
+   ],
+   "key": [
+    2090098308
+   ],
+   "sol": "MDEwMDAwMDEgaXMgNjUsIGFuZCBBU0NJSSBhc3NpZ25zIHRoZSBsZXR0ZXIgQSB0byB0aGUgdmFsdWUgNjUuClNlZTogPGEgaHJlZj0iLi4vY2hhcHRlcnMvMDEtaW50cm9kdWN0aW9uLWV2ZXJ5dGhpbmctaXMtYml0cy5odG1sI2V4bS1ieXRlM3dheXMiPkV4YW1wbGUg4oCcT25lIGJ5dGUsIHRocmVlIG1lYW5pbmdz4oCdPC9hPi4="
+  },
+  {
+   "q": "The stored-program principle says that:",
+   "options": [
+    "Instructions and data share the same memory",
+    "Programs are wired into the CPU",
+    "Data is kept only in registers",
+    "Programs cannot be modified once loaded"
+   ],
+   "key": [
+    685276665
+   ],
+   "sol": "QSBwcm9ncmFtIGlzIGRhdGEgaW4gbWVtb3J5IC0gbG9hZGluZyBkaWZmZXJlbnQgYml0cyByZXByb2dyYW1zIHRoZSBzYW1lIGhhcmR3YXJlLgpTZWU6IDxhIGhyZWY9Ii4uL2NoYXB0ZXJzLzAxLWludHJvZHVjdGlvbi1ldmVyeXRoaW5nLWlzLWJpdHMuaHRtbCNkZWYtdm9ubmV1bWFubiI+RGVmaW5pdGlvbiDigJxUaGUgVm9uIE5ldW1hbm4gYXJjaGl0ZWN0dXJl4oCdPC9hPi4="
+  },
+  {
+   "q": "How many distinct values can 3 bits represent?",
+   "options": [
+    "8",
+    "3",
+    "6",
+    "16"
+   ],
+   "key": [
+    2088624893
+   ],
+   "sol": "MsKzID0gOCAtIGFuZCBldmVyeSBhZGRpdGlvbmFsIGJpdCBkb3VibGVzIHRoZSByYW5nZS4KU2VlOiA8YSBocmVmPSIuLi9jaGFwdGVycy8wMS1pbnRyb2R1Y3Rpb24tZXZlcnl0aGluZy1pcy1iaXRzLmh0bWwjc2VjLTAxLWVuY29kaW5nIj5FdmVyeXRoaW5nIGlzIGJpdHM6IFRoZSBpZGVhIG9mIGVuY29kaW5nPC9hPi4="
+  },
+  {
+   "q": "Which of these is <em>system</em> software?",
+   "options": [
+    "The operating system",
+    "A web browser",
+    "A game",
+    "A spreadsheet"
+   ],
+   "key": [
+    3872994677
+   ],
+   "sol": "U3lzdGVtIHNvZnR3YXJlIG1hbmFnZXMgdGhlIGhhcmR3YXJlIGFuZCBzZXJ2ZXMgb3RoZXIgcHJvZ3JhbXM7IHRoZSByZXN0IGFyZSBhcHBsaWNhdGlvbnMuClNlZTogPGEgaHJlZj0iLi4vY2hhcHRlcnMvMDEtaW50cm9kdWN0aW9uLWV2ZXJ5dGhpbmctaXMtYml0cy5odG1sI3NlYy0wMS1pcG9zIj5IYXJkd2FyZSwgc29mdHdhcmUsIGFuZCB0aGUgSVBPUyBsb29wPC9hPi4="
+  },
+  {
+   "q": "The program counter holds:",
+   "options": [
+    "The address of the next instruction",
+    "The result of the last addition",
+    "The number of running programs",
+    "The current screen contents"
+   ],
+   "key": [
+    820211781
+   ],
+   "sol": "VGhlIFBDIGtlZXBzIHRoZSBmZXRjaC1kZWNvZGUtZXhlY3V0ZSBjeWNsZSBvbiB0cmFjayAtIGp1bXBzIHdvcmsgYnkgY2hhbmdpbmcgaXQuClNlZTogPGEgaHJlZj0iLi4vY2hhcHRlcnMvMDEtaW50cm9kdWN0aW9uLWV2ZXJ5dGhpbmctaXMtYml0cy5odG1sI2V4bS1mZGUiPkV4YW1wbGUg4oCcVGhlIGhlYXJ0YmVhdOKAnTwvYT4u"
+  },
+  {
+   "q": "Moore's Law observes that:",
+   "options": [
+    "Transistor counts double roughly every two years",
+    "Clock speeds double every year",
+    "RAM prices halve every month",
+    "Every CPU doubles its cores annually"
+   ],
+   "key": [
+    167510155
+   ],
+   "sol": "R29yZG9uIE1vb3JlJiN4Mjc7cyAxOTY1IG9ic2VydmF0aW9uIC0gZXhwb25lbnRpYWwgZ3Jvd3RoLCBub3cgc2xvd2luZyBhcyBoZWF0IGFuZCBhdG9taWMgc2NhbGVzIGJpdGUuClNlZTogPGEgaHJlZj0iLi4vY2hhcHRlcnMvMDEtaW50cm9kdWN0aW9uLWV2ZXJ5dGhpbmctaXMtYml0cy5odG1sI3NlYy0wMS1taWxlc3RvbmVzIj5FaWdodHkgeWVhcnMgaW4gc2l4IG1pbGVzdG9uZXM8L2E+Lg=="
+  },
+  {
+   "q": "“Volatile” memory means:",
+   "options": [
+    "Its contents vanish at power-off",
+    "It is unreliable and often corrupts data",
+    "It cannot be written twice",
+    "It explodes under load"
+   ],
+   "key": [
+    2049140186
+   ],
+   "sol": "UkFNIGlzIHZvbGF0aWxlIC0gd2hpY2ggaXMgd2h5IHVuc2F2ZWQgd29yayBkaWVzIHdpdGggdGhlIHBvd2VyLgpTZWU6IDxhIGhyZWY9Ii4uL2NoYXB0ZXJzLzAxLWludHJvZHVjdGlvbi1ldmVyeXRoaW5nLWlzLWJpdHMuaHRtbCNzZWMtMDEtdm9ubmV1bWFubiI+SW5zaWRlIHRoZSBtYWNoaW5lOiBWb24gTmV1bWFubjwvYT4u"
+  }
+ ]
+}
+</script>
+</div>
+```

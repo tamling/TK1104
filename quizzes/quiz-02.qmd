@@ -1,0 +1,123 @@
+# Quiz 2 - Binary, hex and two's complement {.unnumbered}
+
+Eight questions on Session 2, in the exam's own format:
+Four options, exactly one correct. As in the exam, there is no
+penalty for guessing - answer everything, then grade. Wrong
+answers get an explanation and a link into the script.
+
+```{=html}
+<div class="tk-task">
+<script type="application/json">
+{
+ "type": "quiz",
+ "title": "Quiz 2",
+ "questions": [
+  {
+   "q": "Why do computers use binary rather than decimal?",
+   "options": [
+    "Two voltage states can be told apart reliably",
+    "Binary numbers are shorter",
+    "Decimal circuits are patented",
+    "Programmers prefer it"
+   ],
+   "key": [
+    1579546394
+   ],
+   "sol": "VGVuIHN0YXRlcyBpbiBvbmUgdm9sdGFnZSByYW5nZSBsZWF2ZSBubyBzYWZldHkgbWFyZ2luOyB0d28gc3Vydml2ZSBub2lzZSBhbmQgaGVhdC4KU2VlOiA8YSBocmVmPSIuLi9jaGFwdGVycy8wMi1iaW5hcnktaGV4LXR3b3MtY29tcGxlbWVudC5odG1sI3NlYy0wMi13aHktYmluYXJ5Ij5XaHkgYmluYXJ5PzwvYT4u"
+  },
+  {
+   "q": "What is $1011_2$ in decimal?",
+   "options": [
+    "11",
+    "9",
+    "13",
+    "7"
+   ],
+   "key": [
+    194162085
+   ],
+   "sol": "OCArIDIgKyAxID0gMTEuClNlZTogPGEgaHJlZj0iLi4vY2hhcHRlcnMvMDItYmluYXJ5LWhleC10d29zLWNvbXBsZW1lbnQuaHRtbCNzZWMtMDItY29udmVydGluZyI+Q29udmVydGluZyBpbiBib3RoIGRpcmVjdGlvbnM8L2E+Lg=="
+  },
+  {
+   "q": "What is $25_{10}$ in binary?",
+   "options": [
+    "11001",
+    "10101",
+    "11011",
+    "10011"
+   ],
+   "key": [
+    3819691319
+   ],
+   "sol": "MTYgKyA4ICsgMSA9IDI1LCBzbyAxIDEwMDEuClNlZTogPGEgaHJlZj0iLi4vY2hhcHRlcnMvMDItYmluYXJ5LWhleC10d29zLWNvbXBsZW1lbnQuaHRtbCNzZWMtMDItY29udmVydGluZyI+Q29udmVydGluZyBpbiBib3RoIGRpcmVjdGlvbnM8L2E+Lg=="
+  },
+  {
+   "q": "One hexadecimal digit corresponds to exactly:",
+   "options": [
+    "4 bits",
+    "2 bits",
+    "8 bits",
+    "16 bits"
+   ],
+   "key": [
+    3997154283
+   ],
+   "sol": "MTYgPSAy4oG0IC0gZWFjaCBoZXggZGlnaXQgaXMgb25lIG5pYmJsZS4KU2VlOiA8YSBocmVmPSIuLi9jaGFwdGVycy8wMi1iaW5hcnktaGV4LXR3b3MtY29tcGxlbWVudC5odG1sI3NlYy0wMi1oZXgiPkhleGFkZWNpbWFsIGFuZCBvY3RhbDwvYT4u"
+  },
+  {
+   "q": "What is $\\mathrm{FF}_{16}$ in decimal?",
+   "options": [
+    "255",
+    "240",
+    "155",
+    "256"
+   ],
+   "key": [
+    2153723202
+   ],
+   "sol": "MTXCtzE2ICsgMTUgPSAyNTUgLSB0aGUgbGFyZ2VzdCB2YWx1ZSBvZiBvbmUgYnl0ZS4KU2VlOiA8YSBocmVmPSIuLi9jaGFwdGVycy8wMi1iaW5hcnktaGV4LXR3b3MtY29tcGxlbWVudC5odG1sI3NlYy0wMi1oZXgiPkhleGFkZWNpbWFsIGFuZCBvY3RhbDwvYT4u"
+  },
+  {
+   "q": "−1 in 8-bit two's complement is:",
+   "options": [
+    "1111 1111",
+    "1000 0001",
+    "1111 1110",
+    "0000 0001"
+   ],
+   "key": [
+    3999249967
+   ],
+   "sol": "KzEgPSAwMDAwIDAwMDE7IGludmVydCB0byAxMTExIDExMTAsIGFkZCAxOiAxMTExIDExMTEuClNlZTogPGEgaHJlZj0iLi4vY2hhcHRlcnMvMDItYmluYXJ5LWhleC10d29zLWNvbXBsZW1lbnQuaHRtbCNkZWYtdHdvc2NvbXAiPkRlZmluaXRpb24g4oCcVHdvJiN4Mjc7cyBjb21wbGVtZW504oCdPC9hPi4="
+  },
+  {
+   "q": "Two's complement won over the other schemes mainly because:",
+   "options": [
+    "Subtraction becomes just another addition",
+    "It stores larger numbers",
+    "It has two representations of zero",
+    "It needs fewer bits"
+   ],
+   "key": [
+    3250593079
+   ],
+   "sol": "QSDiiJIgQiBpcyBjb21wdXRlZCBhcyBBICsgKOKIkkIpLCBzbyBvbmUgYWRkZXIgY2lyY3VpdCBkb2VzIGJvdGggb3BlcmF0aW9ucy4KU2VlOiA8YSBocmVmPSIuLi9jaGFwdGVycy8wMi1iaW5hcnktaGV4LXR3b3MtY29tcGxlbWVudC5odG1sI3NlYy0wMi1hcml0aG1ldGljIj5CaW5hcnkgYXJpdGhtZXRpYyBhbmQgdHdvJiN4Mjc7cyBjb21wbGVtZW50PC9hPi4="
+  },
+  {
+   "q": "In unsigned 8-bit arithmetic, 255 + 1 equals:",
+   "options": [
+    "0 - the value wraps around silently",
+    "256",
+    "An error is raised",
+    "−128"
+   ],
+   "key": [
+    1545419630
+   ],
+   "sol": "VGhlIHJlc3VsdCBleGNlZWRzIHRoZSByYW5nZSBhbmQgd3JhcHMsIHdpdGggbm8gd2FybmluZyAtIHRoZSBjbGFzc2ljIG92ZXJmbG93IGJ1Zy4KU2VlOiA8YSBocmVmPSIuLi9jaGFwdGVycy8wMi1iaW5hcnktaGV4LXR3b3MtY29tcGxlbWVudC5odG1sI3NlYy0wMi1hcml0aG1ldGljIj5CaW5hcnkgYXJpdGhtZXRpYyBhbmQgdHdvJiN4Mjc7cyBjb21wbGVtZW50PC9hPi4="
+  }
+ ]
+}
+</script>
+</div>
+```

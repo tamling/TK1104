@@ -155,6 +155,32 @@ body.quarto-dark .tk-task {
 .tk-gatebox.tk-ok-zone { border-color: var(--tk-ok); color: var(--tk-ok); font-size: 1em; }
 .tk-lamp { font-size: 2em; filter: grayscale(1) opacity(0.45); transition: filter 0.15s; }
 .tk-lamp.tk-lit { filter: none; text-shadow: 0 0 14px rgba(255, 200, 40, 0.9); }
+.tk-q { margin: 1.3rem 0; }
+.tk-q-text { margin: 0 0 0.5rem; }
+.tk-q-opts { display: flex; flex-direction: column; gap: 0.35rem; }
+.tk-opt {
+  font: inherit;
+  font-size: 0.92em;
+  text-align: left;
+  padding: 0.4rem 0.7rem;
+  border: 1.5px solid var(--tk-chip-border);
+  border-radius: 6px;
+  background: var(--tk-chip-bg);
+  color: inherit;
+  cursor: pointer;
+}
+.tk-opt.tk-picked { outline: 2px solid var(--tk-accent); }
+.tk-opt.tk-opt-correct { border-color: var(--tk-ok); outline: 2px solid var(--tk-ok); }
+.tk-opt.tk-opt-wrong { border-color: var(--tk-accent); color: var(--tk-accent); }
+.tk-q-expl {
+  margin-top: 0.5rem;
+  padding: 0.5rem 0.7rem;
+  border-left: 3px solid var(--tk-ok);
+  font-size: 0.88em;
+  white-space: pre-line;
+}
+.tk-q-expl.tk-q-expl-wrong { border-left-color: var(--tk-accent); }
+.tk-score { font-size: 1.05em; font-weight: 700; margin: 1rem 0 0.4rem; }
 </style>
 <script>
 document.addEventListener("DOMContentLoaded", function () {
@@ -440,6 +466,91 @@ document.addEventListener("DOMContentLoaded", function () {
     addSolution(controls, cfg);
   }
 
+  // Exam-style quiz: four options per question, exactly one correct;
+  // graded on demand, with per-question explanations and score.
+  function buildQuiz(root, cfg) {
+    var graded = false;
+    var qs = cfg.questions.map(function (q, i) {
+      var wrap = root.appendChild(el("div", "tk-q"));
+      wrap.appendChild(el("p", "tk-q-text")).innerHTML =
+        "<strong>" + (i + 1) + ".</strong> " + q.q;
+      var opts = wrap.appendChild(el("div", "tk-q-opts"));
+      var state = { idx: i, picked: null, key: q.key, sol: q.sol, buttons: [], wrap: wrap };
+      shuffle(q.options.slice()).forEach(function (text) {
+        var b = opts.appendChild(el("button", "tk-opt", text));
+        b.type = "button";
+        state.buttons.push(b);
+        b.addEventListener("click", function () {
+          if (graded) return;
+          state.buttons.forEach(function (o) { o.classList.remove("tk-picked"); });
+          b.classList.add("tk-picked");
+          state.picked = b;
+        });
+      });
+      return state;
+    });
+    var score = root.appendChild(el("p", "tk-score", ""));
+    score.hidden = true;
+    var status = el("p", "tk-status",
+      "Pick one answer per question, then grade - there is no penalty for guessing.");
+    root.appendChild(status);
+    var btn = root.appendChild(el("button", "tk-btn", "Grade quiz"));
+    btn.type = "button";
+    btn.addEventListener("click", function () {
+      if (graded) { // reset for another round
+        graded = false;
+        score.hidden = true;
+        btn.textContent = "Grade quiz";
+        status.className = "tk-status";
+        status.textContent = "Pick one answer per question, then grade - there is no penalty for guessing.";
+        qs.forEach(function (s) {
+          s.picked = null;
+          s.buttons.forEach(function (o) {
+            o.classList.remove("tk-picked", "tk-opt-correct", "tk-opt-wrong");
+          });
+          shuffle(s.buttons.slice()).forEach(function (o) { o.parentElement.appendChild(o); });
+          var e = s.wrap.querySelector(".tk-q-expl");
+          if (e) e.remove();
+        });
+        return;
+      }
+      var unanswered = qs.filter(function (s) { return !s.picked; }).length;
+      if (unanswered > 0) {
+        status.className = "tk-status tk-status-bad";
+        status.textContent = "Answer every question first (" + unanswered +
+          " to go) - blank scores zero, a guess might not.";
+        return;
+      }
+      var right = 0;
+      qs.forEach(function (s) {
+        var isRight = s.key.indexOf(djb2(norm(s.picked.textContent) + "|q" + s.idx)) !== -1;
+        if (isRight) {
+          right++;
+          s.picked.classList.add("tk-opt-correct");
+        } else {
+          s.picked.classList.add("tk-opt-wrong");
+          s.buttons.forEach(function (o) {
+            if (s.key.indexOf(djb2(norm(o.textContent) + "|q" + s.idx)) !== -1) {
+              o.classList.add("tk-opt-correct");
+            }
+          });
+        }
+        var expl = s.wrap.appendChild(el("div", "tk-q-expl" + (isRight ? "" : " tk-q-expl-wrong")));
+        expl.innerHTML = b64utf8(s.sol);
+      });
+      graded = true;
+      score.hidden = false;
+      score.textContent = "You scored " + right + " / " + qs.length + ".";
+      status.className = "tk-status " + (right === qs.length ? "tk-status-ok" : "");
+      status.textContent = right === qs.length
+        ? "✓ Full marks - exam mode: on."
+        : (right >= Math.ceil(qs.length * 0.7)
+            ? "Solid - skim the explanations on the red ones."
+            : "Worth another pass through the chapter - the explanations link straight to it.");
+      btn.textContent = "Try again";
+    });
+  }
+
   document.querySelectorAll(".tk-task").forEach(function (root) {
     var cfgEl = root.querySelector('script[type="application/json"]');
     if (!cfgEl) return;
@@ -448,6 +559,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (cfg.type === "sort" || cfg.type === "order") buildPlacement(root, cfg);
     else if (cfg.type === "input") buildInput(root, cfg);
     else if (cfg.type === "gate") buildGate(root, cfg);
+    else if (cfg.type === "quiz") buildQuiz(root, cfg);
   });
 });
 </script>

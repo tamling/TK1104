@@ -1,0 +1,123 @@
+# Quiz 6 - The Internet {.unnumbered}
+
+Eight questions on Session 6, in the exam's own format:
+Four options, exactly one correct. As in the exam, there is no
+penalty for guessing - answer everything, then grade. Wrong
+answers get an explanation and a link into the script.
+
+```{=html}
+<div class="tk-task">
+<script type="application/json">
+{
+ "type": "quiz",
+ "title": "Quiz 6",
+ "questions": [
+  {
+   "q": "The internet is best described as:",
+   "options": [
+    "A network of networks cooperating through shared protocols",
+    "One big computer",
+    "A service owned by one company",
+    "Another name for the web"
+   ],
+   "key": [
+    3349615511
+   ],
+   "sol": "SW5kZXBlbmRlbnQgbmV0d29ya3Mgam9pbmVkIHRvZ2V0aGVyLCB3aXRoIG5vIGNlbnRyYWwgb3duZXIuClNlZTogPGEgaHJlZj0iLi4vY2hhcHRlcnMvMDYtdGhlLWludGVybmV0Lmh0bWwjZGVmLWludGVybmV0Ij5EZWZpbml0aW9uIOKAnFRoZSBpbnRlcm5ldOKAnTwvYT4u"
+  },
+  {
+   "q": "The internet chose packet switching because data traffic is:",
+   "options": [
+    "Bursty",
+    "Steady",
+    "Encrypted",
+    "Small"
+   ],
+   "key": [
+    3757963436
+   ],
+   "sol": "TGlua3MgYXJlIHNoYXJlZCBvbiBkZW1hbmQsIHNvIG5vYm9keSBob2xkcyBpZGxlIGNhcGFjaXR5LgpTZWU6IDxhIGhyZWY9Ii4uL2NoYXB0ZXJzLzA2LXRoZS1pbnRlcm5ldC5odG1sI3NlYy0wNi1pbnRlcm5ldC13ZWIiPlRoZSBpbnRlcm5ldCBhbmQgdGhlIHdlYjwvYT4u"
+  },
+  {
+   "q": "The relationship between the internet and the web:",
+   "options": [
+    "The web is one service running on the internet",
+    "They are the same thing",
+    "The internet runs on the web",
+    "The web replaced the internet"
+   ],
+   "key": [
+    2120956314
+   ],
+   "sol": "VGhlIGludGVybmV0IGlzIHRoZSBpbmZyYXN0cnVjdHVyZTsgdGhlIHdlYiBtb3ZlcyBwYWdlcyBvdmVyIEhUVFAgb24gdG9wIG9mIGl0LgpTZWU6IDxhIGhyZWY9Ii4uL2NoYXB0ZXJzLzA2LXRoZS1pbnRlcm5ldC5odG1sI3NlYy0wNi1pbnRlcm5ldC13ZWIiPlRoZSBpbnRlcm5ldCBhbmQgdGhlIHdlYjwvYT4u"
+  },
+  {
+   "q": "A protocol's three classic ingredients are:",
+   "options": [
+    "Syntax, semantics and timing",
+    "Speed, cost and distance",
+    "Copper, fibre and radio",
+    "Client, server and router"
+   ],
+   "key": [
+    244189754
+   ],
+   "sol": "VGhlIGZvcm0sIHRoZSBtZWFuaW5nLCBhbmQgdGhlIHdoZW4gLSBnZXQgYW55IG9uZSB3cm9uZyBhbmQgY29tbXVuaWNhdGlvbiBicmVha3MuClNlZTogPGEgaHJlZj0iLi4vY2hhcHRlcnMvMDYtdGhlLWludGVybmV0Lmh0bWwjZGVmLXByb3RvY29sIj5EZWZpbml0aW9uIOKAnFByb3RvY29s4oCdPC9hPi4="
+  },
+  {
+   "q": "The five layers, top to bottom, are:",
+   "options": [
+    "Application, transport, network, link, physical",
+    "Physical, link, network, transport, application",
+    "Application, network, transport, physical, link",
+    "Transport, application, network, link, physical"
+   ],
+   "key": [
+    975490924
+   ],
+   "sol": "RWFjaCBsYXllciBzZXJ2ZXMgdGhlIG9uZSBhYm92ZSBhbmQgY29udmVyc2VzIHdpdGggaXRzIHBlZXIgb3Bwb3NpdGUuClNlZTogPGEgaHJlZj0iLi4vY2hhcHRlcnMvMDYtdGhlLWludGVybmV0Lmh0bWwjZGVmLXN0YWNrIj5EZWZpbml0aW9uIOKAnFRoZSBmaXZlLWxheWVyIHN0YWNr4oCdPC9hPi4="
+  },
+  {
+   "q": "The data unit at the transport layer is called a:",
+   "options": [
+    "Segment",
+    "Message",
+    "Datagram",
+    "Frame"
+   ],
+   "key": [
+    3291444314
+   ],
+   "sol": "TWVzc2FnZSwgc2VnbWVudCwgZGF0YWdyYW0sIGZyYW1lIC0gdGhlIHVuaXQmI3gyNztzIG5hbWUgdGVsbHMgeW91IHRoZSBsYXllci4KU2VlOiA8YSBocmVmPSIuLi9jaGFwdGVycy8wNi10aGUtaW50ZXJuZXQuaHRtbCNzZWMtMDYtZW5jYXBzdWxhdGlvbiI+RW5jYXBzdWxhdGlvbjwvYT4u"
+  },
+  {
+   "q": "<code>ping</code> reports:",
+   "options": [
+    "Whether a host answers, and the round-trip time",
+    "The routers along the path",
+    "The IP behind a name",
+    "Your open connections"
+   ],
+   "key": [
+    1475536836
+   ],
+   "sol": "SXQgc2VuZHMgYW4gZWNobyBhbmQgbWVhc3VyZXMgdGhlIFJUVCAtIHRoZSBmaXJzdCB0b29sIHdoZW4g4oCcdGhlIGludGVybmV0IGlzIGRvd27igJ0uClNlZTogPGEgaHJlZj0iLi4vY2hhcHRlcnMvMDYtdGhlLWludGVybmV0Lmh0bWwjc2VjLTA2LXRvb2xzIj5TZWVpbmcgdGhlIG5ldHdvcms8L2E+Lg=="
+  },
+  {
+   "q": "A satellite link has huge bandwidth but video calls feel sluggish. The culprit:",
+   "options": [
+    "Propagation delay - the signal's physical travel time",
+    "Too little bandwidth",
+    "A broken cable",
+    "The video codec"
+   ],
+   "key": [
+    1004579964
+   ],
+   "sol": "TGF0ZW5jeSwgbm90IGNhcGFjaXR5OiB0aGUgdHJpcCB0byBhIHNhdGVsbGl0ZSBhbmQgYmFjayBhcHByb2FjaGVzIGhhbGYgYSBzZWNvbmQuClNlZTogPGEgaHJlZj0iLi4vY2hhcHRlcnMvMDYtdGhlLWludGVybmV0Lmh0bWwjc2VjLTA2LWxheWVycyI+TGF5ZXJlZCBtb2RlbHM8L2E+Lg=="
+  }
+ ]
+}
+</script>
+</div>
+```

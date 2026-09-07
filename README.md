@@ -35,6 +35,15 @@ _tikz/build.sh   # needs pdflatex + TikZ, pdfcrop, pdftocairo (poppler)
 In dark mode the SVGs (dark ink, transparent background) sit on a light
 backing card - see `theme-dark.scss`.
 
+## Session quizzes
+
+A second, independent part of the site: one exam-style quiz per session
+(`quizzes/quiz-NN.qmd`, 8 questions each - four options, one correct,
+like the real exam). Graded client-side with a score, per-question
+explanations and links into the script. Generated from the same
+`_interactive/make_tasks.py`; the quiz pages are unnumbered, so the
+script keeps its chapter numbers 1-11.
+
 ## Password protection
 
 The published site is password-protected: the publish workflow encrypts

@@ -1,0 +1,123 @@
+# Quiz 5 - Operating systems {.unnumbered}
+
+Eight questions on Session 5, in the exam's own format:
+Four options, exactly one correct. As in the exam, there is no
+penalty for guessing - answer everything, then grade. Wrong
+answers get an explanation and a link into the script.
+
+```{=html}
+<div class="tk-task">
+<script type="application/json">
+{
+ "type": "quiz",
+ "title": "Quiz 5",
+ "questions": [
+  {
+   "q": "The two views of an operating system are:",
+   "options": [
+    "Abstraction (top-down) and resource management (bottom-up)",
+    "Hardware and firmware",
+    "Compiler and interpreter",
+    "Client and server"
+   ],
+   "key": [
+    1264055765
+   ],
+   "sol": "SXQgbWFrZXMgdGhlIG1hY2hpbmUgdXNhYmxlIChhYnN0cmFjdGlvbikgYW5kIHNoYXJlYWJsZSAocmVzb3VyY2UgbWFuYWdlbWVudCkuClNlZTogPGEgaHJlZj0iLi4vY2hhcHRlcnMvMDUtb3BlcmF0aW5nLXN5c3RlbXMuaHRtbCNkZWYtb3MiPkRlZmluaXRpb24g4oCcT3BlcmF0aW5nIHN5c3RlbeKAnTwvYT4u"
+  },
+  {
+   "q": "A system call is:",
+   "options": [
+    "A program's request to the OS for a privileged service",
+    "A phone call between two servers",
+    "A CPU instruction that draws a window",
+    "An error message"
+   ],
+   "key": [
+    2472350761
+   ],
+   "sol": "VGhlIENQVSBzd2l0Y2hlcyBpbnRvIGtlcm5lbCBtb2RlLCB0aGUgT1MgZG9lcyB0aGUgd29yayBhbmQgY2hlY2tzIHBlcm1pc3Npb25zLgpTZWU6IDxhIGhyZWY9Ii4uL2NoYXB0ZXJzLzA1LW9wZXJhdGluZy1zeXN0ZW1zLmh0bWwjZGVmLXN5c2NhbGwiPkRlZmluaXRpb24g4oCcU3lzdGVtIGNhbGzigJ08L2E+Lg=="
+  },
+  {
+   "q": "A process is:",
+   "options": [
+    "A program in execution, together with its resources",
+    "A file on disk",
+    "A CPU core",
+    "A user account"
+   ],
+   "key": [
+    2937883517
+   ],
+   "sol": "VGhlIHByb2dyYW0gb24gZGlzayBpcyBwYXNzaXZlOyB0aGUgcHJvY2VzcyBpcyB0aGF0IHByb2dyYW0gcnVubmluZy4KU2VlOiA8YSBocmVmPSIuLi9jaGFwdGVycy8wNS1vcGVyYXRpbmctc3lzdGVtcy5odG1sI2RlZi1wcm9jZXNzIj5EZWZpbml0aW9uIOKAnFByb2Nlc3MsIHRocmVhZCwgcmVzb3VyY2XigJ08L2E+Lg=="
+  },
+  {
+   "q": "How does the OS get the CPU back from a running program?",
+   "options": [
+    "A hardware timer interrupt fires unconditionally",
+    "The program is asked politely",
+    "The user presses a key",
+    "It waits for the program to finish"
+   ],
+   "key": [
+    1847697687
+   ],
+   "sol": "Tm8gcHJvZ3JhbSBpcyBhc2tlZCAtIHRoZSB0aW1lciBpbnRlcnJ1cHQgaXMgd2lyZWQgYmVsb3cgYW55dGhpbmcgc29mdHdhcmUgY2FuIHByZXZlbnQuClNlZTogPGEgaHJlZj0iLi4vY2hhcHRlcnMvMDUtb3BlcmF0aW5nLXN5c3RlbXMuaHRtbCNzZWMtMDUtcHJvY2Vzc2VzIj5Qcm9jZXNzZXMgYW5kIHNjaGVkdWxpbmc8L2E+Lg=="
+  },
+  {
+   "q": "When a blocked process's disk read completes, the process becomes:",
+   "options": [
+    "Ready - it still has to be dispatched",
+    "Running immediately",
+    "Terminated",
+    "A thread"
+   ],
+   "key": [
+    3759824108
+   ],
+   "sol": "VGhlIGludGVycnVwdCBtb3ZlcyBpdCB0byByZWFkeTsgb25seSB0aGUgc2NoZWR1bGVyIGRpc3BhdGNoZXMgaXQgdG8gcnVubmluZy4KU2VlOiA8YSBocmVmPSIuLi9jaGFwdGVycy8wNS1vcGVyYXRpbmctc3lzdGVtcy5odG1sI3NlYy0wNS1wcm9jZXNzZXMiPlByb2Nlc3NlcyBhbmQgc2NoZWR1bGluZzwvYT4u"
+  },
+  {
+   "q": "Two threads updating the same counter lose updates. The OS remedy is:",
+   "options": [
+    "Locks around the critical section",
+    "A faster CPU",
+    "More RAM",
+    "Restarting the machine"
+   ],
+   "key": [
+    474906093
+   ],
+   "sol": "QSByYWNlIGNvbmRpdGlvbiAtIGxvY2tzIGxldCBvbmx5IG9uZSB0aHJlYWQgaW50byB0aGUgY3JpdGljYWwgc2VjdGlvbiBhdCBhIHRpbWUuClNlZTogPGEgaHJlZj0iLi4vY2hhcHRlcnMvMDUtb3BlcmF0aW5nLXN5c3RlbXMuaHRtbCNzZWMtMDUtcHJvY2Vzc2VzIj5Qcm9jZXNzZXMgYW5kIHNjaGVkdWxpbmc8L2E+Lg=="
+  },
+  {
+   "q": "“Thrashing” means:",
+   "options": [
+    "Heavy swapping between RAM and disk dominating the runtime",
+    "A virus scanning files",
+    "Two programs printing at once",
+    "The fan spinning up"
+   ],
+   "key": [
+    1195904261
+   ],
+   "sol": "VmlydHVhbCBtZW1vcnkgcHVzaGVkIHRvbyBmYXIgLSBkaXNrIGlzIG9yZGVycyBvZiBtYWduaXR1ZGUgc2xvd2VyIHRoYW4gUkFNLgpTZWU6IDxhIGhyZWY9Ii4uL2NoYXB0ZXJzLzA1LW9wZXJhdGluZy1zeXN0ZW1zLmh0bWwjZGVmLXZpcnR1YWxtZW0iPkRlZmluaXRpb24g4oCcVmlydHVhbCBtZW1vcnnigJ08L2E+Lg=="
+  },
+  {
+   "q": "In <code>chmod 755</code>, the 7 grants the owner:",
+   "options": [
+    "Read, write and execute",
+    "Read only",
+    "Write only",
+    "No access"
+   ],
+   "key": [
+    1545630530
+   ],
+   "sol": "cnd4ID0gNCArIDIgKyAxID0gNyAtIHRocmVlIHBlcm1pc3Npb24gYml0cyBhcyBvbmUgb2N0YWwgZGlnaXQuClNlZTogPGEgaHJlZj0iLi4vY2hhcHRlcnMvMDUtb3BlcmF0aW5nLXN5c3RlbXMuaHRtbCNzZWMtMDUtZmlsZXMiPkZpbGVzIGFuZCBzdG9yYWdlPC9hPi4="
+  }
+ ]
+}
+</script>
+</div>
+```
