@@ -6,6 +6,17 @@ Lecture 2, and so on, and each is followed in the same week by its guided
 Practice session. The slides shown in the lectures carry the same
 structure, so slides, script and exercises can be used side by side.
 
+::: {.callout-note}
+## How this script was written
+
+The chapters were drafted with the help of a large language model
+(Anthropic's Claude), working from the lecturer's slide decks and notes,
+and were reviewed and edited by the lecturer before publication. Drafting
+this way is fast but not infallible: If something looks wrong, it may well
+be - say so in the lecture or on Canvas, and it will be checked and
+corrected.
+:::
+
 In this course, the lectures themselves are the curriculum - the exam will
 not ask for book-only material. The script therefore does something simple
 but useful: It re-tells each lecture in connected prose, slowly enough to
