@@ -16,10 +16,6 @@ annotations: true
 
 book:
   title: "TK1104 - Digital Technology"
-  # Search is off on purpose: the published site is password-protected
-  # (StatiCrypt in .github/workflows/publish.yml), and the search index
-  # (search.json) would otherwise carry the full text in plain text.
-  search: false
   subtitle: "Lecture script - a companion to the twelve lectures"
   author: "Timo Amling"
   chapters:
