@@ -8,3 +8,6 @@ _site/
 *.aux
 *.log
 *.synctex.gz
+
+# Annotation audit trail: raw Hypothesis export contains real usernames
+data/annotations_raw.json
